@@ -1,0 +1,48 @@
+
+@font-face{
+    font-family: 'FavoritMed';
+    src:  url('assets/Favorit\ Medium.ttf'); 
+}
+
+@font-face{
+    font-family: "Favorit"; 
+    src: url("assets/Favorit\ Light.ttf")
+}
+
+body{
+    background-color: #d1cebf;
+}
+
+
+#wrapper{
+    display: flex;
+    margin-top: 15px;
+}
+
+
+#about{
+    display: flex;
+    flex-direction: column;
+    border: solid black 1px;
+} 
+
+#projects-flex {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    border: solid black 1px;
+    margin-left: 20px;
+} 
+
+
+.links{
+    color: #f05124;
+    font-size: 50px;
+    font-family: "Favorit";
+    text-decoration: none; 
+    /* border: solid black 1px; */
+}
+ 
+.links:hover{
+    font-style: italic;
+}
