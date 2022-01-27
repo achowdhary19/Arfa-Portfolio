@@ -172,3 +172,22 @@ h1{
 #play-info{
     margin-left: .5vw;
 }
+
+
+/* foot  */
+/* #foot-image-box{
+    width: 50%;
+}
+*/
+
+#foot-image-box img{
+    max-width: 100%;
+} 
+#foot-info{
+    width: 50%;
+    margin-left: -2vw;
+} 
+
+#originaljoan{
+    width: 95%;
+}
