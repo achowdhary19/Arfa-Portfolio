@@ -1,4 +1,6 @@
 
+
+/* GENERAL */
 @font-face{
     font-family: 'FavoritMed';
     src:  url('assets/Favorit\ Medium.ttf'); 
@@ -11,38 +13,162 @@
 
 body{
     background-color: #d1cebf;
+    margin: 0;
 }
 
 
-#wrapper{
+button{
+    font-size: 13px;
+    cursor: pointer;
+    border: .5px solid #DAD9D9 ;
+    border-radius: 25px;
+    padding: 8px 18px 8px 18px;
+    box-shadow: 0 4px #999;
+    background-color: #DAD9D9;
+    color: #001FCC;
+}
+button:hover{
+    background-color: #CECECE;
+    border: .5px solid #CECECE ;
+
+}
+button:active {
+    box-shadow: 0 0px #999;
+    transform: translateY(3px);
+  }
+
+p {
+    color: #f05124;
+    font-family: "Favorit";
+}
+
+
+
+
+/* JUST FOR THE MAIN PAGE  */
+#main-wrapper{
     display: flex;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 
-#about{
+#home-info{
     display: flex;
     flex-direction: column;
-    border: solid black 1px;
+    width: 50%;
+    font-size: 20px;
+    /* border: solid black 1px; */
+    margin: 0;
+    padding-right: 10vw;
 } 
 
 #projects-flex {
     display: flex;
-    width: 50%;
     flex-direction: column;
-    border: solid black 1px;
-    margin-left: 20px;
+    width: 50%;
+    /* border: solid black 1px; */
+    margin-left: 2vw;
 } 
 
 
-.links{
+.mainlinks{ 
     color: #f05124;
-    font-size: 50px;
+    font-size: 70px;
     font-family: "Favorit";
     text-decoration: none; 
     /* border: solid black 1px; */
 }
  
-.links:hover{
+.mainlinks:hover{
     font-style: italic;
+}
+
+
+#personalLinks{
+    display: flex;
+    flex-direction: row;
+    margin-left: 3vw;
+}
+
+#personalLinks a{
+    font-size: 17px;
+    color: #f05124;
+    font-family: "FavoritMed";
+    text-decoration: none;
+    margin-right: 5vw;
+    margin-top: 2vw;
+    /* border: 1px solid black ;  */
+} 
+#personalLinks a:hover{
+    transform: scale(1.2);
+}
+
+
+
+
+/* ALL PAGES  */
+
+
+h1{
+    color: #f05124;
+    font-family: "FavoritMed";
+    font-size: 40px;
+}
+
+.page-wrapper{
+    display:flex; 
+}
+
+.pagelinks{
+    color: #f05124;
+    font-family: "Favorit";
+}
+
+
+/* bead page  */
+
+#flower-image-box{
+    width: 50%;
+}
+#flower-image-box img {
+    max-width: 80%;
+    margin-top: -55px;
+}
+
+#flower-info{
+    width: 50%;
+    margin-left: -9vw;
+}
+
+
+
+/* quinn page  */
+#quinn-image-box{
+    width: 50%;
+}
+
+#quinn-image-box img{
+    margin-top: -1.5vw;
+    max-width: 95%;
+}
+
+#quinn-info{
+    margin-left: -2vw;
+    width: 50%;
+}
+
+
+/* letsplay */
+
+#play-image-box{
+    width: 50%;
+    margin-left: -3px;
+    /* background-color: #05A556; */
+}
+#play-image-box img{
+    max-width: 100%;
+}
+
+#play-info{
+    margin-left: .5vw;
 }
