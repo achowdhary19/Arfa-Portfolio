@@ -39,7 +39,7 @@ button:active {
 
 p {
     color: #f05124;
-    font-family: "Favorit";
+    font-family: "Favorit", Helvetica, sans-serif;
 }
 
 
@@ -170,7 +170,7 @@ h1{
 }
 
 #play-info{
-    margin-left: .5vw;
+    margin-left: 1vw;
 }
 
 
@@ -185,9 +185,26 @@ h1{
 } 
 #foot-info{
     width: 50%;
-    margin-left: -2vw;
+    margin-left: -1vw;
+    margin-right: 1vw;
 } 
 
 #originaljoan{
     width: 95%;
+}
+
+
+/* game page */
+#game-image-box{
+    width: 50%;
+}
+
+#game-image-box img{
+    max-width: 120%;
+}
+
+#game-info{
+    width: 45%;
+    margin-left: 11vw;
+    margin-right: 1vw;
 }
