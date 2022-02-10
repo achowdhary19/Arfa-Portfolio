@@ -200,11 +200,15 @@ h1{
 }
 
 #game-image-box img{
-    max-width: 120%;
+    max-width: 114%;
 }
+/* #game-info{
+    width: 45%;
+    margin-left: 6vw;
+    margin-right: 1vw;
+} */
 
 #game-info{
-    width: 45%;
-    margin-left: 11vw;
-    margin-right: 1vw;
+    width: 50%;
+    margin-left: 7vw;
 }
