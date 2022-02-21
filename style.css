@@ -76,12 +76,15 @@ p {
     font-size: 70px;
     font-family: "Favorit";
     text-decoration: none; 
+
     /* border: solid black 1px; */
 }
  
 .mainlinks:hover{
     font-style: italic;
 }
+
+
 
 
 #personalLinks{
@@ -123,6 +126,10 @@ h1{
     color: #f05124;
     font-family: "Favorit";
 }
+
+/* .pagelinks:visited{
+    color: #001FCC;
+} */
 
 
 /* bead page  */
