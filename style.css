@@ -219,3 +219,24 @@ h1{
     width: 50%;
     margin-left: 7vw;
 }
+
+
+#babylon-holder {
+    width: 70%;
+    height: 100%;
+    padding: 0px; 
+    margin: 0px; 
+    transform: scale(0.8);
+    float: left; 
+}
+
+#instructions {
+    /* padding: 0px;  */
+    padding-top: .5vw; 
+    width: 30%;
+    height: 100%;
+    float: left;
+    color: #f05124;
+    font-family: "FavoritMed";
+    font-size: 100px;
+}
