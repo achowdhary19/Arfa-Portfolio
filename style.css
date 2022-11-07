@@ -232,11 +232,11 @@ h1{
 
 #instructions {
     /* padding: 0px;  */
-    padding-top: .5vw; 
     width: 30%;
     height: 100%;
     float: left;
     color: #f05124;
     font-family: "FavoritMed";
-    font-size: 100px;
+    font-size: 50px;
+
 }
