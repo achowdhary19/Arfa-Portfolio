@@ -62,7 +62,7 @@
 
       const box = BABYLON.MeshBuilder.CreateBox("box", {});
       box.position.y = .5;  //box created with default size so height is 1
-      box.position.x = 5.2; 
+      box.position.x = 5.4; 
 
       box.scaling = new BABYLON.Vector3(2, 1.5, 3);
       const boxMat = new BABYLON.StandardMaterial("boxMat");
@@ -103,7 +103,9 @@ ground.position.x = .75;
         outline.push(new BABYLON.Vector3(-0.3, 0, 0.1));
 
         const car = BABYLON.MeshBuilder.ExtrudePolygon("car", {shape: outline, depth: 0.2});
+        car.position.y = .2
         car.rotation.x = 4.7; 
+        car.scaling = new BABYLON.Vector3(2, 1.5, 3);
         //car.rotation.y = 5; 
         
     const faceUV = [];
