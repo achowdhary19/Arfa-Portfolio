@@ -221,6 +221,24 @@ h1{
 }
 
 
+
+
+/* FORM */
+
+#form-image-box{
+    width: 50%;
+    /* margin-left: -3px; */
+    /* background-color: #05A556; */
+}
+#form-image-box img{
+    max-width: 107%;
+}
+
+#form-info{
+    width: 50%; 
+    margin-left: 4vw;
+}
+
 #babylon-holder {
     width: 70%;
     height: 100%;
