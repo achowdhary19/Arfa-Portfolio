@@ -1,0 +1,30 @@
+<html>
+   <head>
+      <title>Draggables Elements</title>
+		
+     <!-- <script type = "text/javascript" src = "/javascript/prototype.js"></script> -->
+      <script type = "text/javascript" src = "scriptaculous.js"></script>
+		
+      <script type = "text/javascript">
+         window.onload = function() {
+            new Draggable(
+               'myimage', {
+                  revert:true, snap: function(x, y) {
+                     return[
+                        (x < 100) ? (x > 0 ? x : 0 ) : 100,
+                        (y < 50) ? (y > 0 ? y : 0) : 50
+                     ];
+                  }
+               } 
+            );
+         }
+      </script>
+   </head>
+   
+   <body>
+      <p>Try to drag the following image out of its defined
+         boundary and see the result. Later change its boundary and
+         repeat the exercise.</p>
+         <img src="assets/scriptaculous.gif" alt="">
+   </body>
+</html>
