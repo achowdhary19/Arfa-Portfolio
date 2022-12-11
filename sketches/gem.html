@@ -25,12 +25,14 @@
                 </li>
 
                 <li>
-                  <a class = "pagelinks" href="gem.html"> Drag and Drop </a>
-              </li>
+                    <a class = "pagelinks" href="gem.html"> Drag and Drop </a>
+                </li>
 
                 <li>
                     <a class = "pagelinks" href="lottery.html"> Scratch Off </a>
                 </li>
+
+                
 
                 <li>
                     <button onclick="document.location='../index.html'">  Home  </button>
@@ -39,34 +41,34 @@
         </div>
 
         <div class = "content">
-            <h1> Scratch off  </h1>
+            <h1> Drag and Drop Puzzle </h1>
               <div class="fullwidth">
                 <!-- below width and height refers to the dimensions of your sketch-->
         
-                <iframe allow="camera" width="600px" height="600px" src="https://editor.p5js.org/achowdhary19/full/lYSZc2P5q">
+                <iframe allow="camera" width="600px" height="600px" src="https://editor.p5js.org/achowdhary19/full/Uh5JefpAL">
                 </iframe>
 
              </div>
               <p>
-                <a href="https://editor.p5js.org/achowdhary19/sketches/lYSZc2P5q">link to code</a>
+                <a href="https://editor.p5js.org/achowdhary19/sketches/Uh5JefpAL">link to code</a>
               </p>
 
               <h1>
                 Description
               </h1>
-              <p>TODO</p>
+              <p>For this project I wanted to make a puzzle in p5. I was thinking about putting some picture or doodles in the sketch and then making an atypical grid to place the images on. </p>
               <h1>
                 Design Process
               </h1>
-              <p>TODO</p>
+              <p> I started by making a simple grid with red dots that were draggable and snappable. This was much harder than I thought it was going to be. I randomly generated positions for the points, stored them and updated them when I moved them, and made them snap in the center of the grid cell. Initially, the dots were initially snapping to the nearest cell, which doesn't make for a very difficult puzzle. I spent some time making a maximum distance at which a piece will snap to a cell. If it is outside that radius, the piece will fall right where the mouse is. After I got that working, I tried to figure out how to make the mouse pick up the piece where it wasclicked, rather than the piece's center snapping to the mouse. This was difficult to mess with because I was tracking the pieces using specific points, their center, so I couldn't easily reference points around the center. I decided later in the process to make the goal of the puzzle to drag gems onto a piece of jewelry. I added images to the sketch but have been having a hard time uploading multiple "puzzle pieces" and getting them to snap correctly.</p>
               <h1>
                 Reflection
               </h1>
-              <p>TODO</p>
-              <h1>
+              <p> This project isn't completely finished, but I like the direction I'm going in. I started small by making a simple grid and then a jewelry piece with 2 gems. My goal was to have a bigger piece of jewerly and multiple gems of different colors, but I haven't been able to get hte small version working perfectly so I haven't added more images yet. Creating a snap and drag function is something that I will definitiely use in the future so I'm glad I have an idea of how it works. </p>
+              <!-- <h1>
                 Credits
               </h1>
-              <p>TODO</p>
+              <p>TODO</p> -->
 
         </div>
     </div>
@@ -75,10 +77,11 @@
         <footer class="footer">
           <div class="links"> </div>
           
-          <button onclick="document.location='clock.html'">  Experimental Clock  </button>
+          <button onclick="document.location='../p5js.html'">  Experimental Clock  </button>
           <button onclick="document.location='lottery.html'">  Scratch Off </button>
           <button onclick="document.location='generator.html'"> Generator </button>
           <button onclick="document.location='gem.html'"> Drag and Drop</button>
+          
           <!-- <a
             class="btn--remix"
             target="_top"

@@ -25,6 +25,10 @@
                 </li>
 
                 <li>
+                  <a class = "pagelinks" href="gem.html"> Drag and Drop </a>
+              </li>
+
+                <li>
                     <a class = "pagelinks" href="lottery.html"> Scratch Off </a>
                 </li>
 
@@ -49,27 +53,37 @@
               <h1>
                 Description
               </h1>
-              <p>TODO</p>
+              <p> This sketch is a castle generator. As I was looking for inspiration online, I came across a twitter account that generates these playful looking castles every few hours.</p>
+              <div class = 'fullwidth'>
+                <img class = "p5pic" src="/Portfolio/assets/tinySpire.jpeg">
+              </div>
+              <p>Amanda Cifaldi created the "Tiny Spires" twitter account. She was inspired by Mary Blair's small world art. </p>
               <h1>
                 Design Process
               </h1>
-              <p>TODO</p>
+              <p>  Because I needed to reference each shape's position throughout the code, I had to create some classes. Classes/object oriented programming is a powerful tool for managing objects and maintaining inheritance. I struggle using classes so this project was a good opportunity for me to practice. I created a few classes for a few differnet shapes and instantiated a few shapes for each column of the castle. In  the draw function, I drew shapes and moved their y position every 10 frames. I also had to redraw the function every 10 frames to make the shapes look like they're moving instead of just drawing multiple shapes a few pixels apart. I stopped moving a shape by checking if its y positon was at the bottom of the canvas or if it was at the top or the previous shape. Once a shape stopped moving, I drew another shape and repeated hteprocess until I finished the column. Finaly, I wanted to achieve a similar grainy texture as seen in the Tiny Spires' castles, so I added an off screen canvas that adds some noise on top of the main canvas. </p>
               <h1>
                 Reflection
               </h1>
-              <p>TODO</p>
+              <p>This project made me a lot more comfortable with object oriented programming. I did this in a very brute force way that could be condensed and more efficient, but its a good process to start by making something that works rather than star by trying to make the most efficient code possible. to get something working before </p>
               <h1>
                 Credits
-              </h1>
-              <p>TODO</p>
+              </h1> 
+              <p> https://twitter.com/tinyspires 
+                https://www.instagram.com/p/B1FUsgSANMz/ 
+              </p>
 
         </div>
     </div>
 
         <!-- The footer holds our remix button — you can use it for structure or cut it out ✂ -->
     <footer class="footer">
-        <div class="links"></div>
-        <a
+        <div class="links"> </div>
+        
+        <button onclick="document.location='clock.html'">  Experimental Clock  </button>
+        <button onclick="document.location='lottery.html'">  Scratch Off </button>
+        <button onclick="document.location='generator.html'"> Generator </button>
+        <!-- <a
           class="btn--remix"
           target="_top"
           href="clock.html"
@@ -91,11 +105,14 @@
       href="generator.html"
     >
     Generator
-    </a>
+    </a> -->
 
-
-
-</footer>
+    <a
+    class="btn--remix"
+    target="_top"
+  >
+  </a>
+    </footer>
 </body>
 
 </html>
