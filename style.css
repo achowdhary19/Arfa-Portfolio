@@ -178,7 +178,7 @@ h1{
 
 /* quinn page  */
 #quinn-image-box{
-    width: 40%;
+    width: 55%;
 }
 
 #quinn-image-box img{
@@ -234,7 +234,7 @@ h1{
 }
 
 #game-image-box img{
-    max-width: 114%;
+    max-width: 100%;
 }
 /* #game-info{
     width: 45%;
@@ -244,7 +244,7 @@ h1{
 
 #game-info{
     width: 50%;
-    margin-left: 7vw;
+    margin-left: 2vw;
 }
 
 
