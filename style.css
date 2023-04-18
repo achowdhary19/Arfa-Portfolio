@@ -325,7 +325,7 @@ li {
     padding: 1%;
     width: 50%;
     display: block;
-    float: left;
+    float: left; 
 }
 
 .fullwidth{
@@ -334,11 +334,11 @@ li {
     display: block;
 }
 
-/* .halfwidth{
+.halfwidth{
     width:75%;
     float:left;
     display: block;
-} */
+}
 
 .p5pic{
     width: 200px;
