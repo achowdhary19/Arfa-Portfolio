@@ -10,10 +10,19 @@
     font-family: "Favorit"; 
     src: url("assets/Favorit\ Light.ttf")
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body{
-    background-color: #d1cebf;
+    /* background-color: #d1cebf; */
     margin: 0;
+    min-height: 100vh;
+    display: flex;
+  flex-direction: column;
+}
+
+.subscript{
+    font-size: 15px;
 }
 
 
@@ -65,7 +74,8 @@ button[aria-expanded="true"]::after {
 
 
 p {
-    color: #f05124;
+    color: 
+    #00a74f;
     font-family: "Favorit", Helvetica, sans-serif;
 }
 
@@ -73,36 +83,42 @@ p {
 
 
 /* JUST FOR THE MAIN PAGE  */
-#main-wrapper{
-    display: flex;
-    margin-top: 20px;
+
+#construction{
+    font-size: 15px;
 }
 
+#spacerR{
+    height: 1.5vh;
+    border-bottom: 1px solid 
+    #00a74f
+}
 
-#home-info{
+#spacer, #p1spacer, #p2spacer, #p3spacer, #p4spacer, #p5spacer, #p6spacer, #p7spacer{
+    height: 1.5vh;
+}
+
+#left-wrapper{
     display: flex;
+    padding-top: 1.5vh;
     flex-direction: column;
-    width: 50%;
+    margin-left: 2vw !important;
+    width: 25vw;
+    height: 100%;
     font-size: 20px;
-    /* border: solid black 1px; */
+    /* border: solid red 1px; */
     margin: 0;
-    padding-right: 10vw;
-} 
+    position: fixed;
 
-#projects-flex {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    /* border: solid black 1px; */
-    margin-left: 2vw;
-} 
-
+}
 
 .mainlinks{ 
-    color: #f05124;
-    font-size: 70px;
+    color: 
+    #00a74f;
+    font-size: 60px;
     font-family: "Favorit";
     text-decoration: none; 
+    
 
     /* border: solid black 1px; */
 }
@@ -113,25 +129,69 @@ p {
 
 
 
-
 #personalLinks{
     display: flex;
     flex-direction: row;
-    margin-left: 3vw;
+    margin-left: 1vw;
+ 
+
+    position: fixed;
+    bottom: 4vh;
+    width: 100%;
 }
 
 #personalLinks a{
     font-size: 17px;
-    color: #f05124;
+    color: #00a74f;
     font-family: "FavoritMed";
     text-decoration: none;
     margin-right: 5vw;
-    margin-top: 2vw;
+    margin-top: auto;
     /* border: 1px solid black ;  */
 } 
 #personalLinks a:hover{
     transform: scale(1.2);
 }
+
+
+#right-wrapper{
+    /* padding-top: 3.5vh; */
+    height: 100%;
+    width: 50vw;
+    left: 38.5vw;
+    position: absolute;
+    top: 0;
+    /* border: 1px solid black ;  */
+}
+
+#project1container, #project2container,#project3container, #project4container, #project5container{
+        width: 50vw;
+        height: 48vh;
+        /* margin-left: 36vw; */
+        /* margin-top: -16vh; */
+        /* background-color: #76574B; */
+        /* margin-bottom: 30vh; */
+        /* border: solid 1px black; */
+        margin: 0;
+        padding: 0;
+}
+
+
+
+#project1img, #project2img, #project3img, #project4img, #project5img, #project6img{ 
+    width: 50vw;
+    height: 48vh;
+    object-fit: contain;
+    padding: 0;
+    margin: 0;
+    
+}
+
+#project1text p, #project2text p, #project3text p, #project4text p, #project5text p, #project6text p{
+    padding-top: .5vh; ;
+}
+
+
 
 
 
@@ -140,7 +200,7 @@ p {
 
 
 h1{
-    color: #f05124;
+    color: #00a74f;
     font-family: "FavoritMed";
     font-size: 40px;
 }
@@ -150,12 +210,14 @@ h1{
 }
 
 .pagelinks{
-    color: #f05124;
+    color: #00a74f;
+    /* color: #f05124; */
     font-family: "Favorit";
 }
 
 .pagelinks:visited{
-    color: #001FCC;
+    /* color: #001FCC; */
+    color: #00a74f;
 }
 
 
@@ -278,7 +340,7 @@ h1{
     width: 30%;
     height: 100%;
     float: left;
-    color: #f05124;
+    color: #00a74f;
     font-family: "FavoritMed";
     font-size: 50px;
 
@@ -371,7 +433,7 @@ a:not(.btn--remix):visited {
   font-style: normal;
   font-weight: normal;
   font-size: 1.1rem;
-  color: #f05124;
+  color: #00a74f;
   text-decoration: none;
   border-style: none;
 }
