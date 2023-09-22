@@ -10,15 +10,17 @@
     font-family: "Favorit"; 
     src: url("assets/Favorit\ Light.ttf")
 }
+
 html{
     scroll-behavior: smooth;
 }
+
 body{
     /* background-color: #d1cebf; */
     margin: 0;
     min-height: 100vh;
     display: flex;
-  flex-direction: column;
+    flex-direction: column;
 }
 
 .subscript{
@@ -46,40 +48,11 @@ button:active {
     transform: translateY(3px);
 }
 
-/* for the expandable list  */
-button[aria-expanded]::after {
-    content: "+";
-  }
-button[aria-expanded="true"]::after {
-    content: "-";
-  }
-
-.gamenav button {
-  border: none;
-  font-size: 1em;
-  background: transparent;
-  padding: 0;
-  box-shadow: none; 
-
-}
-
-.indent {
-    padding-left: 2vw; 
-}
-
-
-/* end of expandable list styling  */
-
-
-
-
 p {
     color: 
     #00a74f;
     font-family: "Favorit", Helvetica, sans-serif;
 }
-
-
 
 
 /* JUST FOR THE MAIN PAGE  */
@@ -90,8 +63,7 @@ p {
 
 #spacerR{
     height: 1.5vh;
-    border-bottom: 1px solid 
-    #00a74f
+    border-bottom: 1px solid #00a74f;
 }
 
 #spacer, #p1spacer, #p2spacer, #p3spacer, #p4spacer, #p5spacer, #p6spacer, #p7spacer{
@@ -102,28 +74,23 @@ p {
     display: flex;
     padding-top: 1.5vh;
     flex-direction: column;
-    margin-left: 2vw !important;
+    margin-left: 1vw;
     width: 25vw;
     height: 100%;
     font-size: 20px;
-    /* border: solid red 1px; */
-    margin: 0;
     position: fixed;
-
+    /* border: solid red 1px; */
 }
 
-.mainlinks{ 
-    color: 
-    #00a74f;
+.project-links{ 
+    color: #00a74f;
     font-size: 60px;
     font-family: "Favorit";
     text-decoration: none; 
-    
-
     /* border: solid black 1px; */
 }
  
-.mainlinks:hover{
+.project-links:hover{
     font-style: italic;
 }
 
@@ -155,28 +122,21 @@ p {
 
 
 #right-wrapper{
-    /* padding-top: 3.5vh; */
     height: 100%;
     width: 50vw;
     left: 38.5vw;
-    position: absolute;
-    top: 0;
+    position: absolute; 
     /* border: 1px solid black ;  */
 }
 
-#project1container, #project2container,#project3container, #project4container, #project5container{
+#project1container, #project2container,#project3container, #project4container, #project5container, #project6container{
         width: 50vw;
         height: 48vh;
-        /* margin-left: 36vw; */
-        /* margin-top: -16vh; */
-        /* background-color: #76574B; */
-        /* margin-bottom: 30vh; */
-        /* border: solid 1px black; */
+        /* background-color:rgba(0, 0, 0, 1); */
         margin: 0;
         padding: 0;
+        /* border: solid 1px black; */
 }
-
-
 
 #project1img, #project2img, #project3img, #project4img, #project5img, #project6img{ 
     width: 50vw;
@@ -194,15 +154,21 @@ p {
 
 
 
-
-
 /* ALL PAGES  */
+
 
 
 h1{
     color: #00a74f;
     font-family: "FavoritMed";
     font-size: 40px;
+}
+
+h3{
+    color: #00a74f;
+    font-family: "Favorit";
+    font-size: 20px;
+
 }
 
 .page-wrapper{
@@ -219,6 +185,76 @@ h1{
     /* color: #001FCC; */
     color: #00a74f;
 }
+
+
+
+/*slideshow */
+
+#slideshow {
+    width: 100%;
+    height: calc(50vw*.66);
+    margin-bottom: 40px;
+}
+
+.slide img, .myImage {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#arrows {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    top: -55%;
+}
+
+.prev, .next {
+    display: block;
+    cursor: pointer;
+    /* position: absolute; */
+    /* top: 45%; */
+    background-color: white;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    border-radius: 3px 0 0 3px;
+}
+
+.fade{
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+.slide {
+display: none;
+width: 100%;
+height: 100%;
+}
+
+#projectbody{
+    padding: 70px 20vw 1vh 19vw;
+    display: block;
+    margin: 8px;
+    margin-bottom: 2px; 
+}
+
+#description{
+    margin-top: 10px;
+}
+
+
+
 
 
 /* bead page  */
@@ -496,3 +532,33 @@ a:not(.btn--remix):visited {
 /* img {
     animation: fadeInAnimation 2s;
 } */
+
+
+
+/* for the expandable list  */
+button[aria-expanded]::after {
+    content: "+";
+  }
+button[aria-expanded="true"]::after {
+    content: "-";
+  }
+
+.gamenav button {
+  border: none;
+  font-size: 1em;
+  background: transparent;
+  padding: 0;
+  box-shadow: none; 
+
+}
+
+.indent {
+    padding-left: 2vw; 
+}
+
+/* end of expandable list styling  */
+
+
+
+/* Dollhouse page */
+

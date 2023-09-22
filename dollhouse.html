@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+
+    <head>
+        <meta name = "viewport" content= "width=devide-width, initial-scale=1, shrink-to-fit=no" />
+        <title> Dollhouse</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+
+    <body id = "projectbody">
+        <script src="index.js"></script>
+
+        <div id = "title"> 
+            <h1>Dollhouse</h1>
+            <h3> Collaborators: Cade Ponder</h3>
+
+        </div>
+
+        <div id = "slideshow">
+            
+            <div class="slide fade" style="display: block;">
+                <img src="assets/Dollhouse/IMG_0741.JPG" id="" alt="">
+            </div>
+
+            <div class="slide fade" style="display: none;">
+                <img src="assets/Dollhouse/IMG_0730.JPG" alt="">
+            </div>
+
+            <div class="slide fade" style="display: none;">
+                <img src="assets/Dollhouse/IMG_0798.JPG" alt="">
+            </div>
+
+            <div class="slide fade" style="display: none;">
+                <img src="assets/Dollhouse/IMG_0707.JPG" alt="">
+            </div>
+
+            <div class="slide fade" style="display: none;">
+                <img src="assets/Dollhouse/IMG_0765.JPG" alt="">
+            </div>
+
+            <div id="arrows">
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+            </div>
+
+        </div>
+
+        <div id = "description">
+            <h3>Overview</h3>
+            <p> 
+                In this multidimensional dollhouse, house guests are invited to play in the physical world and teleport (via a portal inside the house) into the virtual world where they can learn more about the house and its family. This game-like experience invites people to tinker and uncover stories together.
+                <br>
+            </p>
+
+            <h3>How does it work? </h3>
+            <p>
+                Cade and I worked on separate parts of the game, but we collaborated on the entire design and gameplay of the experience. We frequently worked in the same room which allowed us to talk through ideas, playtest our game, and adjust our game as new problems arose. Cade fabricated the wooden dollhouse and installed/programmed the LEDs and switches in the walls. The house is constructed with an outer shell
+                 <!-- <a href="/house.html" onclick="positionedPopup('house.html','free','444','335','0','1000','yes');return false">outer shell </a> -->
+                that neatly hides the microcontrollers and wires that are weaved throughout the structure. Each doll has a radio-frequency identification (RFID) tag on their foot which assigns them a unique ID number. When a doll enters the portal, their tag gets scanned by an RFID USB reader hidden under the floor. This triggers the video game to start on the monitor. I set up serial communication between the Arduino IDE and Unity so that when a valid tag is scanned, the video game is triggered to start. Each ID tag unlocks each doll's dollhouse, with their respective decorations and stories. The Unity-made virtual dollhouse is developed and designed by me. 
+<br>
+            <br>
+             If you're interested, check out my . . .  
+             <br>
+            <!-- <a href="https://vimeo.com/manage/videos/824455547" target=”_blank”> Short demo video</a>  -->
+            <a href="https://youtu.be/Cfh3PYJWL4c" target=”_blank”> Short demo video</a> 
+            <br>
+             <a href="https://vimeo.com/user67791767" target=”_blank”> Video game demo</a>  
+            <br>
+            <a href="https://my-multidimensional-dollhouse.blogspot.com/2023/05/genesis.html"target=”_blank” > Process blog </a>  
+
+
+             <h3 id= "backlink"> 
+                 <a href="./index.html"> < </a> 
+            </h3>
+        </p>
+
+
+        </div>
+        
+    </body>
+
+</html>
