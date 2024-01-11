@@ -196,6 +196,13 @@ h3{
     margin-bottom: 40px;
 }
 
+/* Dollhouse page */
+#horizontalscreenshot{
+width: 90%;
+margin: auto; 
+display: block;
+}
+
 .slide img, .myImage {
     width: 100%;
     height: 100%;
@@ -253,6 +260,13 @@ height: 100%;
     margin-top: 10px;
 }
 
+#sketch{
+    width: 18vw;
+    float: right;
+    border: solid 1px black;
+    margin: 4px;
+    padding: 2px;
+}
 
 
 
@@ -559,6 +573,4 @@ button[aria-expanded="true"]::after {
 /* end of expandable list styling  */
 
 
-
-/* Dollhouse page */
 
