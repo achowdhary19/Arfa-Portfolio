@@ -16,11 +16,11 @@ html{
 }
 
 body{
-    /* background-color: #d1cebf; */
+    /* background-color: #d1cebf;  */
     margin: 0;
-    min-height: 100vh;
+    min-height: 100vh; 
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
 }
 
 .subscript{
@@ -71,7 +71,7 @@ p {
 }
 
 #left-wrapper{
-    display: flex;
+    /* display: flex; */
     padding-top: 1.5vh;
     flex-direction: column;
     margin-left: 1vw;
@@ -99,9 +99,6 @@ p {
 #personalLinks{
     display: flex;
     flex-direction: row;
-    margin-left: 1vw;
- 
-
     position: fixed;
     bottom: 4vh;
     width: 100%;
@@ -139,8 +136,10 @@ p {
 }
 
 #project1img, #project2img, #project3img, #project4img, #project5img, #project6img{ 
-    width: 50vw;
-    height: 48vh;
+    /* width: 50vw;
+    height: 48vh; */
+    width: 100%;
+    height: 100%;
     object-fit: contain;
     padding: 0;
     margin: 0;
@@ -193,7 +192,7 @@ h3{
 #slideshow {
     width: 100%;
     height: calc(50vw*.66);
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
 }
 
 /* Dollhouse page */
@@ -249,21 +248,22 @@ width: 100%;
 height: 100%;
 }
 
-#projectbody{
+ #projectbody{
     padding: 70px 20vw 1vh 19vw;
     display: block;
     margin: 8px;
     margin-bottom: 2px; 
-}
+} 
 
 #description{
     margin-top: 10px;
 }
 
-#sketch{
+.sketch{
     width: 18vw;
     float: right;
     border: solid 1px black;
+    margin: 4px;
     margin: 4px;
     padding: 2px;
 }
@@ -499,33 +499,42 @@ a:not(.btn--remix):visited {
 .divider {
   padding: 0 1rem;
 }
+#backlink{
+    font-size: 30px;
+}
 
+.providenceGrid{
+    display: flex;
+    margin-left: 12vw;
+    flex-direction: column;
+}
 
-
-/* 3d scene grid  */
+/* 3d scene grid  now being used for providence pictures */
 .scenecontent {
     padding: 1%;
     width: 65vw;
 }
-
-.row {
+ 
+/* .row {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     padding: 0 4px;
-  }
+  }  */
   
-  /* Create four equal columns that sits next to each other */
+  /* Create four equal columns that sits next to each other
   .column {
-    flex: 25%;
+    /* flex: 25%;
     max-width: 50%;
-    padding: 0 4px;
-  }
+    padding: 0 4px; */
+   /* display: flex;
+    flex-direction: column;
+  } */
   
-  .column img {
+  /* .column img {
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
-  }
+  } */ 
   
   /* Responsive layout - makes a two column-layout instead of four columns */
   @media screen and (max-width: 800px) {
@@ -570,7 +579,50 @@ button[aria-expanded="true"]::after {
     padding-left: 2vw; 
 }
 
+
+.center {
+    display: block;
+    position: absolute;
+    margin: auto; 
+    left: 0;
+    right: 0;
+    width: 25%;
+    border: solid 1px black;
+
+  }
 /* end of expandable list styling  */
 
 
+@media only screen and (max-width: 620px) {
+    /* For mobile phones: */
+     #left-wrapper{ /*now top wrapper  */
+        left: 5vw;
+        width: 90vw;
+        height: 10vh;
+        position: relative;
+        margin-bottom: 5vh;
+    }
+    #projects-flex{
+        display: none;
+    }
+    #right-wrapper{
+        left:5vw;
+        width: 90vw;
+        position: relative;
+    }
 
+    #project1container, #project2container,#project3container, #project4container, #project5container, #project6container{
+        height: 13vh;
+        margin: auto;
+    }
+
+    #project1img, #project2img, #project3img, #project4img, #project5img, #project6img{ 
+        left: auto;
+        right: auto;
+    }
+    #personalLinks{
+    position: relative;
+    bottom: 0vh;
+    width: 100%;
+    }
+  }

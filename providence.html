@@ -1,61 +1,90 @@
 <!DOCTYPE html>
 
-<html lang = "en">
+<html lang="en">
 
-    <head>
-        <meta name = "viewport" content= "width=devide-width, initial-scale=1, shrink-to-fit=no" />
-        <title> Providence</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-
-
-    <body id = "projectbody">
-        <script src="index.js"></script>
-
-        <div id = "title"> 
-            <h1>Providence</h1>
-            <h3> Collaborators: Julien Lynge, Taylor Dupuy, Ryan Casement</h3>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title> Providence</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
 
+<body id="projectbody">
+    <script src="index.js"></script>
+
+    <div id="title">
+        <h1>Providence</h1>
+        <h3> Collaborators: Julien Lynge, Taylor Dupuy, Ryan Casement</h3>
+
+
+    </div>
+
+    <div id="slideshow">
+
+        <div class="slide fade" style="display: block;">
+            <img id="horizontalscreenshot" src="assets/Providence3.png" id="" alt="">
         </div>
 
-        <div id = "slideshow">
-            
-            <div class="slide fade" style="display: block;">
-                <img src="assets/Providence3.png" id="" alt="">
-            </div>
-
-            <div class="slide fade" style="display: none;">
-                <img src="assets/Providence1.png" alt="">
-            </div>
-
-            <div class="slide fade" style="display: none;">
-                <img src="assets/Providence2.png" alt="">
-            </div>
-
-            <div id="arrows">
-                <a class="prev" onclick="plusSlides(-1)">❮</a>
-                <a class="next" onclick="plusSlides(1)">❯</a>
-            </div>
-
+        <div class="slide fade" style="display: none;">
+            <img id="horizontalscreenshot" src="assets/Providence1.png" alt="">
         </div>
 
-        <div id = "description">
-    
-            <p> 
-                I was part of a development team that built a web and mobile application that Providence could use to host their new AR volumetric videos. Providence worked with Intel to create these videos in order to provide patients a more engaging, interactive, comprehensive way to learn stetches, physical therapy excercises, or learn about ----.  After working with Intel to create these videos, Providence was looking for a way to host the videos on an easy to use application that users could learn from in their homes. I helped develop these applications using HTML, CSS, and javascript. I designed and developed the UI elements for the interface. Here is a <a href="https://www.youtube.com/watch?v=pX5uOxRRFi4" target="_blank">video from Intel </a> from Providence about their volumetric videos Here is a <a href="https://www.youtube.com/watch?v=aAMJdSW4qDI&embeds_referring_euri=https%3A%2F%2Ftaylordupuy.com%2F&embeds_referring_origin=https%3A%2F%2Ftaylordupuy.com&source_ve_path=OTY3MTQ&feature=emb_imp_woyt" target="_blank">video</a> that my coworker Taylor made with some more details about the applications. 
-            </p>
+        <div class="slide fade" style="display: none;">
+            <img id="horizontalscreenshot" src="assets/Providence2.png" alt="">
+        </div>
 
-    
+        <div id="arrows">
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
 
-             <h3 id= "backlink"> 
-                 <a href="./index.html"> < </a> 
-            </h3>
+    </div>
+
+    <div id="description">
+        <h3>Overview</h3>
+        <p>
+            I was part of a development team that built web and mobile applications to host Providence medical services'
+            new AR volumetric videos. Providence worked with Intel to create these videos in order to provide a more
+            engaging, interactive way to learn and enhance their projects. Providence was looking for a way to host the
+            videos on an easy to use application that users could access from their homes. I helped develop these
+            applications using HTML, CSS, and javascript. I designed and developed the UI elements for the interface.
+            <br>
+            Here is a <a href="https://www.youtube.com/watch?v=pX5uOxRRFi4" target="_blank">video from Intel </a> about
+            the creation of the videos. <br> Here is a <a
+                href="https://www.youtube.com/watch?v=aAMJdSW4qDI&embeds_referring_euri=https%3A%2F%2Ftaylordupuy.com%2F&embeds_referring_origin=https%3A%2F%2Ftaylordupuy.com&source_ve_path=OTY3MTQ&feature=emb_imp_woyt"
+                target="_blank">video</a> that my coworker Taylor made with some more details about the applications.
+            <br>
+            Here is a <a href="https://l.ead.me/UPmersiv-ChairYoga" target="_blank"> link </a> to launch the experience.
+            <br>
+            In celebration of International Yoga Day, the Providence team in India used it as part of their "SEAL: Stop
+            Everything and Learn” week. Below are some pictures and comments from the conference.
+
+        <div class="providenceGrid">
+            <div class="row">
+
+                <img src="/assets/Providence/unnamed.jpeg" alt="">
+                <img src="/assets/Providence/unnamed2.jpeg" alt="">
+
+                <div class="row"></div>
+                <img src="/assets/Providence/unnamed3.jpeg" alt="">
+                <img src="/assets/Providence/unnamed4.jpeg" alt="">
+            </div>
+        </div>
+
+
         </p>
 
 
-        </div>
-        
-    </body>
+
+        <h3 id="backlink">
+            <a href="./index.html">
+                < </a>
+        </h3>
+        </p>
+
+
+    </div>
+
+</body>
 
 </html>
