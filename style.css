@@ -81,7 +81,7 @@ p {
   padding-top: 1.5vh;
   flex-direction: column;
   margin-left: 1vw;
-  width: 25vw;
+  width: 30vw;
   height: 100%;
   font-size: 20px;
   position: fixed;
@@ -90,7 +90,7 @@ p {
 
 .project-links {
   color: #00a74f;
-  font-size: 60px;
+  font-size: 55px;
   font-family: "Favorit";
   text-decoration: none;
   /* border: solid black 1px; */
@@ -163,7 +163,8 @@ p {
 #project3text p,
 #project4text p,
 #project5text p,
-#project6text p {
+#project6text p,
+#project7text p {
   padding-top: 0.5vh;
 }
 
@@ -608,7 +609,8 @@ button[aria-expanded="true"]::after {
   #project3container,
   #project4container,
   #project5container,
-  #project6container {
+  #project6container,
+  #project7container {
     height: 13vh;
     margin: auto;
   }
@@ -618,7 +620,8 @@ button[aria-expanded="true"]::after {
   #project3img,
   #project4img,
   #project5img,
-  #project6img {
+  #project6img,
+  #project7img {
     left: auto;
     right: auto;
   }
