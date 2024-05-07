@@ -72,7 +72,8 @@ p {
 #p4spacer,
 #p5spacer,
 #p6spacer,
-#p7spacer {
+#p7spacer,
+#p8spacer {
   height: 1.5vh;
 }
 
@@ -81,7 +82,7 @@ p {
   padding-top: 1.5vh;
   flex-direction: column;
   margin-left: 1vw;
-  width: 30vw;
+  width: 35vw;
   height: 100%;
   font-size: 20px;
   position: fixed;
@@ -134,7 +135,9 @@ p {
 #project3container,
 #project4container,
 #project5container,
-#project6container {
+#project6container,
+#project7container,
+#projectcontainer {
   width: 50vw;
   height: 48vh;
   /* background-color:rgba(0, 0, 0, 1); */
@@ -148,7 +151,8 @@ p {
 #project3img,
 #project4img,
 #project5img,
-#project6img {
+#project6img,
+#project7img {
   /* width: 50vw;
     height: 48vh; */
   width: 100%;
@@ -600,7 +604,7 @@ button[aria-expanded="true"]::after {
   }
   #right-wrapper {
     left: 5vw;
-    width: 90vw;
+    width: 95vw;
     position: relative;
   }
 
@@ -611,8 +615,8 @@ button[aria-expanded="true"]::after {
   #project5container,
   #project6container,
   #project7container {
-    height: 13vh;
-    margin: auto;
+    height: 30vh;
+    width: 100vw;
   }
 
   #project1img,
