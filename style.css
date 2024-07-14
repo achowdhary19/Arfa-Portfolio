@@ -91,7 +91,7 @@ p {
 
 .project-links {
   color: #00a74f;
-  font-size: 55px;
+  font-size: 3.4rem;
   font-family: "Favorit";
   text-decoration: none;
   /* border: solid black 1px; */
@@ -137,6 +137,7 @@ p {
 #project5container,
 #project6container,
 #project7container,
+#project8container,
 #projectcontainer {
   width: 50vw;
   height: 48vh;
@@ -152,7 +153,8 @@ p {
 #project4img,
 #project5img,
 #project6img,
-#project7img {
+#project7img,
+#project8img {
   /* width: 50vw;
     height: 48vh; */
   width: 100%;
@@ -168,7 +170,8 @@ p {
 #project4text p,
 #project5text p,
 #project6text p,
-#project7text p {
+#project7text p,
+#project8text p {
   padding-top: 0.5vh;
 }
 
@@ -614,7 +617,8 @@ button[aria-expanded="true"]::after {
   #project4container,
   #project5container,
   #project6container,
-  #project7container {
+  #project7container,
+  #project8container {
     height: 30vh;
     width: 100vw;
   }
