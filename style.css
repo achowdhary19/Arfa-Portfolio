@@ -105,9 +105,14 @@ p {
   display: flex;
   flex-direction: row;
   position: fixed;
-  bottom: 4vh;
+  bottom: 2vh;
   width: 100%;
 }
+/* #personalLinks {
+  position: relative;
+  bottom: 0vh;
+  width: 100%;
+} */
 
 #personalLinks a {
   font-size: 17px;
@@ -286,6 +291,20 @@ h3 {
   margin: 4px;
   margin: 4px;
   padding: 2px;
+}
+
+.badge:hover {
+  cursor: grab;
+}
+.badge {
+  width: 1em;
+  margin-right: 3px;
+}
+.hug {
+  width: 1.5em;
+}
+.bio {
+  margin: 15px 0px 0px 0px;
 }
 
 /* bead page  */
@@ -632,10 +651,5 @@ button[aria-expanded="true"]::after {
   #project7img {
     left: auto;
     right: auto;
-  }
-  #personalLinks {
-    position: relative;
-    bottom: 0vh;
-    width: 100%;
   }
 }
