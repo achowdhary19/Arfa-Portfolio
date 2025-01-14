@@ -73,7 +73,8 @@ p {
 #p5spacer,
 #p6spacer,
 #p7spacer,
-#p8spacer {
+#p8spacer,
+#p9spacer {
   height: 1.5vh;
 }
 
@@ -143,6 +144,7 @@ p {
 #project6container,
 #project7container,
 #project8container,
+#project9container,
 #projectcontainer {
   width: 50vw;
   height: 48vh;
@@ -159,7 +161,8 @@ p {
 #project5img,
 #project6img,
 #project7img,
-#project8img {
+#project8img,
+#project9img {
   /* width: 50vw;
     height: 48vh; */
   width: 100%;
@@ -176,7 +179,8 @@ p {
 #project5text p,
 #project6text p,
 #project7text p,
-#project8text p {
+#project8text p,
+#project9text p {
   padding-top: 0.5vh;
 }
 
@@ -297,14 +301,14 @@ h3 {
   cursor: grab;
 }
 .badge {
-  width: 1em;
+  width: 1.15em;
   margin-right: 3px;
 }
 .hug {
   width: 1.5em;
 }
 .bio {
-  margin: 15px 0px 0px 0px;
+  margin: 6vh 0px 0px 0px;
 }
 
 /* bead page  */
