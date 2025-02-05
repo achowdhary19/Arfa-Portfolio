@@ -53,7 +53,7 @@
         <div class="menuandbadges" style= "display: flex; justify-content:space-between">
 
             <div>
-                <p style="margin:0; padding:0;" >[ + ]</p>
+                <p class = "mobiledropdown" style="margin:0; padding:0;" >[ + ]</p>
             </div>
 
             <div class = "badges-mobile">
@@ -73,6 +73,11 @@
 
             <p class = "bio"> Hi my name is Arfa. I'm a designer and developer interested in game-like experiences.
             </p>
+            <section style="display:flex; gap:8px;">
+                <p onclick="reveal()" class = "contact" style=" margin:5px 0px 20px 0px; padding:0; font-size:15px;">Contact</p>
+                <p id ="email" style="margin:5px 0px 0px 0px; padding:0; font-size:15px; display:none; font-weight:bold" >--- arfa.b.chowdhary@gmail.com</p>
+            </section>
+           
 
             <div class = "badges-desktop">
                 <!-- <div class = "badge balloon"><img class ="badgeimg-d" src="/assets/hot-air-baloon-0073.gif"  title="Let this balloon guide you"></div> -->
@@ -238,7 +243,17 @@
         <br>
 
     </section>
-    <script> $( ".badge" ).draggable();
+    <script> 
+    $( ".badge" ).draggable();
+
+    function reveal() {
+  var x = document.getElementById("email");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
     </script>
     <!-- why cant i make this work in an external js file, its something about hte path or the api i'm linking, "Draggable doesn't exist". alert works cus its not accesssing any ui stuff  -->
 
