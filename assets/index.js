@@ -57,7 +57,7 @@ function showSlides(n) {
 let enlarged = 0;
 function toggleEnlargeImg(img) {
   if (enlarged === 0) {
-    img.style.transform = "scale(1.75)";
+    img.style.transform = "scale(1.8)";
     //remove the next two lines if you dont want it to be centered and just want enlarge 
 
     img.classList.add("center");

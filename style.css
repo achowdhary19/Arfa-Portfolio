@@ -13,6 +13,20 @@ html {
   scroll-behavior: smooth;
 }
 
+.badges-mobile {
+  display: none;
+}
+.badges-desktop {
+  display: flex;
+  width: 100%;
+  /* border: solid black 1px; */
+  gap: 10px;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 body {
   /* background-color: #d1cebf;  */
   margin: 0;
@@ -298,15 +312,14 @@ h3 {
 }
 
 .badge:hover {
-  cursor: grab;
+  cursor: grab !important;
 }
+
 .badge {
-  width: 1.15em;
-  margin-right: 3px;
+  align-content: center;
+  object-fit: contain;
 }
-.hug {
-  width: 1.5em;
-}
+
 .bio {
   margin: 6vh 0px 0px 0px;
 }
@@ -564,25 +577,97 @@ a:not(.btn--remix):visited {
     width: 100%;
   } */
 
+/* MOBILE STYLING  */
+
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
+  .badges-desktop {
+    display: none;
+  }
+  body {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+
+  .badges-mobile {
+    display: flex;
+    justify-content: flex-end;
+    gap: 6px;
+  }
+
+  #left-wrapper {
+    /*now top wrapper  */
+    margin-left: 2vw;
+    width: 95vw;
+    position: relative;
+  }
+
+  .bio {
+    margin: 3vh 0px 0px 0px;
+    width: 75vw;
+  }
+  #projects-flex {
+    /* hiding project titles */
+    display: none;
+  }
+  #right-wrapper {
+    position: relative;
+    left: 0;
+    width: 95vw;
+  }
+
+  #project1container,
+  #project2container,
+  #project3container,
+  #project4container,
+  #project5container,
+  #project6container,
+  #project7container,
+  #project8container,
+  #project9container {
+    height: 30vh;
+    width: 100vw;
+  }
+
+  #project1text,
+  #project2text,
+  #project3text,
+  #project4text,
+  #project5text,
+  #project6text,
+  #project7text,
+  #project8text,
+  #project9text,
+  #spacerR {
+    position: relative;
+    left: 2vw;
+  }
+
+  #project1img,
+  #project2img,
+  #project3img,
+  #project4img,
+  #project5img,
+  #project6img,
+  #project7img,
+  #project9img {
+    left: auto;
+    right: auto;
   }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
+#projectbody {
+  width: 94vw;
+  padding: 0;
+  margin: 0vw 3vw 0vw 3vw;
 }
 
-/* img {
-    animation: fadeInAnimation 2s;
-} */
+.providenceGrid {
+  justify-content: center;
+}
+
+/* ajf;kasdfa */
 
 /* for the expandable list  */
 button[aria-expanded]::after {
@@ -614,46 +699,3 @@ button[aria-expanded="true"]::after {
   border: solid 1px black;
 }
 /* end of expandable list styling  */
-
-@media only screen and (max-width: 620px) {
-  /* For mobile phones: */
-  #left-wrapper {
-    /*now top wrapper  */
-    left: 5vw;
-    width: 90vw;
-    height: 10vh;
-    position: relative;
-    margin-bottom: 5vh;
-  }
-  #projects-flex {
-    display: none;
-  }
-  #right-wrapper {
-    left: 5vw;
-    width: 95vw;
-    position: relative;
-  }
-
-  #project1container,
-  #project2container,
-  #project3container,
-  #project4container,
-  #project5container,
-  #project6container,
-  #project7container,
-  #project8container {
-    height: 30vh;
-    width: 100vw;
-  }
-
-  #project1img,
-  #project2img,
-  #project3img,
-  #project4img,
-  #project5img,
-  #project6img,
-  #project7img {
-    left: auto;
-    right: auto;
-  }
-}
