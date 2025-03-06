@@ -344,7 +344,8 @@ h3 {
 }
 
 .sketch {
-  width: 18vw;
+  display: flex;
+  width: 30%;
   float: right;
   border: solid 1px black;
   margin: 4px;
