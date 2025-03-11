@@ -269,7 +269,9 @@ h3 {
   margin: auto;
   display: block;
 }
-
+.flex {
+  display: flex;
+}
 .slide img,
 .myImage {
   width: 100%;
@@ -549,7 +551,12 @@ li {
   /* float: center; */
   margin-bottom: 2%;
 }
-
+.bluelink a {
+  text-decoration: none;
+}
+.bluelink a:visited {
+  color: #0000ee !important;
+}
 .footer {
   display: flex;
   justify-content: space-between;
