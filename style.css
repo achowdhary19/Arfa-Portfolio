@@ -742,8 +742,13 @@ a:not(.btn--remix):visited {
   }
 
   .homegif {
+    width: 10vh;
+  }
+  .homegifdiv {
+    display: flex;
     width: 7vh;
   }
+
   #slideshow {
     /* width: 100%; */
     height: calc(50vw * 0.8);
