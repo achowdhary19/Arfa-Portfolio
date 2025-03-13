@@ -271,6 +271,8 @@ h3 {
   /* width: 100%; */
   height: calc(50vw * 0.6);
   /* margin-bottom: 40px; */
+  padding: 10px;
+  border: 0.7px solid black;
 }
 
 /* Dollhouse page */
@@ -739,6 +741,9 @@ a:not(.btn--remix):visited {
     margin-bottom: 10px;
   }
 
+  .homegif {
+    width: 7vh;
+  }
   #slideshow {
     /* width: 100%; */
     height: calc(50vw * 0.8);
