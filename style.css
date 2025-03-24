@@ -22,17 +22,24 @@ body {
 .mobiledropdown {
   display: none;
 }
+
 .badges-desktop {
-  display: flex;
+  /* display: flex;
   width: 100%;
-  /* border: solid black 1px; */
   gap: 10px;
   align-content: center;
   flex-wrap: wrap;
   justify-content: flex-start;
-  align-items: center;
+  align-items: center; */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  gap: 5px;
 }
-
+.black {
+  border: solid black 1px;
+}
 .mainbody {
   width: 100vw;
   display: block;
@@ -78,15 +85,16 @@ p {
   /* color: #00a74f; */
   color: black;
   font-family: "Favorit", Helvetica, sans-serif;
+  font-size: 16px;
   margin: 0;
   padding: 0;
 }
 
 /* JUST FOR THE MAIN PAGE  */
 
-#construction {
+/* #construction {
   font-size: 15px;
-}
+} */
 
 #spacerR {
   height: 1.5vh;
@@ -178,7 +186,7 @@ p {
 #right-wrapper {
   height: 100%;
   width: 50vw;
-  left: 38.5vw;
+  left: 43vw;
   position: absolute;
   /* border: 1px solid black ;  */
 }
@@ -231,23 +239,62 @@ p {
   padding-top: 0.5vh;
 }
 
-/* ALL PAGES  */
+/* FOR EACH PROJECT PAGE  */
+#projectbodycontainer {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0vh 1vh 0vh;
+}
+
+#projectbody {
+  width: 55vw;
+  margin-bottom: 2px;
+}
+
+.header-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  margin-bottom: 2vh;
+  align-items: flex-end;
+}
+.grid-item.double {
+  grid-column: 1/2;
+}
+.grid-item {
+  position: relative;
+}
+.gray {
+  opacity: 1;
+  color: #6f6e6e;
+  font-size: 15px;
+}
 
 h1 {
+  padding: 0;
+  margin: 0;
   color: #00a74f;
   font-family: "FavoritMed";
-  font-size: 40px;
+  font-size: 24px;
+  letter-spacing: 0.8px;
+}
+
+.blackh1 {
+  padding: 0;
+  margin: 0;
+  color: black;
+  font-family: Helvetica;
+  font-weight: normal;
 }
 
 h3 {
   /* color: #00a74f; */
   color: black;
   font-family: "Favorit";
-  font-size: 25px;
+  font-size: 18px;
   font-weight: bold;
   padding: 0;
-  margin-bottom: 8px;
-  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .page-wrapper {
@@ -337,24 +384,12 @@ h3 {
   width: 100%;
   height: 100%;
 }
-#projectbodycontainer {
-  width: 100vw;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-#projectbody {
-  width: 55vw;
-  /* padding: 70px 20vw 1vh 19vw; */
-  display: block;
-  margin: 8px;
-  margin-bottom: 2px;
-}
 
 #description {
+  display: flex;
+  flex-direction: column;
   margin-top: 10px;
+  gap: 1.5vh;
 }
 
 .linksandhomecontainer {
@@ -380,7 +415,6 @@ h3 {
 
 .badge {
   align-content: center;
-  object-fit: contain;
 }
 
 .bio {
@@ -742,11 +776,7 @@ a:not(.btn--remix):visited {
   }
 
   .homegif {
-    width: 10vh;
-  }
-  .homegifdiv {
-    display: flex;
-    width: 7vh;
+    width: 100%;
   }
 
   #slideshow {

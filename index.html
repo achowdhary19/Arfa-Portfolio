@@ -143,54 +143,68 @@
           </section>
         </div>
 
-        <div class="badges-desktop">
-          <!-- <div class = "badge balloon"><img class ="badgeimg-d" src="/assets/hot-air-baloon-0073.gif"  title="Let this balloon guide you"></div> -->
-          <img
-            class="badgeimg-d badge"
-            src="/assets/hot-air-baloon-0073.gif"
-            title="Let this balloon guide you"
-          />
-          <!--                 
-                <div class = "hug-d badge"><img class ="badgeimg-d" src="/assets/hug-0047.gif"  title="Thanks for visiting! Here's a hug."></div> -->
+        <div
+          style="
+            position: absolute;
+            bottom: 0;
+            padding-bottom: 10px;
+            left: 0;
+            display: flex;
+            align-items: baseline;
+            gap: 9px;
+          "
+        >
+          <div class="badge" style="width: 1.4em">
+            <a href=""
+              ><img
+                src="/assets/hot-air-baloon-0073.gif"
+                alt="Hot air balloon"
+                title="Let this balloon guide you"
+                style="width: 100%"
+            /></a>
+          </div>
 
-          <a
-            href="https://thoughts.melonking.net/guides/introduction-to-the-web-revival-1-what-is-the-web-revival"
-            target="_blank"
-            ><img
-              style="width: 1.9em"
-              class="badgeimg-d badge"
-              src="/assets/hug-0047.gif"
-              title="Thanks for visiting! Here's a hug."
-              alt="two rounds hugging"
-            />
-          </a>
-          <!-- 
-                <div class="badge folder"><a href="https://rapid-mud-recorder.glitch.me/index.html" target="_blank"><img class ="badgeimg-d" src="/assets/folder-0003.gif" title = "List/table view" alt=""></a></div> -->
-          <a
-            href="https://rapid-mud-recorder.glitch.me/index.html"
-            target="_blank"
-            ><img
-              style="width: 1.2em; padding-bottom: 4px"
-              class="badgeimg-d badge"
-              src="/assets/folder-0003.gif"
-              title="List/table view"
-              alt=""
-          /></a>
+          <div class="badge" style="width: 1.8em">
+            <a
+              href="https://thoughts.melonking.net/guides/introduction-to-the-web-revival-1-what-is-the-web-revival"
+              ><img
+                src="/assets/hug-0047.gif"
+                alt="two rounds hugging"
+                title="Thanks for visiting! Here's a hug."
+                style="width: 100%"
+            /></a>
+          </div>
 
-          <!-- <div class ="badge door"><a href="https://alive-swanky-charger.glitch.me/index.html" target = "_blank"><img class ="badgeimg-d" src="/assets/door.gif" title= "Come say hi" alt=""></a></div> -->
+          <div class="badge" style="width: 1.3em">
+            <a
+              href="https://rapid-mud-recorder.glitch.me/index.html"
+              target="_blank"
+              ><img
+                src="/assets/folder-0003.gif"
+                alt="Folder on fire"
+                title="List/table view"
+                style="width: 100%"
+            /></a>
+          </div>
 
-          <a
-            href="https://alive-swanky-charger.glitch.me/index.html"
-            target="_blank"
-            ><img
-              class="badgeimg-d badge"
-              src="/assets/door.gif"
-              title="Come say hi"
-              alt=""
-          /></a>
+          <div class="badge" style="width: 1.4em">
+            <a
+              href="https://alive-swanky-charger.glitch.me/index.html"
+              target="_blank"
+              ><img
+                src="/assets/door.gif"
+                alt="A door swining open and close"
+                title="Come say hi"
+                style="width: 100%"
+            /></a>
+          </div>
 
-          <!-- <img style = "border: solid black 1px;"class = "badge" src="/assets/globe-03.gif"  title="I've been on this world for 23 years"> 
-                -->
+          <!-- <img
+            style="border: solid black 1px"
+            class="badge"
+            src="/assets/globe-03.gif"
+            title="I've been on this world for 23 years"
+          /> -->
         </div>
       </div>
 
@@ -215,9 +229,9 @@
       </div>
       <div id="project1text">
         <p class="green">
-          <i>Dollhouse</i> extends traditional, tabletop play by allowing house
-          guests to play in a physical dollhouse and teleport to a virtual,
-          video game dollhouse. Using Unity, Arduino, and RFID technology.
+          <u><i>Dollhouse</i></u> is an interactive, mixed-reality experience
+          that connects a traditional tabletop dollhouse game with a video game
+          counterpart. Using Unity, Arduino, and RFID technology.
         </p>
       </div>
 
@@ -231,9 +245,26 @@
       </div>
       <div id="project2text">
         <p class="green">
-          Work from my time with Providence Health and Services where I helped
-          build a web and mobile application to host immersive, 3D videos. Using
-          html, css, javascript, A-frame, and 8th wall
+          UX design and development for
+          <a
+            style="
+              text-decoration: underline;
+              text-underline-offset: 2px;
+              font-weight: bold;
+            "
+            href="https://arfachowdhary.com/providence.html"
+            >Providence's</a
+          >
+          augmented reality web/mobile application displaying 3D physical
+          therapy videos. Created design system, implemented responsive UI, and
+          built interactive elements using JavaScript and A-frame. Featured by
+          Intel.
+
+          <a
+            style="text-decoration: none; font-family: Helvetica, sans-serif"
+            href="https://arfachowdhary.com/providence.html"
+            >[ Read more ]</a
+          >
         </p>
       </div>
 
@@ -241,17 +272,33 @@
       <section id="p3spacer"></section>
 
       <div id="project3container">
-        <a href="">
+        <a href="https://arfachowdhary.com/oblivion.html">
           <img id="project3img" src="/assets/oblivion1.gif" alt=""
         /></a>
       </div>
 
       <div id="project3text">
         <p class="green">
-          <i>Oblivion</i> is a 3D mobile puzzle game currently in early
-          development by Unity Production Foundations. Set in historically rich
-          environments, the game challenges players to solve complex puzzles
-          using tools build in the Middle Ages.
+          <a
+            class="green"
+            style="
+              text-decoration: underline;
+              text-underline-offset: 2px;
+              font-weight: bold;
+            "
+            href="https://arfachowdhary.com/oblivion.html"
+            >Oblivion</a
+          >
+          is a 3D escape room game currently in early development by Unity
+          Production Foundations. Set in historically rich environments, the
+          game challenges players to solve complex puzzles using tools build in
+          the Middle Ages.
+          <a
+            class="green"
+            style="text-decoration: none; font-family: Helvetica, sans-serif"
+            href="https://arfachowdhary.com/oblivion.html"
+            >[ Read more ]</a
+          >
         </p>
       </div>
 
@@ -265,8 +312,16 @@
       </div>
       <div id="project4text">
         <p class="green">
-          <a href="https://orcasmicrocinema.org/" target="_blank">
-            <i>Orcas Microcinema</i></a
+          <a
+            style="
+              text-decoration: underline;
+              text-underline-offset: 2px;
+              font-weight: bold;
+            "
+            href="https://orcasmicrocinema.org/"
+            target="_blank"
+          >
+            Orcas Microcinema</a
           >
           is a nonprofit itinerant microcinema based in Orcas Island, Washington
           and opening in August 2024.

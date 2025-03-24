@@ -11,244 +11,255 @@
     <link rel="icon" type="gif" href="/assets/hot-air-baloon-0073.gif" />
   </head>
 
-  <div id="projectbodycontainer">
-    <div id="projectbody">
-      <div id="title">
-        <h1
-          style="
-            padding: 0;
-            margin: 0;
-            color: black;
-            font-family: Helvetica;
-            font-weight: normal;
-          "
-        >
-          Providence
-        </h1>
-        <!-- <p><i>Immersive Learning with AR </i></p>
-        <br /> -->
-        <div style="display: flex; margin-bottom: 10px">
-          <div style="width: 25%">
-            <p>
-              <i>Collaborators: Julien Lynge, Taylor Dupuy, Ryan Casement</i>
-            </p>
+  <body>
+    <div id="projectbodycontainer">
+      <div id="projectbody">
+        <div class="header-grid">
+          <h1 class="blackh1 grid-item double">Providence</h1>
+          <div class="grid-item" style="grid-column: 2/3">
+            <p class="gray">2023</p>
+            <p class="gray">WebAR</p>
           </div>
-          <div style="width: 30%; margin-left: 2vw">
-            <p>
-              <i>
-                Using: Figma, HTML, CSS, JavaScript, A-Frame, 8th Wall, Webpack
-              </i>
-            </p>
-          </div>
-        </div>
-      </div>
+          <p class="grid-item gray" style="grid-column: 3/6">
+            Collaborators: Julien Lynge, Taylor Dupuy, Ryan Casement
+          </p>
 
-      <div id="slideshow">
-        <div class="slide fade" style="display: block">
-          <img
-            id="horizontalscreenshot"
-            src="assets/providence3.png"
-            id=""
-            alt=""
-          />
-        </div>
-
-        <div class="slide fade" style="display: none">
-          <img id="horizontalscreenshot" src="assets/Providence1.png" alt="" />
-        </div>
-        <div class="slide fade" style="display: none">
-          <img id="horizontalscreenshot" src="assets/providence5.avif" alt="" />
-        </div>
-        <div class="slide fade" style="display: none">
-          <img
-            id="horizontalscreenshot"
-            src="assets/providence-vaughn.webp"
-            alt=""
-          />
-        </div>
-        <div class="slide fade" style="display: none">
-          <img id="horizontalscreenshot" src="assets/Providence2.png" alt="" />
-        </div>
-
-        <div id="arrows">
-          <a class="prev" onclick="plusSlides(-1)">❮</a>
-          <a class="next" onclick="plusSlides(1)">❯</a>
-        </div>
-      </div>
-
-      <div id="description">
-        <h3>Project Overview</h3>
-        <p>
-          Over a 5-month period, I worked with a small team of three to develop
-          a modular web and mobile application for Providence Medical Services.
-          Our application was designed to display AR volumetric videos created
-          using Intel® RealSense™ cameras, enabling patients to learn physical
-          therapy exercises at home and providing internal training materials
-          for Providence's workforce across their 51 hospitals.
-        </p>
-
-        <h3>Technical considerations</h3>
-        <p>
-          This project had many moving parts. Some key aspects and their
-          challenges included:
-        </p>
-        <p><br /></p>
-        <div style="display: flex; margin-left: 0vw; width: 60%">
-          <img src="./assets/bracket.png" style="width: 6%" alt="" />
-          <p style="margin-left: 0.5vw">
-            <strong>⁑</strong> Designing an intuitive UI that maintained
-            Providence's long standing brand identity <br />
-            <strong>⁑</strong> Building a user-friendly interface that expands
-            access to specialized care, particularly for patients in remote
-            locations who can't easily visit physical therapy facilities in
-            person.<br />
-            <strong>⁑</strong> Creating an accessible interface that worked
-            across both desktop and mobile devices<br />
-            <strong>⁑ </strong> Integrating volumetric videos into an augmented
-            reality environment, allowing patients to view exercises from
-            multiple angles and better understand proper form and technique.
-            These videos needed to be properly placed in the user's physical
-            space, maintain proper scale and perspective, and remain responsive
-            to user interactions<br />
-            <strong>⁑</strong> Developing a hosting solution that was more
-            cost-effective than their existing third-party platform <br />
+          <p class="grid-item gray" style="grid-column: 6/10">
+            Using: Figma, HTML, CSS, JavaScript, A-Frame, 8th Wall, Webpack
           </p>
         </div>
 
-        <h3>My Role & Contributions</h3>
-        <p>
-          As a software developer on the project, my primary responsibility was
-          designing and implementing the user interface. I used Figma to design
-          a reusable UI component library that could adapt to differnet AR
-          experiences. With that, I built a visual system that maintained
-          Providence's established brand integrity and focused on accessibility
-          for differnet users/use cases.<br /><br />
-          While I focused on UI design, our team collaborated closely on all
-          aspects of development. I worked with my teammates to implement the
-          augmented reality technology and ensurethat the interface we built +
-          the volumetric videos fit properly with the AR environment. Using
-          A-frame and 8th wall, we displayed the motion captured virtual
-          environments in the user's real world. To add functionality to the
-          app, we integrated the interactive button elements with the video
-          player to ensure the appropriate response was triggered(i.e.
-          pause/play, mute, captions, video scrubbing, looping).
-        </p>
-
-        <h3>Impact & Results</h3>
-        <p>
-          At the end of the project, Providence had functional, reusable
-          prototypes that no longer rely on third party hosting, allowing them
-          to pursue grants for additional features and expand the market for
-          their volumetric videos. <br />
-          The project was featured in Intel promotional materials and showcased
-          at Providence's "SEAL: Stop Everything and Learn" week. <br />
-          Here is a
-          <a href="https://l.ead.me/UPmersiv-ChairYoga" target="_blank">
-            link</a
-          >
-          to launch the experience.
-        </p>
-        <br />
-        <br />
-        <div
-          style="
-            display: flex;
-            margin-bottom: 50px;
-            align-items: flex-end;
-            gap: 20%;
-          "
-        >
-          <div>
-            <p class="times"><i>Press</i></p>
-            <a
-              class="press"
-              href="https://www.intel.com/content/www/us/en/customer-spotlight/stories/providence-customer-story.html"
-              target="_blank"
-              ><i>Providence Delivers Immersive Learning with AR</i></a
-            ><br />
-            <p class="times">Intel, 2024</p>
-            <br />
-
-            <a
-              class="press"
-              href="https://www.youtube.com/watch?v=pX5uOxRRFi4"
-              target="_blank"
-              ><i
-                >Intel Technology is Helping Providence Shape the Future of
-                Healthcare</i
-              ></a
-            ><br />
-            <p class="times">Intel, 2022</p>
-            <br />
-            <a
-              class="press"
-              href="https://marketscale.com/industries/healthcare/how-augmented-reality-and-immersive-technologies-improve-patient-outcomes/"
-              target="_blank"
-              ><i
-                >How Augmented Reality and Immersive Technologies Can Improve
-                Patient Outcomes</i
-              ></a
-            ><br />
-            <p class="times">MarketScale, 2023</p>
+        <div id="slideshow">
+          <div class="slide fade" style="display: block">
+            <img
+              id="horizontalscreenshot"
+              src="assets/providence3.png"
+              id=""
+              alt=""
+            />
           </div>
-          <div class="homegifdiv">
-            <a href="https://arfachowdhary.com/"
-              ><img class="homegif" src="./assets/home.gif" alt=""
-            /></a>
+
+          <div class="slide fade" style="display: none">
+            <img
+              id="horizontalscreenshot"
+              src="assets/Providence1.png"
+              alt=""
+            />
+          </div>
+          <div class="slide fade" style="display: none">
+            <img
+              id="horizontalscreenshot"
+              src="assets/providence5.avif"
+              alt=""
+            />
+          </div>
+          <div class="slide fade" style="display: none">
+            <img
+              id="horizontalscreenshot"
+              src="assets/providence-vaughn.webp"
+              alt=""
+            />
+          </div>
+          <div class="slide fade" style="display: none">
+            <img
+              id="horizontalscreenshot"
+              src="assets/Providence2.png"
+              alt=""
+            />
+          </div>
+
+          <div id="arrows">
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
           </div>
         </div>
 
-        <!-- <a
-          href="https://www.youtube.com/watch?v=aAMJdSW4qDI&embeds_referring_euri=https%3A%2F%2Ftaylordupuy.com%2F&embeds_referring_origin=https%3A%2F%2Ftaylordupuy.com&source_ve_path=OTY3MTQ&feature=emb_imp_woyt"
-          target="_blank"
-        ></a> -->
+        <div id="description">
+          <div>
+            <h3>Project Overview</h3>
+            <p>
+              Focus Group Contributor & Playtester: "Oblivion" (Unity Production
+              Foundations) As a core playtester for this 3D mobile puzzle game
+              set in historical environments, I provide critical UX feedback and
+              player perspective insights through bi-weekly development
+              discussions. My contributions help shape puzzle mechanics and
+              player experience in this historically-inspired game currently in
+              early development. Focus Group Contributor & Playtester:
+              "Oblivion" (Unity Production Foundations) | 2024-Present As a core
+              member of the pre-development design focus group, I've influenced
+              this 3D mobile puzzle game from concept stages through early
+              development. My contributions include shaping core puzzle
+              mechanics, providing level design input during planning sessions,
+              and delivering detailed gameplay feedback as a regular playtester.
+              The historical setting presents unique design challenges that our
+              bi-weekly discussions help resolve, balancing period authenticity
+              with engaging gameplay. My perspective helps bridge the gap
+              between developer intentions and player experience.
+            </p>
+          </div>
+          <div
+            style="
+              display: grid;
+              grid-template-columns: repeat(24, 1fr);
+              grid-template-rows: auto auto;
+              width: 100%;
+              max-width: 800px;
+              margin: auto;
+            "
+          >
+            <!-- First Row: Heading -->
+            <h3 style="grid-column: 1 / -1">Key Aspects:</h3>
 
-        <!-- and comments -->
-
-        <!-- <div class="providenceGrid">
-            <div class="row">
-              <img src="/assets/Providence/unnamed.jpeg" alt="" />
-              <img src="/assets/Providence/unnamed2.jpeg" alt="" />
-
-              <div class="row"></div>
-              <img src="/assets/Providence/unnamed3.jpeg" alt="" />
-              <img src="/assets/Providence/unnamed4.jpeg" alt="" />
+            <!-- Second Row: Image and Paragraph -->
+            <div style="grid-column: 1/2; overflow: hidden">
+              <img
+                src="assets/bracket.png"
+                style="width: 100%; height: auto; object-fit: cover"
+              />
             </div>
-          </div> -->
+            <p style="grid-column: 2 / 22; margin-left: 8px">
+              <strong>⁑</strong> Designing an intuitive, accessible desktop and
+              mobile UI that maintained Providence's long standing brand
+              identity.
+              <br />
+              <strong>⁑</strong> Building a user-friendly experience that
+              expands access to specialized care, particularly for patients in
+              remote locations who can't easily visit physical therapy
+              facilities in person.<br />
+              <strong>⁑ </strong> Integrating volumetric videos into an AR
+              environment, allowing patients to view exercises from multiple
+              angles and better understand proper form and technique. These
+              videos needed to be properly placed in the user's physical space,
+              maintain proper scale and perspective, and remain responsive to
+              user interactions. <br />
+              <strong>⁑</strong> Developing a hosting solution that was more
+              cost-effective than their existing third-party platform. <br />
+            </p>
+          </div>
 
-        <!-- <p>
-            "Thank you Johnny for sharing the below and its ALWAYS AWESOME to partner with you.
-            <br><br>
-            SEAL – Stop everything and learn is an entire month with its grand finale tomorrow. The theme this year is Innovation with Compassion and we did around 10 different learning events including Mindful techie where we shared our chair yoga personal coach.
-            <br><br>
-            I love experimenting and working with Johnny and his team has been a complete pleasure.
-            <br><br>
-            Thank you Darci and Clint for this wonderful collaboration!
-            <br><br>
-            Warm regards,
-            <br><br>
-            Nupur Todi, Senior Manager, L&D- Providence Global Center"
-            
-            
-            <br><br><br><br>
-            This is amazing collaboration and innovative use of tech for learning and well-being ! Kudos to the whole team who worked on this!
-            <br><br>
-            Neetu Taj, DEI Program Manager
-            
-            <br><br><br><br>
-            
-            This is fantastic Johnny!  Way to go Innovation team!!
-            <br><br>
-            Clint Crittenden, Executive Director, Creative Learning Services & Support
-            
-            <br><br><br><br>
-            
-            Congratulations!! What a huge step forward
-            <br><br>
-            Darci Hall, VP Talent Effectiveness and Development
-             -->
-      </div>
-      <script src="./assets/index.js"></script>
-    </div>
+          <div>
+            <h3>My Role & Contributions</h3>
+            <p style="margin-bottom: 1vh">
+              As the UX/UI designer on the project, I took ownership of the
+              entire design process while collaboratively implementing
+              interactive elements through pair programming.
+            </p>
+
+            <p style="margin-bottom: 1vh">
+              I independently created all UI wireframes and high-fidelity
+              prototypes in Figma, designing a comprehensive component library
+              of 15+ UI elements that maintained Providence's established brand
+              guidelines and were reusable for other AR applications.
+            </p>
+
+            <p>
+              Through pair programming sessions with my development team, I
+              directly contributed to implementing the AR environment and
+              interactive elements using JavaScript and A-frame. My specific
+              coding contributions included building the custom video player
+              controls (play/pause, mute, video scrubbing) and developing the
+              responsive behavior that ensured proper video scaling across
+              devices.
+            </p>
+          </div>
+
+          <div>
+            <h3>Impact & Results</h3>
+
+            <p style="margin-bottom: 1vh">
+              The application we delivered provided tangible benefits for
+              Providence Health. Our team's solution replaced their previous
+              third-party platform with an AWS-based infrastructure, reducing
+              their annual hosting costs by thousands of dollars.
+            </p>
+
+            <p style="margin-bottom: 1vh">
+              The successful prototypes served as proof of concept, leading
+              Providence to pursue additional grant funding for feature
+              expansion and expand the market for their volumetric videos.
+              Initial feedback from Providence staff indicated improved training
+              efficiency and higher patient engagement with physical therapy
+              routines.
+            </p>
+            <p style="margin-bottom: 1vh">
+              The project gained industry recognition, being featured in
+              multiple Intel promotional materials and showcased at Providence's
+              "SEAL: Stop Everything and Learn" week.
+            </p>
+
+            <p style="margin-bottom: 3vh">
+              Here is a
+              <a href="https://l.ead.me/UPmersiv-ChairYoga" target="_blank">
+                link</a
+              >
+              to launch the experience.
+            </p>
+          </div>
+
+          <div
+            style="
+              display: flex;
+              margin-bottom: 50px;
+              align-items: flex-end;
+              gap: 20%;
+            "
+          >
+            <div>
+              <p class="times"><i>Press</i></p>
+              <a
+                class="press"
+                href="https://www.intel.com/content/www/us/en/customer-spotlight/stories/providence-customer-story.html"
+                target="_blank"
+                ><i>Providence Delivers Immersive Learning with AR</i></a
+              ><br />
+              <p class="times">Intel, 2024</p>
+              <br />
+
+              <a
+                class="press"
+                href="https://www.youtube.com/watch?v=pX5uOxRRFi4"
+                target="_blank"
+                ><i
+                  >Intel Technology is Helping Providence Shape the Future of
+                  Healthcare</i
+                ></a
+              ><br />
+              <p class="times">Intel, 2022</p>
+              <br />
+              <a
+                class="press"
+                href="https://marketscale.com/industries/healthcare/how-augmented-reality-and-immersive-technologies-improve-patient-outcomes/"
+                target="_blank"
+                ><i
+                  >How Augmented Reality and Immersive Technologies Can Improve
+                  Patient Outcomes</i
+                ></a
+              ><br />
+              <p class="times">MarketScale, 2023</p>
+            </div>
+            <div class="homegifdiv">
+              <a href="https://arfachowdhary.com/"
+                ><img class="homegif" src="./assets/home.gif" alt=""
+              /></a>
+            </div>
+          </div>
+
+          <!-- <div class="providenceGrid">
+  <div class="row">
+  <img src="/assets/Providence/unnamed.jpeg" alt="" />
+  <img src="/assets/Providence/unnamed2.jpeg" alt="" />
+  
+  <div class="row"></div>
+  <img src="/assets/Providence/unnamed3.jpeg" alt="" />
+  <img src="/assets/Providence/unnamed4.jpeg" alt="" />
   </div>
+  </div>
+  
+  SEAL – Stop everything and learn is an entire month with its grand finale tomorrow. The theme this year is Innovation with Compassion and we did around 10 different learning events including Mindful techie where we shared our chair yoga personal coach.
+  -->
+        </div>
+        <script src="./assets/index.js"></script>
+      </div>
+    </div>
+  </body>
 </html>
