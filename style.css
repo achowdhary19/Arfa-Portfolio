@@ -35,7 +35,7 @@ body {
   bottom: 0;
   left: 0;
   display: flex;
-  gap: 5px;
+  gap: 9px;
 }
 .black {
   border: solid black 1px;
@@ -115,15 +115,14 @@ p {
 }
 
 #left-wrapper {
-  /* display: flex; */
-  padding-top: 1.5vh;
+  display: flex;
   flex-direction: column;
+  margin-top: 1.5vh;
   margin-left: 1vw;
   width: 35vw;
   height: 100%;
-  font-size: 20px;
   position: fixed;
-  /* border: solid red 1px; */
+  gap: 8vh;
 }
 .green {
   color: #00a74f;
