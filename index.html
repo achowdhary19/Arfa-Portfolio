@@ -62,65 +62,13 @@
         <br />
       </section>
 
-      <div>
-        <div
-          class="menuandbadges"
-          style="display: flex; justify-content: space-between"
-        >
-          <div>
-            <p class="mobiledropdown" style="margin: 0; padding: 0">[ + ]</p>
-          </div>
-
-          <div class="badges-mobile">
-            <div class="badge" style="width: 1.5em">
-              <a href=""
-                ><img
-                  src="/assets/hot-air-baloon-0073.gif"
-                  alt="Hot air balloon"
-                  title="Let this balloon guide you"
-                  style="width: 100%"
-              /></a>
-            </div>
-            <div class="badge" style="width: 1.5em">
-              <a
-                href="https://alive-swanky-charger.glitch.me/index.html"
-                target="_blank"
-                ><img
-                  src="/assets/door.gif"
-                  alt="A door swinging open and close"
-                  title="Come say hi"
-                  style="width: 100%"
-              /></a>
-            </div>
-            <div class="badge" style="width: 1.9em">
-              <a
-                href="https://thoughts.melonking.net/guides/introduction-to-the-web-revival-1-what-is-the-web-revival"
-                ><img
-                  src="/assets/hug-0047.gif"
-                  alt="two rounds hugging"
-                  title="Thanks for visiting! Here's a hug."
-                  style="width: 100%"
-              /></a>
-            </div>
-            <div class="badge" style="width: 1.4em">
-              <a
-                href="https://rapid-mud-recorder.glitch.me/index.html"
-                target="_blank"
-                ><img
-                  src="/assets/folder-0003.gif"
-                  alt="Folder on fire"
-                  title="List/table view"
-                  style="width: 100%"
-              /></a>
-            </div>
-          </div>
-        </div>
-        <div class="biodiv">
+      <div class="badges-bio-mobile-container">
+        <div class="bio-contact-container">
           <p class="green" class="bio">
             Hi my name is Arfa. I'm a designer and developer interested in
             game-like experiences.
           </p>
-          <section style="display: flex; gap: 8px">
+          <section id="contact" style="display: flex; gap: 8px">
             <p
               class="green"
               onclick="reveal()"
@@ -130,7 +78,7 @@
               Contact
             </p>
             <p
-              id="email"
+              id="email-m"
               class="green"
               style="
                 margin: 5px 0px 10px 0px;
@@ -144,8 +92,81 @@
             </p>
           </section>
         </div>
+        <div class="badges-mobile">
+          <div class="badge" style="width: 1.5em">
+            <a href=""
+              ><img
+                src="/assets/hot-air-baloon-0073.gif"
+                alt="Hot air balloon"
+                title="Let this balloon guide you"
+                style="width: 100%"
+            /></a>
+          </div>
+          <div class="badge" style="width: 1.5em">
+            <a
+              href="https://alive-swanky-charger.glitch.me/index.html"
+              target="_blank"
+              ><img
+                src="/assets/door.gif"
+                alt="A door swinging open and close"
+                title="Come say hi"
+                style="width: 100%"
+            /></a>
+          </div>
+          <div class="badge" style="width: 1.9em">
+            <a
+              href="https://thoughts.melonking.net/guides/introduction-to-the-web-revival-1-what-is-the-web-revival"
+              ><img
+                src="/assets/hug-0047.gif"
+                alt="two rounds hugging"
+                title="Thanks for visiting! Here's a hug."
+                style="width: 100%"
+            /></a>
+          </div>
+          <div class="badge" style="width: 1.4em">
+            <a
+              href="https://rapid-mud-recorder.glitch.me/index.html"
+              target="_blank"
+              ><img
+                src="/assets/folder-0003.gif"
+                alt="Folder on fire"
+                title="List/table view"
+                style="width: 100%"
+            /></a>
+          </div>
+        </div>
+      </div>
 
-        <div class="badges-desktop">
+      <div class="badges-bio-desktop-container">
+        <p class="green" class="bio">
+          Hi my name is Arfa. I'm a designer and developer interested in
+          game-like experiences.
+        </p>
+        <section id="contact" style="display: flex; gap: 8px">
+          <p
+            class="green"
+            onclick="reveal()"
+            class="contact"
+            style="margin: 5px 0px 10px 0px; padding: 0; font-size: 16px"
+          >
+            Contact
+          </p>
+          <p
+            id="email-d"
+            class="green"
+            style="
+              margin: 5px 0px 10px 0px;
+              padding: 0;
+              font-size: 16px;
+              display: none;
+              font-weight: bold;
+            "
+          >
+            --- arfa.b.chowdhary@gmail.com
+          </p>
+        </section>
+
+        <div class="badges">
           <div class="badge" style="width: 1.4em">
             <a href=""
               ><img
@@ -190,14 +211,12 @@
                 style="width: 100%"
             /></a>
           </div>
+        </div>
 
-          <!-- <img
-            style="border: solid black 1px"
-            class="badge"
+        <!--
             src="/assets/globe-03.gif"
             title="I've been on this world for 23 years"
           /> -->
-        </div>
       </div>
 
       <!-- <section id=personalLinks>
@@ -400,9 +419,18 @@
     </section>
     <script>
       $(".badge").draggable();
+      const screenWidth = window.innerWidth;
 
       function reveal() {
-        var x = document.getElementById("email");
+        if (screenWidth < 800) {
+          var x = document.getElementById("email-m");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+        }
+        var x = document.getElementById("email-d");
         if (x.style.display === "none") {
           x.style.display = "block";
         } else {
