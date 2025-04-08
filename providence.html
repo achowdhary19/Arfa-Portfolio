@@ -15,16 +15,16 @@
     <div id="projectbodycontainer">
       <div id="projectbody">
         <div class="header-grid">
-          <h1 class="blackh1 grid-item double">Providence</h1>
-          <div class="grid-item" style="grid-column: 4/5">
+          <h1 class="blackh1 providence-headeritem1">Providence</h1>
+          <div class="providence-headeritem2">
             <p class="gray">2023</p>
             <p class="gray">WebAR</p>
           </div>
-          <p class="grid-item gray" style="grid-column: 6/9">
+          <p class="providence-headeritem3 gray">
             Collaborators: Julien Lynge, Taylor Dupuy, Ryan Casement
           </p>
 
-          <p class="grid-item gray" style="grid-column: 10/14">
+          <p class="providence-headeritem4 gray">
             Using: Figma, HTML, CSS, JavaScript, A-Frame, 8th Wall, Webpack
           </p>
         </div>
@@ -97,27 +97,15 @@
               between developer intentions and player experience.
             </p>
           </div>
-          <div
-            style="
-              display: grid;
-              grid-template-columns: repeat(24, 1fr);
-              grid-template-rows: auto auto;
-              width: 100%;
-              max-width: 800px;
-              margin: auto;
-            "
-          >
+          <div class="keyaspectsdiv">
             <!-- First Row: Heading -->
-            <h3 style="grid-column: 1 / -1">Key Aspects:</h3>
+            <h3 class="keyaspectsheader">Key Aspects:</h3>
 
             <!-- Second Row: Image and Paragraph -->
-            <div style="grid-column: 1/2; overflow: hidden">
-              <img
-                src="assets/bracket.png"
-                style="width: 100%; height: auto; object-fit: cover"
-              />
+            <div class="bracketdiv">
+              <img src="assets/bracket.png" class="bracketimg" />
             </div>
-            <p style="grid-column: 2 / 22; margin-left: 8px">
+            <p class="bulletsdiv">
               <strong>⁑</strong> Designing an intuitive, accessible desktop and
               mobile UI that maintained Providence's long standing brand
               identity.
@@ -196,65 +184,49 @@
             </p>
           </div>
 
-          <div
-            style="
-              display: flex;
-              margin-bottom: 50px;
-              align-items: flex-end;
-              gap: 20%;
-            "
-          >
-            <div
-              class="pressandhomediv"
-              style="
-                display: grid;
-                width: 100%;
-                grid-template-columns: repeat(15, 1fr);
-              "
-            >
-              <div class="presslinks" style="grid-column: 1/13; grid-row: 1/12">
-                <p class="times"><i>Press</i></p>
+          <div class="pressandhomediv">
+            <div class="presslinks">
+              <p class="times"><i>Press</i></p>
 
-                <a
-                  class="press"
-                  href="https://www.intel.com/content/www/us/en/customer-spotlight/stories/providence-customer-story.html"
-                  target="_blank"
-                  ><i>Providence Delivers Immersive Learning with AR</i></a
-                ><br />
-                <p class="times">Intel, 2024</p>
-                <br />
+              <a
+                class="press"
+                href="https://www.intel.com/content/www/us/en/customer-spotlight/stories/providence-customer-story.html"
+                target="_blank"
+                ><i>Providence Delivers Immersive Learning with AR</i></a
+              ><br />
+              <p class="times">Intel, 2024</p>
+              <br />
 
-                <a
-                  class="press"
-                  href="https://www.youtube.com/watch?v=pX5uOxRRFi4"
-                  target="_blank"
-                  ><i
-                    >Intel Technology is Helping Providence Shape the Future of
-                    Healthcare</i
-                  ></a
-                ><br />
-                <p class="times">Intel, 2022</p>
-                <br />
-                <a
-                  class="press"
-                  href="https://marketscale.com/industries/healthcare/how-augmented-reality-and-immersive-technologies-improve-patient-outcomes/"
-                  target="_blank"
-                  ><i
-                    >How Augmented Reality and Immersive Technologies Can
-                    Improve Patient Outcomes</i
-                  ></a
-                ><br />
-                <p class="times">MarketScale, 2023</p>
-              </div>
-              <div class="home-div" style="grid-column: 14/15; grid-row: 11/12">
-                <div>
-                  <a href="https://arfachowdhary.com/"
-                    ><img
-                      src="./assets/home.gif"
-                      alt="Small home image"
-                      style="width: 100%"
-                  /></a>
-                </div>
+              <a
+                class="press"
+                href="https://www.youtube.com/watch?v=pX5uOxRRFi4"
+                target="_blank"
+                ><i
+                  >Intel Technology is Helping Providence Shape the Future of
+                  Healthcare</i
+                ></a
+              ><br />
+              <p class="times">Intel, 2022</p>
+              <br />
+              <a
+                class="press"
+                href="https://marketscale.com/industries/healthcare/how-augmented-reality-and-immersive-technologies-improve-patient-outcomes/"
+                target="_blank"
+                ><i
+                  >How Augmented Reality and Immersive Technologies Can Improve
+                  Patient Outcomes</i
+                ></a
+              ><br />
+              <p class="times">MarketScale, 2023</p>
+            </div>
+            <div class="homediv" style="grid-row: 11/12">
+              <div class="homegifdiv">
+                <a href="https://arfachowdhary.com/"
+                  ><img
+                    src="./assets/home.gif"
+                    alt="Small home image"
+                    class="homegif"
+                /></a>
               </div>
             </div>
           </div>
