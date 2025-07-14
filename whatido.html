@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <!-- <meta name = "viewport" content= "width=devide-width, initial-scale=1, shrink-to-fit=no"  -->
+  <title>What do I do | Skills, Services, Interests</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="index.js"></script>
+</head>
+
+<body style="margin: 50px 5vw 5vw 4vw;">
+  <!-- <div style = 'display:flex; flex-direction: column;'class="whatdoidobody"><div class="intro"> -->
+
+
+
+  <div class="maincontainer" style="display: flex; gap: 20px; flex-direction: row">
+    <div class="skillcontainer leftcolumn" style="width: 45%; display: flex">
+      <div>
+        <h1 class="blackfont">What I do</h1>
+        <p>
+          I'm a creative technologist interested in working between digital and physical mediums. I work at the
+          intersection of design, programming, and strategy to create intelligent interactive systems.
+        </p>
+      </div>
+
+
+
+      <div class="row1" style="display: flex; ">
+        <div class="skillsections">
+          <h2 class="bold">As a designer</h2>
+          <p>
+            I design interfaces that are personalized and functional. My design process is an iterative process that
+            includes research, strategizing, and protopying. This works best and is most enjoyable when it is
+            collaborative, engaged, process between me and you. My strengths lie in my relationships with people as I'm
+            great collaborator and help you develop a clear shape for your ideas. I enjoy working with important
+            stories, enthusiastic people, and strong communicators.
+          </p>
+        </div>
+        <div class="skillsections">
+          <h2>As a programmer</h2>
+          <p>
+            I build small-to-medium experiences from concept to launch. My systems prioritize function, highlight your
+            body work in the most fitting way through differnet types of media, and uphold accessibility standards. Im
+            experineced with a variety of web building softwares, but I enjoy building with minimal tech - HTML, CSS,
+            and JS - when the project fits. <br>
+            This website is handcoded and maintained by me, with love.</p>
+          <img style="width: 50px;" src="/assets/kittypaint.gif" alt="">
+          </p>
+        </div>
+      </div>
+
+      <div class="row2" style="display: flex">
+        <div class="skillsections">
+          <h2>As a game designer </h2>
+          <p>
+            I develop games and experimental media using Unity, JavaScript, and I experiment with alternative engines
+            like Pico-8 and Twine. I'm experienced with AR development and creating small-scale multi media
+            applications.
+          </p>
+        </div>
+
+        <div class="skillsections">
+          <h2>As a maker</h2>
+          <p>
+            While I’m often working with digital design, I also work with Arduino, soldering, metalworking, 3D modeling
+            + printing, and laser cutting.
+          </p>
+        </div>
+      </div>
+
+      <div class="row3 skillcontainer2">
+
+        
+  <table style="width: 100%; border-collapse: collapse; max-width: 800px; margin: auto; background: white; border: 1px solid #ccc;">
+    <!-- <thead>
+      <tr style="background: #e0e0e0;">
+        <th style="text-align: left; padding: 6px 8px; border: 1px solid #ccc;">Service & Details</th>
+      </tr>
+    </thead> -->
+    <h2>Services & Details</h2>
+    <p style="margin-bottom: 10px">Im looking to collaborate on projects that align with my skills and interests mentioned above. Listed below are a few typical types of projects I work with. If you are interested in something that isn't listed, please say hi via email! <span style=" font-weight: bold; color: #1400ef">  arfa.b.chowdhary@gmail.com</span> </p>
+    <tbody>
+
+      <tr>
+        <td style="padding: 6px 8px; border: 1px solid #ccc; cursor: pointer;" onclick="toggle(this)">
+          <div>
+            <span style="font-weight: bold; margin-right: 6px;">+</span> Web Design
+          </div>
+          <div style="display: none; font-size: 0.9em; margin-top: 4px; color: #555;">
+            I work with you to understand your goals, research inspiration, and design unique, functional wireframes that communicate stories through type, layout, color, and imagery.
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td style="padding: 6px 8px; border: 1px solid #ccc; cursor: pointer;" onclick="toggle(this)">
+          <div>
+            <span style="font-weight: bold; margin-right: 6px;">+</span> Web App Development
+          </div>
+          <div style="display: none; font-size: 0.9em; margin-top: 4px; color: #555;">
+            I build small to medium web applications that prioritize function, work well on different devices, highlight your body of work, and uphold accessibility standards.
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td style="padding: 6px 8px; border: 1px solid #ccc; cursor: pointer;" onclick="toggle(this)">
+          <div>
+            <span style="font-weight: bold; margin-right: 6px;">+</span> Website Refresh, Renovations, and Quick Fixes
+          </div>
+          <div style="display: none; font-size: 0.9em; margin-top: 4px; color: #555;">
+            We can audit your current site, update outdated content, clean up the back end, and revisit your goals to polish your website without rebuilding from scratch.
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td style="padding: 6px 8px; border: 1px solid #ccc; cursor: pointer;" onclick="toggle(this)">
+          <div>
+            <span style="font-weight: bold; margin-right: 6px;">+</span> Web Analytics and SEO Optimization
+          </div>
+          <div style="display: none; font-size: 0.9em; margin-top: 4px; color: #555;">
+            I analyze user behavior and site health using tools like Google Analytics and Semrush, then help improve your reach, visibility, and user experience through data-driven recommendations.
+          </div>
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+      </div>
+    </div>
+
+    <div class="rightcolumn">
+      <div>
+        <img src="/assets/soluciones_para_todo.jpg"
+          alt="Photo of an old computer with a red stuffed animal sitting on top of it. " />
+        <p style="font-style: italic; font-weight: bold; color: #1400ef">
+          soluciones para todo . jpg
+        </p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script>
+    function toggle(cell) {
+      const icon = cell.querySelector('span');
+      const content = cell.querySelectorAll('div')[1]; // the second <div> inside the cell
+      const isVisible = content.style.display === 'block';
+
+      content.style.display = isVisible ? 'none' : 'block';
+      icon.textContent = isVisible ? '+' : '−';
+    }
+  </script>
+</body>
+
+</html>

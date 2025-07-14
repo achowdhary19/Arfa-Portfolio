@@ -1,14 +1,23 @@
-/* GENERAL */
+/* ----------------------------- */
+/* ---------- FONTS ---------- */
+/* ----------------------------- */
 @font-face {
-  font-family: "FavoritMed";
+  font-family: "Favorit";
   src: url("assets/Favorit\ Medium.ttf");
+  font-weight: 600;
+  font-style: bold;
 }
 
 @font-face {
   font-family: "Favorit";
   src: url("assets/Favorit\ Light.ttf");
+  font-weight: normal;
+  font-style: normal;
 }
 
+/* ----------------------------- */
+/* ---------- GENERAL ---------- */
+/* ----------------------------- */
 html {
   scroll-behavior: smooth;
 }
@@ -18,9 +27,50 @@ body {
   height: 100%;
 }
 
-.badges-bio-mobile-container {
-  display: none;
+.bold {
+  font-style: bold;
 }
+button {
+  font-size: 13px;
+  cursor: pointer;
+  border: 0.5px solid #dad9d9;
+  border-radius: 25px;
+  padding: 8px 18px 8px 18px;
+  box-shadow: 0 4px #999;
+  background-color: #dad9d9;
+  color: #001fcc;
+}
+button:hover {
+  background-color: #cecece;
+  border: 0.5px solid #cecece;
+}
+button:active {
+  box-shadow: 0 0px #999;
+  transform: translateY(3px);
+}
+
+.blackfont {
+  color: black;
+}
+
+p {
+  /* color: #00a74f; */
+  color: black;
+  font-family: "Favorit", Helvetica, sans-serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+span,
+div {
+  font-family: "Favorit";
+}
+
+/* ----------------------------- */
+/* ---------- HOME ---------- */
+/* ----------------------------- */
+
 .bio-contact-container {
   display: flex;
   flex-direction: column;
@@ -33,11 +83,15 @@ body {
 
 .badges-bio-desktop-container {
   position: absolute;
-  bottom: 1.5%;
+  bottom: 4%;
   left: 0;
   display: flex;
   flex-direction: column;
   /* gap: 9px; */
+}
+
+.badges-bio-mobile-container {
+  display: none;
 }
 .badges,
 .badges-mobile {
@@ -72,36 +126,6 @@ body {
   border: solid 1px #00a74f;
   padding: 2px 2px 2px 10px;
 }
-
-button {
-  font-size: 13px;
-  cursor: pointer;
-  border: 0.5px solid #dad9d9;
-  border-radius: 25px;
-  padding: 8px 18px 8px 18px;
-  box-shadow: 0 4px #999;
-  background-color: #dad9d9;
-  color: #001fcc;
-}
-button:hover {
-  background-color: #cecece;
-  border: 0.5px solid #cecece;
-}
-button:active {
-  box-shadow: 0 0px #999;
-  transform: translateY(3px);
-}
-
-p {
-  /* color: #00a74f; */
-  color: black;
-  font-family: "Favorit", Helvetica, sans-serif;
-  font-size: 16px;
-  margin: 0;
-  padding: 0;
-}
-
-/* HOME PAGE  */
 
 #spacerR {
   height: 1.5vh;
@@ -161,7 +185,7 @@ p {
   text-decoration: none;
   margin-right: 5vw;
   margin-top: auto;
-  /* border: 1px solid black ;  */
+  /* border: 1px solid black; */
 }
 .times {
   font-family: "Times New Roman", Times, serif;
@@ -241,7 +265,8 @@ h1 {
   padding: 0;
   margin: 0;
   color: #00a74f;
-  font-family: "FavoritMed";
+  font-family: "Favorit";
+  /* font: 600; */
   font-size: 24px;
   letter-spacing: 0.8px;
 }
@@ -254,6 +279,15 @@ h1 {
   font-weight: normal;
 }
 
+h2 {
+  /* color: #00a74f; */
+  color: black;
+  font-family: "Favorit";
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0;
+  margin-bottom: 5px;
+}
 h3 {
   /* color: #00a74f; */
   color: black;
@@ -376,6 +410,24 @@ h3 {
   display: none;
   width: 100%;
   height: 100%;
+}
+
+/* WHAT I DO DESKTOP */
+.skillcontainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1vw;
+}
+
+.skillsections {
+  /* flex-direction: column; */
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.row1,
+.row2 {
+  gap: 12px;
 }
 
 /* Dollhouse desktop */
