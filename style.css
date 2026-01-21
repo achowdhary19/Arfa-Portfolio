@@ -284,17 +284,18 @@ h1 {
   font-family: Helvetica;
   font-weight: normal;
 }
-
+/*
 h2 {
-  /* color: #00a74f; */
+
   color: black;
   font-family: "Favorit";
   font-size: 20px;
   font-weight: bold;
   padding: 0;
   margin-bottom: 5px;
-}
-h3 {
+} */
+ 
+h3, h2 {
   /* color: #00a74f; */
   color: black;
   font-family: "Favorit";
