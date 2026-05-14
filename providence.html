@@ -19,14 +19,15 @@
           <h1 class="blackh1 providence-headeritem1">Providence</h1>
           <div class="providence-headeritem2">
             <p class="gray">2023</p>
-            <p class="gray">Design & Development</p>
+            <p class="gray">Product Design (UX/UI), Front-end Development</p>
           </div>
           <p class="providence-headeritem3 gray">
-            Collaborators: Julien Lynge, Taylor Dupuy, Ryan Casement
+            Collaborators: 4-person interdisciplinary team (design +
+            development)
           </p>
 
           <p class="providence-headeritem4 gray">
-            Using: Figma, HTML, CSS, JavaScript, A-Frame, 8th Wall, Webpack
+            Using: Figma, JavaScript, A-Frame, WebAR (8th Wall)
           </p>
         </div>
 
@@ -34,26 +35,40 @@
           <div class="slide fade" style="display: block">
             <img
               id="horizontalscreenshot"
-              src="assets//Providence/Providence3.png"
+              src="assets//Providence/providence-mobile1.PNG"
               id=""
               alt=""
             />
           </div>
 
           <div class="slide fade" style="display: none">
-            <img
-              id="horizontalscreenshot"
-              src="assets/Providence/Providence1.png"
-              alt=""
-            />
+            <div
+              style="
+                display: flex;
+                object-fit: contain;
+                width: 100%;
+                flex-direction: row;
+                gap: 1vh;
+              "
+            >
+              <img
+                class="three-image-slide"
+                src="assets/Providence/providence-tutorial5.PNG"
+                alt=""
+              />
+              <img
+                class="three-image-slide"
+                src="assets/Providence/providence-tutorial4.PNG"
+                alt=""
+              />
+              <img
+                class="three-image-slide"
+                src="assets/Providence/providence-tutorial1.PNG"
+                alt=""
+              />
+            </div>
           </div>
-          <div class="slide fade" style="display: none">
-            <img
-              id="horizontalscreenshot"
-              src="assets/Providence/providence5.avif"
-              alt=""
-            />
-          </div>
+
           <div class="slide fade" style="display: none">
             <img
               id="horizontalscreenshot"
@@ -75,95 +90,244 @@
           </div>
         </div>
 
-        <div id="description">
-          <div>
+        <div class="project-description-div">
+          <div class="about-div">
             <h2>About</h2>
             <p>
-              Over a 5-month period, I worked with a small team of three to
-              develop a modular web and mobile application for Providence
-              Medical Services. Our application was designed to display AR
-              volumetric videos created using Intel® RealSense™ cameras,
-              enabling patients to learn physical therapy exercises at home and
-              providing internal training materials for Providence's workforce
-              across their 51 hospitals.
-            </p>
-          </div>
-          <div class="keyaspectsdiv">
-            <!-- First Row: Heading -->
-            <h2 class="keyaspectsheader">Key Aspects:</h2>
-
-            <!-- Second Row: Image and Paragraph -->
-            <div class="bracketdiv">
-              <img src="assets/bracket.png" class="bracketimg" />
-            </div>
-            <p class="bulletsdiv">
-              <strong>⁑</strong> Designing an intuitive, accessible desktop and
-              mobile UI that maintained Providence's long standing brand
-              identity.
-              <br />
-              <strong>⁑</strong> Building a user-friendly experience that
-              expands access to specialized care, particularly for patients in
-              remote locations who can't easily visit physical therapy
-              facilities in person.<br />
-              <strong>⁑ </strong> Integrating volumetric videos into an AR
-              environment, allowing patients to view exercises from multiple
-              angles and better understand proper form and technique. These
-              videos needed to be properly placed in the user's physical space,
-              maintain proper scale and perspective, and remain responsive to
-              user interactions. <br />
-              <strong>⁑</strong> Developing a hosting solution that was more
-              cost-effective than their existing third-party platform. <br />
-            </p>
-          </div>
-
-          <div>
-            <h2>My Role & Contributions</h2>
-            <p style="margin-bottom: 1vh">
-              As the UX/UI designer on the project, I took ownership of the
-              entire design process while collaboratively implementing
-              interactive elements through pair programming.
-            </p>
-
-            <p style="margin-bottom: 1vh">
-              I independently created all UI wireframes and high-fidelity
-              prototypes in Figma, designing a comprehensive component library
-              of 15+ UI elements that maintained Providence's established brand
-              guidelines and were reusable for other AR applications.
-            </p>
-
-            <p>
-              Through pair programming sessions with my development team, I
-              directly contributed to implementing the AR environment and
-              interactive elements using JavaScript and A-frame. My specific
-              coding contributions included building the custom video player
-              controls (play/pause, mute, video scrubbing) and developing the
-              responsive behavior that ensured proper video scaling across
+              Over a 5-month period, I worked on a small interdisciplinary team
+              to design and develop a web-based augmented reality (AR)
+              application for Providence Health, a large healthcare system
+              exploring new models for training and patient education.
+              <br /><br />
+              The project was part of a broader initiative—supported by Intel
+              and Evercoast—explore how volumetric video and AR could improve
+              remote learning, workforce training, and patient outcomes. Our
+              team developed an early-stage prototype to validate how AR-based
+              interactions could make physical therapy exercises and training
+              scenarios more understandable, engaging, and accessible across
               devices.
             </p>
           </div>
 
-          <div>
+          <div class="problem-div">
+            <h2>Problem & Context</h2>
+            <p>
+              Providence was exploring alternatives to traditional training and
+              patient education methods, which often relied on static content or
+              standard video. These formats made it difficult for users to fully
+              understand spatial movement, retain information, and confidently
+              apply what they learned.
+            </p>
+            <br />
+            <p style="margin-bottom: 1.35vh">
+              This challenge became more urgent during COVID-19, when in-person
+              training and care were limited. Providence needed a way to deliver
+              training that was:
+            </p>
+
+            <div class="list">
+              <p>
+                • Accessible remotely across a distributed workforce and patient
+                base
+              </p>
+              <p>• Engaging enough to improve retention and comprehension</p>
+              <p>• Scalable across multiple hospitals and user groups</p>
+            </div>
+            <br />
+            <p style="margin-bottom: 1.35vh">
+              At the same time, emerging AR and volumetric video technologies
+              introduced new UX challenges:
+            </p>
+
+            <div class="list">
+              <p>
+                • Users needed to understand how to place and interact with
+                content in physical space
+              </p>
+              <p>
+                • Interfaces had to remain usable across mobile and non-AR
+                contexts
+              </p>
+              <p>
+                • Interaction patterns had to feel intuitive despite being
+                unfamiliar to most users
+              </p>
+            </div>
+          </div>
+
+          <div class="projectgoals">
+            <h2>Project Goals:</h2>
+            <div class="list">
+              <p>
+                • Enable users to better understand and replicate physical
+                movements through spatial, immersive content
+              </p>
+              <p>
+                • Ensure accessibility across devices, including non-AR
+                fallbacks
+              </p>
+              <p>
+                • Design intuitive interaction patterns for placing and viewing
+                AR-based volumetric video
+              </p>
+              <p>
+                • Support both patient use (at-home learning) and internal staff
+                training scenarios
+              </p>
+              <p>
+                • Contribute to a scalable model for distributing immersive
+                training content
+              </p>
+              <p>• Reduce reliance on costly third-party hosting solutions</p>
+            </div>
+          </div>
+
+          <div class="role-and-constraints">
+            <div class="role-col">
+              <h2>My Role</h2>
+
+              <div class="list">
+                <p>
+                  • Led UX/UI design for the application, including wireframes,
+                  interaction design, and high-fidelity prototypes
+                </p>
+                <p>
+                  • Designed a reusable component system aligned with
+                  Providence’s brand guidelines
+                </p>
+                <p>
+                  • Collaborated closely with developers through pair
+                  programming to implement interactive featuresTranslated visual
+                  assets into a modular UI system aligned with content structure
+                </p>
+                <p>
+                  • Designed interaction patterns(buttons, hover states, loading
+                  animations) to support usability and feedback
+                </p>
+                <p>
+                  • Built key interface components, including custom video
+                  controls and responsive behaviors for AR content
+                </p>
+                <p>
+                  • Contributed to translating experimental AR interactions into
+                  usable interface patterns
+                </p>
+              </div>
+            </div>
+            <div class="constraint-col">
+              <h2>Constraints</h2>
+              <div class="list">
+                <p>
+                  • Designing for an emerging interaction model (WebAR) with
+                  limited established UX patterns
+                </p>
+                <p>
+                  • Technical limitations around rendering, scaling, and
+                  performance of volumetric video
+                </p>
+                <p>
+                  • Need to support both AR-enabled and standard device
+                  experiences
+                </p>
+                <p>
+                  • Aligning with enterprise-level brand and accessibility
+                  expectations
+                </p>
+                <p>
+                  • Working within a prototype scope while contributing to a
+                  larger, evolving product ecosystem
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="key-design-decisions">
+            <h2>Key Design Decisions</h2>
+
+            <p style="font-style: italic; font-weight: 400">
+              Simplifying AR interaction for first-time users
+            </p>
+            <p style="margin-bottom: 10px">
+              The interface was designed to help users understand how to place
+              and interact with AR content in their physical space—an unfamiliar
+              interaction model for most users. To reduce friction, we
+              introduced lightweight onboarding tutorials with visual cues (e.g.
+              pinch, rotate gestures) alongside simplified interaction patterns.
+            </p>
+            <p style="margin-bottom: 1.35vh">
+              This introduced a tradeoff between providing guidance and
+              maintaining a streamlined interface. To balance this, onboarding
+              was kept brief and contextual, allowing users to quickly learn
+              interactions without interrupting the experience.
+            </p>
+            <p style="font-style: italic; font-weight: 400">
+              Ensuring usability beyond AR-enabled environments
+            </p>
+            <p style="margin-bottom: 1.35vh">
+              Because not all users would access the experience in AR, the
+              interface was designed to function across standard web and mobile
+              contexts. This required designing interaction patterns that could
+              translate between spatial and non-spatial environments without
+              losing clarity or functionality.
+            </p>
+            <p style="font-style: italic; font-weight: 400">
+              Designing video controls for spatial interaction
+            </p>
+            <p style="margin-bottom: 10px">
+              Standard video controls were adapted for an AR environment, where
+              content exists in 3D space rather than a fixed screen. Controls
+              needed to remain legible and accessible while not interfering with
+              the AR content, which could move or be positioned behind interface
+              elements.
+            </p>
+            <p style="margin-bottom: 1.35vh">
+              Balancing usability with immersion required simplifying controls
+              while maintaining core functionality (play, pause, mute,
+              scrubbing). UI placement and layering were carefully considered to
+              ensure controls remained visible without obstructing the
+              experience.
+            </p>
+            <p style="font-style: italic; font-weight: 400">
+              Time-based controls
+            </p>
+            <p style="margin-bottom: 10px">
+              Users needed precise control over time-based exercise
+              demonstrations to revisit and practice specific movements. The
+              interface supports scrubbing, skipping forward/backward, and
+              replaying segments within volumetric video.
+            </p>
+            <p style="margin-bottom: 1.35vh">
+              Designing these controls in a 3D environment required adapting
+              familiar interaction patterns while maintaining responsiveness and
+              clarity. Time-synced closed captions were integrated to support
+              accessibility and reinforce verbal instruction.
+            </p>
+          </div>
+
+          <div class="results-div">
             <h2>Impact & Results</h2>
 
-            <p style="margin-bottom: 1vh">
-              The application we delivered provided tangible benefits for
-              Providence Health. Our team's solution replaced their previous
-              third-party platform with an AWS-based infrastructure, reducing
-              their annual hosting costs by thousands of dollars.
+            <p style="margin-bottom: 1.35vh">
+              The prototype demonstrated the viability of AR-based training as
+              part of Providence’s broader learning and development strategy,
+              validating AR as a scalable model for both patient education and
+              workforce training. It contributed to replacing reliance on
+              external platforms with a more scalable, cost-effective
+              infrastructure and supported continued investment in immersive
+              training tools.
             </p>
 
-            <p style="margin-bottom: 1vh">
-              The successful prototypes served as proof of concept, leading
-              Providence to pursue additional grant funding for feature
-              expansion and expand the market for their volumetric videos.
-              Initial feedback from Providence staff indicated improved training
-              efficiency and higher patient engagement with physical therapy
-              routines.
+            <p style="margin-bottom: 1.35vh">
+              Feedback from Providence staff indicated that immersive, spatial
+              experiences improved engagement, comprehension, and confidence
+              compared to traditional formats. The project contributed to
+              ongoing efforts to expand AR-based training across workforce
+              development and patient care.
             </p>
-            <p style="margin-bottom: 1vh">
-              The project gained industry recognition, being featured in
-              multiple Intel promotional materials and showcased at Providence's
-              "SEAL: Stop Everything and Learn" week.
+            <p style="margin-bottom: 1.35vh">
+              The work was featured in Intel case studies and industry
+              publications, highlighting its role in advancing immersive
+              learning in healthcare.
             </p>
 
             <p style="margin-bottom: 3vh">
@@ -181,7 +345,7 @@
 
               <a
                 class="press"
-                href="https://www.intel.com/content/www/us/en/customer-spotlight/stories/providence-customer-story.html"
+                href="https://www.intel.com/content/www/us/en/content-details/822564/case-study-providence-delivers-immersive-learning-with-ar-enabled-training.html"
                 target="_blank"
                 ><i>Providence Delivers Immersive Learning with AR</i></a
               ><br />

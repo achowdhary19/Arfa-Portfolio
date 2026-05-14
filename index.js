@@ -50,7 +50,7 @@ function showSlides(n) {
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex - 1].style.display = "block";
+  slides[slideIndex - 1].style.display = "flex"; //if i have suddne issues change this back to blocks
   // dots[slideIndex-1].className += " active";
 }
 
@@ -80,3 +80,21 @@ function toggleEnlargeImg(img) {
 }
 
 //jquery
+
+
+//lightbox image
+document.addEventListener("DOMContentLoaded", () => {
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImage = document.getElementById("lightbox-image");
+
+  document.querySelectorAll(".lightbox-img").forEach((img) => {
+    img.addEventListener("click", () => {
+      lightboxImage.src = img.src;
+      lightbox.classList.add("active");
+    });
+  });
+
+  lightbox.addEventListener("click", () => {
+    lightbox.classList.remove("active");
+  });
+});
