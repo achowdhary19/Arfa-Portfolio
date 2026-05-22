@@ -84,6 +84,8 @@ div {
 .lightbox-img {
   cursor: zoom-in;
   transition: opacity 0.2s ease;
+  display: flex;
+  z-index: 5;
 }
 
 .lightbox-img:hover {
@@ -199,7 +201,8 @@ div {
 #p6spacer,
 #p7spacer,
 #p8spacer,
-#p9spacer {
+#p9spacer,
+#p10spacer {
   height: 1.5vh;
 }
 
@@ -339,16 +342,7 @@ h1 {
   font-family: Helvetica;
   font-weight: normal;
 }
-/*
-h2 {
 
-  color: black;
-  font-family: "Favorit";
-  font-size: 20px;
-  font-weight: bold;
-  padding: 0;
-  margin-bottom: 5px;
-} */
  
 h3, h2 {
  
