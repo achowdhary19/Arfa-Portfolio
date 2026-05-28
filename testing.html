@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blob</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
+  </head>
+
+  <body>
+    <div class="heading">
+      <h1>The Unfolding</h1>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+
+  <style>
+    body,
+    html {
+      margin: 0;
+      overflow: hidden;
+      background: black;
+    }
+
+    canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      touch-action: none;
+    }
+
+    .heading {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      z-index: 10;
+      pointer-events: none;
+    }
+
+    h1 {
+      color: white;
+      font-family: Arial;
+      font-weight: 300;
+    }
+  </style>
+</html>

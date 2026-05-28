@@ -211,7 +211,7 @@ div {
   flex-direction: column;
   margin-top: 1.5vh;
   margin-left: 1vw;
-  width: 35vw;
+  width: 39%;
   height: 100%;
   position: fixed;
   gap: 8vh;
@@ -224,6 +224,7 @@ div {
   font-size: 3.2rem;
   font-family: "Favorit";
   text-decoration: none;
+  text-wrap: nowrap;
   /* border: solid black 1px; */
 }
 
@@ -267,15 +268,15 @@ div {
 
 #right-wrapper {
   height: 100%;
-  width: 50vw;
-  left: 43vw;
+  width: 50%;
+  left: 45%;
   position: absolute;
   /* border: 1px solid black ;  */
 }
 
 
-#projectcontainer,
-#project1container,
+
+/* #project1container,
 #project2container,
 #project3container,
 #project4container,
@@ -283,10 +284,10 @@ div {
 #project6container,
 #project7container,
 #project8container,
-#project9container,
+#project9container, */
 #projectcontainer {
   width: 50vw;
-  height: 48vh;
+  height: auto;
   /* background-color:rgba(0, 0, 0, 1); */
   margin: 0 0 10px 0;
   padding: 0;
@@ -895,7 +896,7 @@ a:not(.btn--remix):visited {
 
 @media only screen and (max-width: 800px) {
   body {
-    margin: 0;
+    margin-left: 1vw;
     width: 100%;
     height: 100%;
   }
@@ -933,21 +934,15 @@ a:not(.btn--remix):visited {
   }
   #right-wrapper {
     position: relative;
-    left: 0;
+    left: 1vw;
+    padding: 0px 0px 0px 5px;
     width: 95vw;
   }
 
-  #project1container,
-  #project2container,
-  #project3container,
-  #project4container,
-  #project5container,
-  #project6container,
-  #project7container,
-  #project8container,
-  #project9container {
-    height: 30vh;
-    width: 100vw;
+  
+  #projectcontainer {
+    height: auto;
+ 
   }
 
   #project1text,
