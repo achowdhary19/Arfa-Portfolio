@@ -1,185 +1,250 @@
 <!doctype html>
 
 <html lang="en">
-  <head>
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <title>Oblivion</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="gif" href="/assets/gifs/hot-air-baloon-0073.gif" />
-  </head>
 
-  <body>
-    <div id="projectbodycontainer">
-      <div id="projectbody">
-        <div class="header-grid">
-          <h1 class="blackh1 oblivion-headeritem1">Oblivion</h1>
-          <div class="oblivion-headeritem2">
-            <p class="gray">2024</p>
-            <p class="gray">Game Dev Playtesting</p>
-          </div>
-          <p class="gray oblivion-headeritem3">
-            Collaborators: Unity Production Foundations, Saltium Games
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Vanished Puzzle Quest</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="index.js"></script>
+  <link rel="icon" type="gif" href="/assets/gifs/hot-air-baloon-0073.gif" />
+</head>
+
+<body>
+  <div id="projectbodycontainer">
+    <div id="projectbody">
+      <div class="header-grid">
+        <h1 class="blackh1 oblivion-headeritem1">Vanished Puzzle Quest</h1>
+        <div class="oblivion-headeritem2">
+          <p class="gray">2024</p>
+          <p class="gray">UX Research, Playtesting</p>
+        </div>
+        <p class="gray oblivion-headeritem3">
+          Collaborators: Unity Productions Foundation, Saltium Games
+        </p>
+      </div>
+
+      <div id="slideshow">
+        <div class="slide fade" style="display: block">
+          <img id="horizontalscreenshot" src="/assets/vanished/oblivion1.gif" id="" alt="" />
+        </div>
+
+        <div class="slide fade" style="display: none">
+          <img id="horizontalscreenshot" src="/assets/vanished/vanished1.PNG" alt="" />
+        </div>
+        <div class="slide fade" style="display: none">
+          <img id="horizontalscreenshot" src="/assets/vanished/vanished2.PNG" alt="" />
+        </div>
+        <div class="slide fade" style="display: none">
+          <img id="horizontalscreenshot" src="/assets/vanished/oblivion4.jpg" alt="" />
+        </div>
+        <div class="slide fade" style="display: none">
+          <img id="horizontalscreenshot" src="/assets/vanished/oblivion2.jpg" alt="" />
+        </div>
+
+        <div id="arrows">
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+      </div>
+
+      <div id="project-description-div">
+        <div>
+          <h2 style="font-weight: bold">About</h2>
+          <p>
+            Vanished is a first-person puzzle game based in the Islamic Golden
+            Ages that challenges players to use found objects to unravel a
+            mystery against an unknown foe. By rebuilding ancient tools and
+            instruments, players open doors and piece together lost history. I
+            joined the project during development as a playtester and UX
+            contributor, collaborating with the team to evaluate gameplay,
+            improve puzzle interactions, and identify opportunities to create
+            a smoother player experience.
+          </p>
+        </div>
+        <div>
+          <h2 style="font-weight: bold">Research</h2>
+          <p>
+            During development, we tested the game with volunteers and
+            collected information to inform development priorities and
+            production decisions. We conducted regular playtesting and
+            maintained documentation logs with feedback categorized by type -
+            usability concerns, technical bugs, our observations, user stated
+            pain points, and visual issues. This allowed me to synthesize our
+            findings and reveal patterns amongst players. After identifying
+            some common issues, I designed solutions that balanced player
+            experience, developer process, stakeholder considerations, while
+            supporting the game's goals of challenge, discovery, and
+            learning.
+          </p>
+        </div>
+        <div>
+          <h2 style="font-weight: bold">Redesign: Inventory Management</h2>
+          <p>
+            Playtesting the early versions revealed a few overarching
+            usability issues with players: object discoverability, progression
+            confusion, and inventory comprehension. Because the core gameplay
+            revolves around collecting, combining, and learning about
+            historical artifacts, understanding what each object is and how it
+            relates to the surrounding environment is fundamental to both
+            progression and learning. The existing inventory represented
+            collected items as small icons without labels, inspection, or
+            additional context. Players were often left uncertain about an
+            item's identity or purpose. In many cases, this uncertainty
+            appeared to shift player behavior away from intentional reasoning
+            and toward a brute force approach, such as repeatedly combining
+            objects or testing every possible interaction.<br /><br />
+          </p>
+          <p>
+            The inventory system introduced unnecessary uncertainty that
+            distracted players from the intended puzzle-solving experience.
+            Rather than stripping down puzzle level design and reducing
+            challenge, I proposed a more supportive inventory system that
+            would provide clearer context around collected objects and allow
+            players to spend more time reasoning through puzzles rather than
+            guessing what they were carrying and quitting out of annoyance.
+
+
+            <!-- <br /> This redesign was a speculative exploration based on observations
+              collected during playtesting and was not implemented in the
+              shipped game. -->
           </p>
         </div>
 
-        <div id="slideshow">
-          <div class="slide fade" style="display: block">
-            <img
-              id="horizontalscreenshot"
-              src="/assets/oblivion1.gif"
-              id=""
-              alt=""
-            />
+
+        <div class="original-inventory-div">
+          <div class="original-inventory-innerdiv">
+            <img src="assets/vanished/current-inventory.png" alt="Current inventory" class="lightbox-img" />
+            <p class="inventory-caption">
+              Original inventory system, annotated
+            </p>
           </div>
 
-          <div class="slide fade" style="display: none">
-            <img id="horizontalscreenshot" src="/assets/oblivion2.PNG" alt="" />
-          </div>
-          <div class="slide fade" style="display: none">
-            <img id="horizontalscreenshot" src="/assets/oblivion3.PNG" alt="" />
-          </div>
-          <div class="slide fade" style="display: none">
-            <img id="horizontalscreenshot" src="/assets/oblivion4.PNG" alt="" />
-          </div>
-          <div class="slide fade" style="display: none">
-            <img id="horizontalscreenshot" src="/assets/oblivion5.PNG" alt="" />
-          </div>
-
-          <div id="arrows">
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
-          </div>
+          <p>The current inventory provides insufficient information for players to confidently identify, understand,
+            and apply collected objects within puzzle-solving contexts.</p>
         </div>
 
-        <div id="project-description-div">
-          <div>
-            <h2 style="font-weight: bold">About</h2>
-            <p>
-              Oblivion is an atmospheric escape room game set during the Islamic
-              Golden Age. Players embody a confused traveler who wakes up in a
-              disheveled room with no memory of how they arrived. The traveler
-              goes on a journey to find answers, exploring differnet locations,
-              discovering broken artifacts and old texts. By restoring relics
-              and solving puzzles based on these innovations, players unlock new
-              areas and uncover their mysterious past.
-            </p>
-          </div>
 
-          <div>
-            <h2>My Role</h2>
-            <p style="margin-bottom: 20px">
-              As a core member of the pre-development design focus group and
-              current playtester for Unity Production Foundations, I've
-              influenced Oblivion from early concept through its current
-              development phase
-            </p>
-            <div class="contributions-twocolumn">
-              <div style="width: 50%">
-                <p
-                  style="
-                    font-style: italic;
-                    font-weight: bold;
-                    margin-bottom: 4px;
-                  "
-                >
-                  Design phase contributions:
-                </p>
-                <p>
-                  • Collaborated in bi-weekly design discussions to develop
-                  puzzle mechanics using historically accurate technologies from
-                  the Islamic Golden Age, including instruments like the
-                  Triquetrum, Astrolabe, Al-Jazari's Water Clock, and Abu
-                  Al-Salt's Equatorium
-                </p>
-                <p>
-                  • Developed strategic input on level progression that balances
-                  challenging puzzle design with engaging learning
-                  opportunities, focusing on creating puzzles that:
-                </p>
-                <p style="margin-left: 15px">
-                  ◦ Educate players about historical artifacts <br />◦ Maintain
-                  cultural accuracy<br />
-                  ◦ Promote player-driven knowledge discovery<br />
-                  <!-- ◦ Gradually introduce complex mechanical and historical
-                  concepts -->
-                </p>
-              </div>
+        <div class="oblivion-two-column">
+          <div class="oblivion-col1">
+            <h2>Design Goals</h2>
 
-              <div style="width: 50%">
-                <p
-                  style="
-                    font-style: italic;
-                    font-weight: bold;
-                    margin-bottom: 4px;
-                  "
-                >
-                  Playtesting and UX Refinement (current):
-                </p>
-                <p>
-                  • Documenting game issues with a team spreadsheet tracking
-                  system where I categorize feedback (design suggestions,
-                  technical bugs, art concerns) and prioritize issues based on
-                  impact to gameplay.
-                </p>
+            <ul class="design-goals list">
+              <li>• Help players confidently identify collected objects.</li>
 
-                <p>
-                  • Uncovered critical user experience barriers in early builds
-                  that caused confusiong and impeded game progress.
-                </p>
-                <p>
-                  • Proposed an innovative tutorial/guidance system using
-                  environmental storytelling:
-                </p>
-                <p style="margin-left: 15px">
-                  ◦ Subtle guidance through particle systems and object
-                  highlighting<br />
-                  ◦ Contextual visual cues (e.g., blue guidance indicators) to
-                  demonstrate object interactions<br />
-                  ◦ Non-intrusive navigation system using lighting, animation,
-                  and environmental design
-                </p>
-              </div>
-            </div>
+              <li>• Provide additional context without eliminating the need for interpretation.</li>
+
+              <li>• Keep the interface uncluttered for small mobile screens.</li>
+              <li>• Reduce cognitive load while preserving immersion.</li>
+              <li>• Preserve the game's goals of exploration, challenge, and learning.</li>
+            </ul>
 
             <div>
-              <h2>Current stage:</h2>
-              <p style="margin-bottom: 1.5vh">
-                Development is ongoing, with ~35% of planned chapters now
-                complete! My recommendations for a more intuitive guidance
-                system was implemented in the most recent build, resulting in a
-                significantly improved player experience. The development team
-                incorporated optional hints, environmental feedback for player
-                actions, and subtle audio cues that guide without interrupting
-                gameplay.
-              </p>
+              <h2>Selected Direction</h2>
               <p>
-                Playtester feedback has been positive—we've reported a much more
-                enjoyable experience with the revised level design. The changes
-                preserve the game's immersive quality while substantially
-                improving the new player experience. playtesters completed the
-                levels 50% faster with fewer requests for help, while still
-                experiencing the intended sense of challenge, discovery, and
-                achievement.
+                I selected the tap-to-inspect approach because it quickly provides contextual information only when
+                requested without breaking immersion. Persistent labels on items improved understanding but created
+                visual clutter, which is especially felt on mobile screens. A dedicated inventory journal offered richer
+                educational content but was overly complex for how simple most objects were and was likely to slowdown
+                gameplay. Instead of addressing the challenges by removing layers from the game, the selected direction
+                supported the current gameplay while balancing clarity, player agency, and feasibility.
               </p>
+            </div>
+
+          </div>
+          <div class=" oblivion-col2 concept-exploration-innerdiv">
+            <img src="assets/vanished/inventory-mockups.jpg" alt="Inventory mockups" class="lightbox-img" />
+            <p class="inventory-caption">
+              Concept exploration for inventory system
+            </p>
+          </div>
+        </div>
+        <div>
+
+          <div>
+            <h2>Reflection</h2>
+            <p>Working on Vanished reinforced how (game) design requires balancing competing priorities beyond usability
+              alone. Design decisions are shaped by technical limitations, production constraints, narrative goals, and
+              the emotional experience the game aims to create. Unlike productivity-focused products, games encourage
+              players to <i><b> spend </b> </i> time rather than save time by completing tasks as efficiently as
+              possible. With games, there is a bigger responsibility to the player and their wants. Co-designing with
+              real users becomes very powerful in shaping a game and goes beyond what technical predictions and internal
+              reviews can provide. As a designer, I am tasked with finding pivot points between clarity, challenge,
+              discovery, and learning.</p>
+          </div>
+
+
+          <div>
+            <h2>Project Status</h2>
+            <p>
+              Vanished Puzzle Quest was commercially released in March 2026. My contributions
+              were made during development through UX research, playtesting, and design
+              exploration. The inventory redesign presented above remained a speculative UX
+              proposal and was not implemented in the released game.
+            </p>
+          </div>
+        </div>
+
+        <div class="pressandhomediv">
+
+          <div class="presslinks">
+
+            <p class="times"><i>Official</i></p>
+
+            <a class="press" href="https://vanished.game/" target="_blank">
+              Vanished Official Website
+            </a><br>
+
+            <a class="press" href="https://store.steampowered.com/app/4262720/Vanished_Puzzle_Quest/" target="_blank">
+              Steam
+            </a><br>
+
+            <a class="press" href="https://store.epicgames.com/p/vanished-puzzle-quest-080e56?lang=en-US"
+              target="_blank">
+              Epic Games Store
+            </a><br>
+
+            <a class="press" href="https://www.youtube.com/watch?v=o2daFgdaxqY" target="_blank">
+              Official Launch Trailer
+            </a>
+
+            <br><br>
+
+            <p class="times"><i>Press</i></p>
+
+            <a class="press"
+              href="https://www.wisfarmer.com/press-release/story/44176/a-first-of-its-kind-video-game-based-on-muslim-scientific-artifacts-launching-on-march-20-2026/"
+              target="_blank">
+              Wisconsin Farmer
+            </a><br>
+
+            <a class="press" href="https://www.pocketgamer.com/vanished-puzzle-quest/official-launch/" target="_blank">
+              Pocket Gamer
+            </a><br>
+
+            <a class="press" href="https://zeteo.com/p/video-game-golden-age-islam-vanished" target="_blank">
+              Zeteo
+            </a>
+
+          </div>
+
+          <div class="homediv">
+            <div class="homegifdiv">
+              <a href="https://arfachowdhary.com/"><img src="./assets/gifs/home.gif" alt="Small home image"
+                  class="homegif" /></a>
             </div>
           </div>
 
-          <div class="">
-            <div class="homegifdiv">
-              <a href="https://arfachowdhary.com/"
-                ><img
-                  src="./assets/gifs/home.gif"
-                  alt="Small home image"
-                  class="homegif"
-              /></a>
-            </div>
-          </div>
         </div>
-        <script src="./assets/index.js"></script>
+
       </div>
+      <script src="./assets/index.js"></script>
     </div>
-  </body>
+  </div>
+
+  <div id="lightbox">
+    <img id="lightbox-image" src="" alt="" />
+  </div>
+</body>
+
 </html>

@@ -573,9 +573,98 @@ a:link{
   grid-column: 11/14;
 }
 
+.pressandhomediv {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;   /* aligns bottoms */
+    gap: 30px;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.presslinks {
+    max-width: 700px;
+}
+
+.homediv {
+    flex-shrink: 0;
+    align-self: flex-end;
+}
+
+.press {
+    font-family: Times;
+    text-decoration: none !important;
+    color: var(--primary-blue) !important;
+}
+/* Oblivion desktop  */
+.oblivion-headeritem1 {
+  grid-column: 1/6;
+}
+.oblivion-headeritem2 {
+  grid-column: 6/8;
+}
+.oblivion-headeritem3 {
+  grid-column: 9/13;
+}
 
 
 
+
+
+.original-inventory-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;      /* caption aligns with image */
+}
+
+
+.original-inventory-innerdiv, .concept-exploration-innerdiv{
+    display: flex;
+    width:100%;
+    flex-direction: column;
+    align-items: center;      /* caption aligns with image */
+        margin: 15px 0px 15px 0px;
+}
+
+.concept-exploration-innerdiv{
+  align-items:flex-start
+}
+
+
+.original-inventory-innerdiv img, .concept-exploration-innerdiv img{
+    width: 95%;      /* change this */
+    height: auto; 
+    max-width: 100%;
+  
+    display: block;
+}
+.concept-exploration-innerdiv img{
+    width:95%;
+}
+
+.oblivion-two-column{
+    display:flex;
+    gap:48px;
+    align-items:flex-start;
+}
+.oblivion-col1{
+    flex:0 0 38%;
+}
+
+.oblivion-col2{
+    flex:1;
+}
+
+
+.inventory-caption {
+    margin-top: 6px;
+    font-size: 0.8rem;
+    font-style: italic;
+    align-self:flex-start;
+    font-weight: bold;
+    color: #1400ef;
+    text-align: left;
+}
 
 
 /* mornings desktop  */
@@ -583,6 +672,7 @@ a:link{
   display: flex;
   gap: 70px;
 }
+
 
 
 .user-flow{
@@ -597,43 +687,6 @@ a:link{
 }
 
 
-.pressandhomediv {
-  display: grid;
-  width: 100%;
-  grid-template-columns: repeat(15, 1fr);
-  margin-bottom: 3vh;
-}
-
-.presslinks {
-  grid-column: 1/13;
-  grid-row: 1/12;
-}
-.press {
-  font-family: Times;
-  text-decoration: none !important;
-  color: var(--primary-blue) !important;
-}
-
-/* Oblivion desktop  */
-.oblivion-headeritem1 {
-  grid-column: 1/3;
-}
-.oblivion-headeritem2 {
-  grid-column: 4/6;
-}
-.oblivion-headeritem3 {
-  grid-column: 7/11;
-}
-.contributions-twocolumn {
-  display: flex;
-}
-.homediv-wide {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 5vh;
-  margin-top: 5px;
-}
 
 /* letsplay */
 
@@ -823,24 +876,9 @@ a:not(.btn--remix):visited {
   font-size: 30px;
 }
 
-.providenceGrid {
-  display: flex;
-  justify-content: center;
-  border: 1.5px solid #00a74f;
-  padding: 3px 0px 0px 0px;
-}
 
-/* 3d scene grid  now being used for providence pictures */
-.scenecontent {
-  padding: 1%;
-  width: 65vw;
-}
 
-.list{
-  display: flex;
-  flex-direction: column; 
-  gap: 3px;
-}
+
 
 
 /* .row {
@@ -866,7 +904,7 @@ a:not(.btn--remix):visited {
 
   /* worldcraft styling  */
 
-#worldcraft-description-div, .project-description-div{
+#worldcraft-description-div, #project-description-div{
     display:flex;
     flex-direction: column;
     gap: 20px;
@@ -1106,3 +1144,10 @@ button[aria-expanded="true"]::after {
   border: solid 1px black;
 }
 /* end of expandable list styling  */
+
+
+
+li{
+  margin:0;
+  padding:0;
+}
