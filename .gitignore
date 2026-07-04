@@ -5,7 +5,7 @@
 .vscode/
 
 # Unused portfolio assets
-unused/
+archive/
 
 # Temporary files
 *.log
