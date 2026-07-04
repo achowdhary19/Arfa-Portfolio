@@ -1,25 +1,26 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="en">
 
 <head>
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <title>0.0</title>
+  <title> 0.0 </title>
+  <meta name="description"
+    content="Portfolio of Arfa Chowdhary, a designer and programmer building tools that encourage curiosity and deeper engagement with information, environments, and culture." />
 
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/smoothness/jquery-ui.css" />
   <link rel="stylesheet" href="style.css" />
 
-  <link rel="icon" type="gif" href="/assets/gifs/hot-air-baloon-0073.gif" />
+  <link rel="icon" type="image/gif" href="/assets/gifs/hot-air-baloon-0073.gif" />
 
   <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
   <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
-  <script src="/index.js"></script>
+  <script src="/index.js" defer></script>
 </head>
 
 <body id="mainbody">
-  <div id="left-wrapper">
-    <section id="projects-flex">
-
+  <header id="left-wrapper">
+    <nav id="projects-flex" aria-label="Projects">
       <a class="project-links" href="#p1spacer">
         Ecolibrium <sub class="subscript">1</sub>
       </a><br>
@@ -63,29 +64,28 @@
       <a class="project-links" href="#p11spacer">
         Looking for... <sub class="subscript">11</sub>
       </a><br>
-
-    </section>
+    </nav>
 
     <div class="badges-bio-mobile-container">
       <div class="bio-contact-container">
-        <p class="green" class="bio">
+        <p class="green bio">
           Hi, my name is Arfa. I’m a designer and programmer interested in creating tools that encourage curiosity and
           deeper engagement with information, environments, and culture.
         </p>
-        <section id="contact" style="display: flex; gap: 8px">
-          <p class="green" onclick="reveal()" class="contact"
-            style="margin: 5px 0px 10px 0px; padding: 0; font-size: 16px">
+        <p style="display: flex; gap: 8px">
+          <span class="green contact" onclick="reveal()" role="button" tabindex="0"
+            style="margin: 5px 0px 10px 0px; padding: 0; font-size: 16px; cursor: pointer;">
             Contact
-          </p>
-          <p id="email-m" class="green" style="
+          </span>
+          <span id="email-m" class="green" style="
                 margin: 5px 0px 10px 0px;
                 padding: 0;
                 font-size: 16px;
                 display: none;
               ">
             --- arfa.b.chowdhary@gmail.com
-          </p>
-        </section>
+          </span>
+        </p>
       </div>
       <div class="badges-mobile">
         <div class="badge" style="width: 1.5em">
@@ -98,7 +98,7 @@
               style="width: 100%" /></a>
         </div>
         <div class="badge" style="width: 1.9em">
-          <a><img src="/assets/gifs/hug-0047.gif" alt="two rounds hugging" title="Thanks for visiting! Here's a hug."
+          <a><img src="/assets/gifs/hug-0047.gif" alt="Two rounds hugging" title="Thanks for visiting! Here's a hug."
               style="width: 100%" /></a>
         </div>
         <div class="badge" style="width: 1.4em">
@@ -109,19 +109,17 @@
     </div>
 
     <div class="badges-bio-desktop-container">
-      <p class="green" class="bio">
+      <p class="green bio">
         Hi, my name is Arfa. I’m a designer and programmer interested in creating tools that encourage curiosity and
         deeper
         engagement with information, environments, and culture. Read more about my
         <a href="/whatido.html">skills and interests here. </a>
       </p>
 
-
-
-      <p style="font-family:Times" class="green">
+      <p style="font-family: Times" class="green">
         <a href="https://achowdhary19.github.io/alive-swanky-charger/"> → guestbook</a>
-        </a>
       </p>
+
       <div class="badges">
         <div class="badge" style="width: 1.6em">
           <a href=""><img src="/assets/gifs/hot-air-baloon-0073.gif" alt="Hot air balloon"
@@ -129,7 +127,7 @@
         </div>
 
         <div class="badge" style="width: 2em">
-          <a href=""><img src="/assets/gifs/hug-0047.gif" alt="two rounds hugging"
+          <a href=""><img src="/assets/gifs/hug-0047.gif" alt="Two rounds hugging"
               title="Thanks for visiting! Here's a hug." style="width: 100%" /></a>
         </div>
 
@@ -144,239 +142,206 @@
         </div>
       </div>
     </div>
+  </header>
 
-    <!-- <section id=personalLinks>
-            <a href="https://github.com/achowdhary19" target="_blank">Github</a>
+  <main id="right-wrapper">
+    <div id="p1spacer" class="spacer"></div>
+    <div class="spacer"></div>
 
-            <a href="https://docs.google.com/document/d/1zyW4UOjNO2o5rIr19hmRFAGKquj9Vv3gn5J4SQYWeho/edit" target="_blank"> Resume </a>
+    <article class="project-entry">
+      <div class="project-container">
+        <a href="/ecolibrium.html">
+          <img class="project-img" src="/assets/Ecolibrium/wip10.png"
+            alt="Ecolibrium environmental mapping tool interface" />
+        </a>
+      </div>
 
-            <a href="https://linkedin.com/in/arfa-chowdhary" target="_blank">LinkedIn </a>
-
-        </section> -->
-  </div>
-
-  <section id="right-wrapper">
-    <section id="p1spacer"></section>
-    <section id="spacer"></section>
-
-    <div id="projectcontainer">
-      <a href="/ecolibrium.html">
-        <img id="projectimg" src="/assets/Ecolibrium/wip10.png" />
-      </a>
-    </div>
-
-    <div id="projecttext">
-      <p class="green">
+      <p class="green project-text">
         Designing and developing a spatial data visualization tool for <a href="/ecolibrium.html">Ecolibrium</a> at the
         Loisaida Center. Investigating how energy infrastructure, environmental conditions, and urban systems interact
         at a neighborhood scale.
-
       </p>
-    </div>
+    </article>
 
+    <div class="spacer-divider"></div>
+    <div id="p2spacer" class="spacer"></div>
+    <div class="spacer"></div>
 
+    <article class="project-entry">
+      <div class="project-container">
+        <a href="/oblivion.html">
+          <img class="project-img" src="/assets/vanished/oblivion1.gif" alt="Vanished escape room game screenshot" />
+        </a>
+      </div>
 
-    <section id="spacerR"></section>
-    <section id="p2spacer"></section>
-    <section id="spacer"></section>
-
-    <div id="projectcontainer">
-      <a href="https://arfachowdhary.com/oblivion.html">
-        <img id="projectimg" src="/assets/vanished/oblivion1.gif" />
-      </a>
-    </div>
-
-    <div id="projecttext">
-      <p class="green">
-        <a href="https://arfachowdhary.com/oblivion.html">Vanished</a>
+      <p class="green project-text">
+        <a href="/oblivion.html">Vanished</a>
         is a 3D escape room game by Unity Production Foundations. Set in historically rich environments, the game
         challenges players to solve complex puzzles using tools build in the Middle Ages.
       </p>
-    </div>
+    </article>
 
+    <div class="spacer-divider"></div>
+    <div id="p3spacer" class="spacer"></div>
+    <div class="spacer"></div>
 
-    <section id="spacerR"></section>
-    <section id="p3spacer"></section>
-    <section id="spacer"></section>
+    <article class="project-entry">
+      <div class="project-container">
+        <a href="/providence.html">
+          <img class="project-img" src="/assets/Providence/Providence2.png"
+            alt="Providence AR physical therapy application" />
+        </a>
+      </div>
 
-
-    <div id="projectcontainer">
-      <a href="providence.html">
-        <img id="projectimg" src="/assets/Providence/Providence2.png" />
-      </a>
-    </div>
-
-    <div id="projecttext">
-      <p class="green">
-        Designed the user interface and interaction system for <a href="providence.html">Providence's</a> AR-based
+      <p class="green project-text">
+        Designed the user interface and interaction system for <a href="/providence.html">Providence's</a> AR-based
         physical therapy tool, enabling patients to view and learn exercises in their own space through volumetric
         video.
       </p>
-    </div>
+    </article>
 
-    <section id="spacerR"></section>
-    <section id="p4spacer"></section>
-    <section id="spacer"></section>
+    <div class="spacer-divider"></div>
+    <div id="p4spacer" class="spacer"></div>
+    <div class="spacer"></div>
 
+    <article class="project-entry">
+      <div class="project-container">
+        <a href="/digitalcounsel.html">
+          <img class="project-img" src="/assets/dc/final1.png"
+            alt="The Labyrinth digital commission for Hyundai Artlab" />
+        </a>
+      </div>
 
-    <section id="p4spacer"></section>
-
-    <div id="projectcontainer">
-      <a href="/digitalcounsel.html">
-        <img id="projectimg" src="/assets/dc/final1.png" />
-      </a>
-    </div>
-
-    <div id="projecttext">
-      <p class="green">
+      <p class="green project-text">
         <a href="/digitalcounsel.html">The Labyrinth</a>
         is a narrative web experience for Hyundai Artlab’s commission by artist Kyung-Me. Using motion, pacing, and
         interaction to signal the nature of internal transformations.
       </p>
-    </div>
+    </article>
 
-    <section id="spacerR"></section>
-    <section id="p5spacer"></section>
-    <section id="spacer"></section>
+    <div class="spacer-divider"></div>
+    <div id="p5spacer" class="spacer"></div>
+    <div class="spacer"></div>
 
+    <article class="project-entry">
+      <div class="project-container">
+        <a href="/dollhouse.html">
+          <img class="project-img" src="/assets/Dollhouse/shorterGif.gif" alt="Dollhouse multimedia installation" />
+        </a>
+      </div>
 
-    <section id="p5spacer"></section>
-
-    <div id="projectcontainer">
-      <a href="/dollhouse.html">
-        <img id="projectimg" src="/assets/Dollhouse/shorterGif.gif" />
-      </a>
-    </div>
-
-    <div id="projecttext">
-      <p class="green">
+      <p class="green project-text">
         <u><i>Dollhouse</i></u> is a multimedia installation that connects a traditional tabletop dollhouse with a video
         game counterpart. Using Unity, Arduino, and RFID.
       </p>
-    </div>
+    </article>
 
-    <section id="spacerR"></section>
-    <section id="p6spacer"></section>
-    <section id="spacer"></section>
+    <div class="spacer-divider"></div>
+    <div id="p6spacer" class="spacer"></div>
+    <div class="spacer"></div>
 
-    <section id="p6spacer"></section>
+    <article class="project-entry">
+      <div class="project-container">
+        <a href="/worldcraft.html">
+          <img class="project-img" src="/assets/worldcraft/fishing-presentation.JPG"
+            alt="AR Worldcraft course at NuVu" />
+        </a>
+      </div>
 
-    <div id="projectcontainer">
-      <a href="/worldcraft.html">
-        <img id="projectimg" src="/assets/worldcraft/fishing-presentation.JPG" />
-      </a>
-    </div>
-
-    <div id="projecttext">
-      <p class="green">
+      <p class="green project-text">
         <u><i>AR Worldcraft</i></u> is a game design and development course taught at NuVu innovation school.
       </p>
-    </div>
+    </article>
 
-    <section id="spacerR"></section>
-    <section id="p7spacer"></section>
-    <section id="spacer"></section>
+    <div class="spacer-divider"></div>
+    <div id="p7spacer" class="spacer"></div>
+    <div class="spacer"></div>
 
-    <div id="projectcontainer">
-      <a target="_blank" href="https://espacioenredo.com/">
-        <img id="projectimg" src="/assets/espacio-enredo1.png" />
-      </a>
-    </div>
+    <article class="project-entry">
+      <div class="project-container">
+        <a target="_blank" href="https://espacioenredo.com/">
+          <img class="project-img" src="/assets/espacio-enredo1.png" alt="Espacio Enredo website homepage" />
+        </a>
+      </div>
 
-    <div id="projecttext">
-      <p class="green">
+      <p class="green project-text">
         Designed and developed a lightweight website for <a href="https://espacioenredo.com/">Espacio Enredo</a>, an
         independent contemporary art space and publishing initiative based in Madrid. The platform was created to
         establish a digital presence for the organization, archive exhibitions and publications, communicate
         programming, and support community-building through newsletters, press materials, and public outreach.
       </p>
-    </div>
+    </article>
 
+    <div class="spacer-divider"></div>
+    <div id="p8spacer" class="spacer"></div>
+    <div class="spacer"></div>
 
+    <article class="project-entry">
+      <div class="project-container">
+        <a href="https://orcasmicrocinema.org/" target="_blank">
+          <img class="project-img" src="/assets/orcas.gif" alt="Orcas Microcinema website homepage" />
+        </a>
+      </div>
 
-    <section id="spacerR"></section>
-    <section id="p8spacer"></section>
-    <section id="spacer"></section>
-
-    <div id="projectcontainer">
-      <a href="https://orcasmicrocinema.org/" target="_blank">
-        <img id="projectimg" src="/assets/orcas.gif" />
-      </a>
-    </div>
-
-    <div id="projecttext">
-      <p class="green">
+      <p class="green project-text">
         Designed and developed a website for Orcas Microcinema, a nonprofit microcinema in Washington.
       </p>
-    </div>
+    </article>
 
-    <section id="spacerR"></section>
-    <section id="p9spacer"></section>
-    <section id="spacer"></section>
+    <div class="spacer-divider"></div>
+    <div id="p9spacer" class="spacer"></div>
+    <div class="spacer"></div>
 
+    <article class="project-entry">
+      <div class="project-container">
+        <a href="/mornings.html">
+          <img class="project-img" src="/assets/mornings/morning-loading-animation.gif"
+            alt="Cafe Mornings website loading animation" />
+        </a>
+      </div>
 
-
-    <div id="projectcontainer">
-      <a href="mornings.html">
-        <img id="projectimg" src="/assets/mornings/morning-loading-animation.gif" />
-      </a>
-    </div>
-
-    <div id="projecttext">
-      <p class="green">
+      <p class="green project-text">
         Redesigned the website for <a href="mornings.html">Cafe Mornings</a> to improve navigation and user experience.
       </p>
-    </div>
+    </article>
 
+    <div class="spacer-divider"></div>
+    <div id="p10spacer" class="spacer"></div>
+    <div class="spacer"></div>
 
+    <article class="project-entry">
+      <div class="project-container">
+        <a href="https://arfa00.itch.io/smelling-rain" target="_blank">
+          <img class="project-img" src="assets/gifs/tree.gif" alt="Smelling Rain narrative flatgame" />
+        </a>
+      </div>
 
-
-
-
-    <section id="spacerR"></section>
-    <section id="p10spacer"></section>
-    <section id="spacer"></section>
-
-    <div id="projectcontainer">
-      <a href="https://arfa00.itch.io/smelling-rain" target="_blank">
-        <img id="projectimg" src="assets/gifs/tree.gif" />
-      </a>
-    </div>
-
-    <div id="projecttext">
-      <p class="green">
+      <p class="green project-text">
         <a href="https://arfa00.itch.io/smelling-rain"><i>Smelling rain</i></a> (WIP)
         is a narrative flatgame made in Unity.
       </p>
-    </div>
+    </article>
 
+    <div class="spacer-divider"></div>
+    <div id="p11spacer" class="spacer"></div>
+    <div class="spacer"></div>
 
+    <article class="project-entry">
+      <div class="project-container">
+        <a href="https://achowdhary19.github.io/fictional-spoon/#/" target="_blank">
+          <img class="project-img" src="/assets/lookingfor.gif" alt="Looking for... handmade words site" />
+        </a>
+      </div>
 
-
-    <section id="spacerR"></section>
-    <section id="p11spacer"></section>
-    <section id="spacer"></section>
-
-    <div id="projectcontainer">
-      <a href="https://achowdhary19.github.io/fictional-spoon/#/" target="_blank">
-        <img id="projectimg" src="/assets/lookingfor.gif" />
-      </a>
-    </div>
-
-    <div id="projecttext">
-      <p class="green">
+      <p class="green project-text">
         <a href="https://achowdhary19.github.io/fictional-spoon/#/">
           <i>Looking for...</i>
         </a>(WIP)
         is an handmade words site made with HTML/CSS/JS.
       </p>
-    </div>
+    </article>
+  </main>
 
-
-
-
-
-  </section>
   <script>
     $(".badge").draggable();
     const screenWidth = window.innerWidth;
@@ -391,20 +356,20 @@
         }
       }
       var x = document.getElementById("email-d");
-      if (x.style.display === "none") {
-        x.style.display = "block";
-      } else {
-        x.style.display = "none";
+      if (x) {
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
       }
     }
 
     // Create an audio element
     const audio = new Audio("assets/wet.wav");
 
-    // Select elements with the specified class
+    // Play a click sound whenever a badge is dropped
     const elements = document.querySelectorAll(".badge");
-
-    // Add mouseup event listeners to each element
     elements.forEach((element) => {
       element.addEventListener("mouseup", () => {
         audio.play();

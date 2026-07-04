@@ -1,11 +1,18 @@
+/* =============================================================
+   Shared across every page via <script src="index.js">.
+   Sections below are used by different pages — see comments.
+   ============================================================= */
+
+/* Expandable accordion menu (no-JS friendly: buttons are generated here
+   so the submenu is visible by default if this script fails to load).
+   Not used by any page in this cleanup batch — kept for whatido.html
+   and similar pages that use a ".topItem" accordion. */
 var expandableTopItems = document.querySelectorAll(".topItem");
 
 expandableTopItems.forEach(function (topItem) {
-  /* buttons are generated on init, to support no JS and have the submenus displayed by default */
-  topItem.innerHTML = `<button type=button aria-expanded="false">${topItem.textContent}</button>`; //insert a button in the spans
-  topItem.nextElementSibling.hidden = true; //hide submenu by default
+  topItem.innerHTML = `<button type="button" aria-expanded="false">${topItem.textContent}</button>`;
+  topItem.nextElementSibling.hidden = true;
   var btn = topItem.firstElementChild;
-  /* add listener on each button to implement the behavior on click */
   btn.addEventListener("click", function (e) {
     let expanded = this.getAttribute("aria-expanded") === "true" || false;
     this.setAttribute("aria-expanded", !expanded);
@@ -16,76 +23,65 @@ expandableTopItems.forEach(function (topItem) {
   });
 });
 
-
+/* Not used by any page in this cleanup batch — kept in case another
+   page opens a project link in a sized popup window. */
 var popupWindow = null;
 function positionedPopup(url, winName, w, h, t, l, scroll) {
-  settings =
-    'height=' + h + ',width=' + w + ',top=' + t + ',left=' + l + ',scrollbars=' + scroll + ',resizable'
-  popupWindow = window.open(url, winName, settings)
+  const settings =
+    "height=" + h + ",width=" + w + ",top=" + t + ",left=" + l + ",scrollbars=" + scroll + ",resizable";
+  popupWindow = window.open(url, winName, settings);
 }
 
-let index;
+/* Slideshow controls — used by every case-study page's #slideshow. */
 let slideIndex = 1;
 
-//W3 
-// Next/previous controls
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+  showSlides((slideIndex += n));
 }
 
-// Thumbnail image controls
 function currentSlide(n) {
-  showSlides(slideIndex = n);
+  showSlides((slideIndex = n));
 }
 
 function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("slide");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) { slideIndex = 1 }
-  if (n < 1) { slideIndex = slides.length }
-  for (i = 0; i < slides.length; i++) {
+  const slides = document.getElementsByClassName("slide");
+  if (n > slides.length) slideIndex = 1;
+  if (n < 1) slideIndex = slides.length;
+  for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex - 1].style.display = "flex"; //if i have suddne issues change this back to blocks
-  // dots[slideIndex-1].className += " active";
+  slides[slideIndex - 1].style.display = "flex";
 }
 
+/* Click-to-enlarge/float toggle for a single image (uses the ".sketch"
+   and ".center" classes). Not used by any page in this cleanup batch —
+   kept in case a p5.js/sketch page relies on it. */
 let enlarged = 0;
 function toggleEnlargeImg(img) {
   if (enlarged === 0) {
     img.style.transform = "scale(1.8)";
-    //remove the next two lines if you dont want it to be centered and just want enlarge 
-
     img.classList.add("center");
     img.classList.remove("sketch");
-
-    img.style.transition =
-      "transform 0.2s ease";
+    img.style.transition = "transform 0.2s ease";
     enlarged = 1;
-  }
-  else {
-    img.style.transform = "scale(1)";    //remove the next two lines if you dont want it to be centered and just want enlarge 
-
+  } else {
+    img.style.transform = "scale(1)";
     img.classList.remove("center");
     img.classList.add("sketch");
-    img.style.transition =
-      "transform 0.2s ease";
+    img.style.transition = "transform 0.2s ease";
     enlarged = 0;
   }
   return enlarged;
 }
 
-//jquery
-
-
-//lightbox image
+/* Lightbox: click any ".lightbox-img" to view it enlarged.
+   Guarded because not every page has a #lightbox element
+   (e.g. providence.html doesn't use the lightbox). */
 document.addEventListener("DOMContentLoaded", () => {
   const lightbox = document.getElementById("lightbox");
   const lightboxImage = document.getElementById("lightbox-image");
+
+  if (!lightbox || !lightboxImage) return;
 
   document.querySelectorAll(".lightbox-img").forEach((img) => {
     img.addEventListener("click", () => {

@@ -1,19 +1,21 @@
 <!doctype html>
-
 <html lang="en">
 
 <head>
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <title>Vanished Puzzle Quest</title>
+  <meta name="description"
+    content="UX research and playtesting case study on Vanished Puzzle Quest, a first-person puzzle game set in the Islamic Golden Age, including a speculative inventory system redesign." />
   <link rel="stylesheet" href="style.css" />
-  <script src="index.js"></script>
-  <link rel="icon" type="gif" href="/assets/gifs/hot-air-baloon-0073.gif" />
+  <script src="index.js" defer></script>
+  <link rel="icon" type="image/gif" href="/assets/gifs/hot-air-baloon-0073.gif" />
 </head>
 
 <body>
   <div id="projectbodycontainer">
-    <div id="projectbody">
-      <div class="header-grid">
+    <main id="projectbody">
+      <header class="header-grid">
         <h1 class="blackh1 oblivion-headeritem1">Vanished Puzzle Quest</h1>
         <div class="oblivion-headeritem2">
           <p class="gray">2024</p>
@@ -22,34 +24,33 @@
         <p class="gray oblivion-headeritem3">
           Collaborators: Unity Productions Foundation, Saltium Games
         </p>
-      </div>
+      </header>
 
       <div id="slideshow">
         <div class="slide fade" style="display: block">
-          <img id="horizontalscreenshot" src="/assets/vanished/oblivion1.gif" id="" alt="" />
-        </div>
-
-        <div class="slide fade" style="display: none">
-          <img id="horizontalscreenshot" src="/assets/vanished/vanished1.PNG" alt="" />
+          <img class="screenshot" src="/assets/vanished/oblivion1.gif" alt="Vanished Puzzle Quest gameplay" />
         </div>
         <div class="slide fade" style="display: none">
-          <img id="horizontalscreenshot" src="/assets/vanished/vanished2.PNG" alt="" />
+          <img class="screenshot" src="/assets/vanished/vanished1.PNG" alt="Vanished Puzzle Quest screenshot 1" />
         </div>
         <div class="slide fade" style="display: none">
-          <img id="horizontalscreenshot" src="/assets/vanished/oblivion4.jpg" alt="" />
+          <img class="screenshot" src="/assets/vanished/vanished2.PNG" alt="Vanished Puzzle Quest screenshot 2" />
         </div>
         <div class="slide fade" style="display: none">
-          <img id="horizontalscreenshot" src="/assets/vanished/oblivion2.jpg" alt="" />
+          <img class="screenshot" src="/assets/vanished/oblivion4.jpg" alt="Vanished Puzzle Quest screenshot 3" />
+        </div>
+        <div class="slide fade" style="display: none">
+          <img class="screenshot" src="/assets/vanished/oblivion2.jpg" alt="Vanished Puzzle Quest screenshot 4" />
         </div>
 
         <div id="arrows">
-          <a class="prev" onclick="plusSlides(-1)">❮</a>
-          <a class="next" onclick="plusSlides(1)">❯</a>
+          <a class="prev" onclick="plusSlides(-1)" role="button" tabindex="0" aria-label="Previous screenshot">❮</a>
+          <a class="next" onclick="plusSlides(1)" role="button" tabindex="0" aria-label="Next screenshot">❯</a>
         </div>
       </div>
 
-      <div id="project-description-div">
-        <div>
+      <div class="project-description-div">
+        <section>
           <h2 style="font-weight: bold">About</h2>
           <p>
             Vanished is a first-person puzzle game based in the Islamic Golden
@@ -61,8 +62,9 @@
             improve puzzle interactions, and identify opportunities to create
             a smoother player experience.
           </p>
-        </div>
-        <div>
+        </section>
+
+        <section>
           <h2 style="font-weight: bold">Research</h2>
           <p>
             During development, we tested the game with volunteers and
@@ -77,8 +79,9 @@
             supporting the game's goals of challenge, discovery, and
             learning.
           </p>
-        </div>
-        <div>
+        </section>
+
+        <section>
           <h2 style="font-weight: bold">Redesign: Inventory Management</h2>
           <p>
             Playtesting the early versions revealed a few overarching
@@ -103,37 +106,29 @@
             would provide clearer context around collected objects and allow
             players to spend more time reasoning through puzzles rather than
             guessing what they were carrying and quitting out of annoyance.
-
-
-            <!-- <br /> This redesign was a speculative exploration based on observations
-              collected during playtesting and was not implemented in the
-              shipped game. -->
           </p>
-        </div>
-
+        </section>
 
         <div class="original-inventory-div">
           <div class="original-inventory-innerdiv">
-            <img src="assets/vanished/current-inventory.png" alt="Current inventory" class="lightbox-img" />
+            <img src="assets/vanished/current-inventory.png" alt="Original inventory system, annotated"
+              class="lightbox-img" />
             <p class="inventory-caption">
               Original inventory system, annotated
             </p>
           </div>
-
-          <p>The current inventory provides insufficient information for players to confidently identify, understand,
-            and apply collected objects within puzzle-solving contexts.</p>
+          <p>
+            The current inventory provides insufficient information for players to confidently identify, understand,
+            and apply collected objects within puzzle-solving contexts.
+          </p>
         </div>
 
-
-        <div class="oblivion-two-column">
+        <section class="oblivion-two-column">
           <div class="oblivion-col1">
             <h2>Design Goals</h2>
-
             <ul class="design-goals list">
               <li>• Help players confidently identify collected objects.</li>
-
               <li>• Provide additional context without eliminating the need for interpretation.</li>
-
               <li>• Keep the interface uncluttered for small mobile screens.</li>
               <li>• Reduce cognitive load while preserving immersion.</li>
               <li>• Preserve the game's goals of exploration, challenge, and learning.</li>
@@ -150,63 +145,51 @@
                 supported the current gameplay while balancing clarity, player agency, and feasibility.
               </p>
             </div>
-
           </div>
-          <div class=" oblivion-col2 concept-exploration-innerdiv">
-            <img src="assets/vanished/inventory-mockups.jpg" alt="Inventory mockups" class="lightbox-img" />
-            <p class="inventory-caption">
+          <figure class="oblivion-col2 concept-exploration-innerdiv">
+            <img src="assets/vanished/inventory-mockups.jpg" alt="Concept exploration for inventory system"
+              class="lightbox-img" />
+            <figcaption class="inventory-caption">
               Concept exploration for inventory system
-            </p>
-          </div>
-        </div>
-        <div>
+            </figcaption>
+          </figure>
+        </section>
 
-          <div>
-            <h2>Reflection</h2>
-            <p>Working on Vanished reinforced how (game) design requires balancing competing priorities beyond usability
-              alone. Design decisions are shaped by technical limitations, production constraints, narrative goals, and
-              the emotional experience the game aims to create. Unlike productivity-focused products, games encourage
-              players to <i><b> spend </b> </i> time rather than save time by completing tasks as efficiently as
-              possible. With games, there is a bigger responsibility to the player and their wants. Co-designing with
-              real users becomes very powerful in shaping a game and goes beyond what technical predictions and internal
-              reviews can provide. As a designer, I am tasked with finding pivot points between clarity, challenge,
-              discovery, and learning.</p>
-          </div>
+        <section>
+          <h2>Reflection</h2>
+          <p>
+            Working on Vanished reinforced how (game) design requires balancing competing priorities beyond usability
+            alone. Design decisions are shaped by technical limitations, production constraints, narrative goals, and
+            the emotional experience the game aims to create. Unlike productivity-focused products, games encourage
+            players to <i><b>spend</b></i> time rather than save time by completing tasks as efficiently as
+            possible. With games, there is a bigger responsibility to the player and their wants. Co-designing with
+            real users becomes very powerful in shaping a game and goes beyond what technical predictions and internal
+            reviews can provide. As a designer, I am tasked with finding pivot points between clarity, challenge,
+            discovery, and learning.
+          </p>
+        </section>
 
+        <section>
+          <h2>Project Status</h2>
+          <p>
+            Vanished Puzzle Quest was commercially released in March 2026. My contributions
+            were made during development through UX research, playtesting, and design
+            exploration. The inventory redesign presented above remained a speculative UX
+            proposal and was not implemented in the released game.
+          </p>
+        </section>
 
-          <div>
-            <h2>Project Status</h2>
-            <p>
-              Vanished Puzzle Quest was commercially released in March 2026. My contributions
-              were made during development through UX research, playtesting, and design
-              exploration. The inventory redesign presented above remained a speculative UX
-              proposal and was not implemented in the released game.
-            </p>
-          </div>
-        </div>
-
-        <div class="pressandhomediv">
-
+        <footer class="pressandhomediv">
           <div class="presslinks">
-
             <p class="times"><i>Official</i></p>
 
-            <a class="press" href="https://vanished.game/" target="_blank">
-              Vanished Official Website
-            </a><br>
-
-            <a class="press" href="https://store.steampowered.com/app/4262720/Vanished_Puzzle_Quest/" target="_blank">
-              Steam
-            </a><br>
-
+            <a class="press" href="https://vanished.game/" target="_blank">Vanished Official Website</a><br>
+            <a class="press" href="https://store.steampowered.com/app/4262720/Vanished_Puzzle_Quest/"
+              target="_blank">Steam</a><br>
             <a class="press" href="https://store.epicgames.com/p/vanished-puzzle-quest-080e56?lang=en-US"
-              target="_blank">
-              Epic Games Store
-            </a><br>
-
-            <a class="press" href="https://www.youtube.com/watch?v=o2daFgdaxqY" target="_blank">
-              Official Launch Trailer
-            </a>
+              target="_blank">Epic Games Store</a><br>
+            <a class="press" href="https://www.youtube.com/watch?v=o2daFgdaxqY" target="_blank">Official Launch
+              Trailer</a>
 
             <br><br>
 
@@ -214,32 +197,20 @@
 
             <a class="press"
               href="https://www.wisfarmer.com/press-release/story/44176/a-first-of-its-kind-video-game-based-on-muslim-scientific-artifacts-launching-on-march-20-2026/"
-              target="_blank">
-              Wisconsin Farmer
-            </a><br>
-
-            <a class="press" href="https://www.pocketgamer.com/vanished-puzzle-quest/official-launch/" target="_blank">
-              Pocket Gamer
-            </a><br>
-
-            <a class="press" href="https://zeteo.com/p/video-game-golden-age-islam-vanished" target="_blank">
-              Zeteo
-            </a>
-
+              target="_blank">Wisconsin Farmer</a><br>
+            <a class="press" href="https://www.pocketgamer.com/vanished-puzzle-quest/official-launch/"
+              target="_blank">Pocket Gamer</a><br>
+            <a class="press" href="https://zeteo.com/p/video-game-golden-age-islam-vanished" target="_blank">Zeteo</a>
           </div>
 
           <div class="homediv">
             <div class="homegifdiv">
-              <a href="https://arfachowdhary.com/"><img src="./assets/gifs/home.gif" alt="Small home image"
-                  class="homegif" /></a>
+              <a href="./"><img src="./assets/gifs/home.gif" alt="Return to homepage" class="homegif" /></a>
             </div>
           </div>
-
-        </div>
-
+        </footer>
       </div>
-      <script src="./assets/index.js"></script>
-    </div>
+    </main>
   </div>
 
   <div id="lightbox">

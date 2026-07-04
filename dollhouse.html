@@ -1,22 +1,21 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <title>Dollhouse</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="gif" href="/assets/hot-air-baloon-0073.gif" />
-          <script src="assets/index.js"></script>
 
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Dollhouse</title>
+  <meta name="description"
+    content="Dollhouse is a mixed-reality installation connecting a physical wooden dollhouse with a video game counterpart, built with Unity, Arduino, and RFID technology." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/gif" href="/assets/gifs/hot-air-baloon-0073.gif" />
+  <script src="index.js" defer></script>
+</head>
 
-  <body>
-    <div id="projectbodycontainer">
-      <div id="projectbody" >
-      <div class="header-grid">
+<body>
+  <div id="projectbodycontainer">
+    <main id="projectbody">
+      <header class="header-grid">
         <h1 class="blackh1 dollhouse-headeritem1">Dollhouse</h1>
         <div class="dollhouse-headeritem2">
           <p class="gray">2023</p>
@@ -25,114 +24,80 @@
         <p class="dollhouse-headeritem3 gray">
           Collaborators: Cade Ponder
         </p>
-
         <p class="dollhouse-headeritem4 gray">
           Using: Unity, Arduino
         </p>
-      </div>
+      </header>
 
       <div id="slideshow">
         <div class="slide fade" style="display: block">
-          <img src="assets/Dollhouse/EditedFullsetup.png" id="" alt="" />
+          <img class="screenshot" src="assets/Dollhouse/EditedFullsetup.png"
+            alt="Dollhouse full physical and digital setup" />
         </div>
-
         <div class="slide fade" style="display: none">
-          <img
-            id="horizontalscreenshot"
-            src="assets/Dollhouse/Bear.png"
-            alt=""
-          />
+          <img class="screenshot" src="assets/Dollhouse/Bear.png" alt="Dollhouse bear character room" />
         </div>
-
         <div class="slide fade" style="display: none">
-          <img
-            id="horizontalscreenshot"
-            src="assets/Dollhouse/Attic.png"
-            alt="dollscreenshot2"
-          />
+          <img class="screenshot" src="assets/Dollhouse/Attic.png" alt="Dollhouse attic room" />
         </div>
-
         <div class="slide fade" style="display: none">
-          <img src="assets/Dollhouse/IMG_0798.JPG" alt="" />
+          <img class="screenshot" src="assets/Dollhouse/IMG_0798.JPG" alt="Dollhouse physical build detail" />
         </div>
-
         <div class="slide fade" style="display: none">
-          <img
-            id="horizontalscreenshot"
-            src="assets/Dollhouse/beachpic.png"
-            alt=""
-          />
+          <img class="screenshot" src="assets/Dollhouse/beachpic.png" alt="Dollhouse beach room" />
         </div>
 
         <div id="arrows">
-          <a class="prev" onclick="plusSlides(-1)">❮</a>
-          <a class="next" onclick="plusSlides(1)">❯</a>
+          <a class="prev" onclick="plusSlides(-1)" role="button" tabindex="0" aria-label="Previous screenshot">❮</a>
+          <a class="next" onclick="plusSlides(1)" role="button" tabindex="0" aria-label="Next screenshot">❯</a>
         </div>
       </div>
 
-      <div id="description">
-        <!-- <p class="bluelink">
-          <a
-            href="https://pouncing-porcupine-a5a.notion.site/Dollhouse-1b1c1f4a3245802aa59fd4ff07d92f6e?pvs=4"
-            target="”_blank”"
-          >
-            [---------- ˗ˏˋ ★ ˎˊ˗ Game dev blog ˗ˏˋ ★ ˎˊ˗ ----------]</a
-          >
-        </p> -->
-        <h2>About</h2>
-        <p>
-          Dollhouse is an interactive mixed-reality experience that connects a
-          physical wooden dollhouse with its digital counterpart. Players place
-          RFID-tagged dolls on a hidden scanner, each one unlocking a differnet
-          home with with unique stories and environments to explore. Developed
-          using Unity and Arduino with custom serial communication .
-        </p>
-        <br />
-        <h2>My Role: Lead Unity Developer & Game Artist</h2>
-        <p>
-     
-          ⁑ Programmed Unity-Arduino communication via RFID technology<br />
-          ⁑ Designed and developed a 2.5D/3D game within a 2D environment<br />
-          ⁑ Created all in-game sprites/assets from photographed physical
-          objects<br />
-          ⁑ Implemented point-and-click + NavMesh navigation system<br />
-          ⁑ Built an interactive dialogue system for storytelling and object
-          interaction
-        </p>
+      <div class="project-description-compact">
+        <section>
+          <h2>About</h2>
+          <p>
+            Dollhouse is an interactive mixed-reality experience that connects a
+            physical wooden dollhouse with its digital counterpart. Players place
+            RFID-tagged dolls on a hidden scanner, each one unlocking a differnet
+            home with with unique stories and environments to explore. Developed
+            using Unity and Arduino with custom serial communication.
+          </p>
+        </section>
 
-        <div class="linksandhomecontainer">
+        <br />
+
+        <section>
+          <h2>My Role: Lead Unity Developer &amp; Game Artist</h2>
+          <ul class="bullet-list">
+            <li>⁑ Programmed Unity-Arduino communication via RFID technology</li>
+            <li>⁑ Designed and developed a 2.5D/3D game within a 2D environment</li>
+            <li>⁑ Created all in-game sprites/assets from photographed physical objects</li>
+            <li>⁑ Implemented point-and-click + NavMesh navigation system</li>
+            <li>⁑ Built an interactive dialogue system for storytelling and object interaction</li>
+          </ul>
+        </section>
+
+        <footer class="linksandhomecontainer">
           <div class="demolink">
             <p class="bluelink">
-              <a href="https://youtu.be/Cfh2PYJWL4c" target="”_blank”">
-                [------- Short demo -------]</a
-              >
+              <a href="https://youtu.be/Cfh2PYJWL4c" target="_blank">[------- Short demo -------]</a>
             </p>
           </div>
-          <div class="gameplaylink" >
+          <div class="gameplaylink">
             <p class="bluelink">
-              <a href="https://vimeo.com/867121633" target="”_blank”">
-                [-------- Gameplay --------]</a
-              >
+              <a href="https://vimeo.com/867121633" target="_blank">[-------- Gameplay --------]</a>
             </p>
           </div>
-
           <div class="homediv">
             <div class="homegifdiv">
-              <a href="https://arfachowdhary.com/"
-                ><img
-                  src="/assets/gifs/home.gif"
-                  alt="Small home image"
-                  class="homegif"
-              /></a>
+              <a href="./"><img src="/assets/gifs/home.gif" alt="Return to homepage" class="homegif" /></a>
             </div>
           </div>
-        </div>
-
-        <!-- <a href="https://vimeo.com/manage/videos/824455547" target=”_blank”> Short demo video</a>  -->
-
-        <!-- <a href="https://my-multidimensional-dollhouse.blogspot.com/2023/05/genesis.html"target=”_blank” > Process blog </a>   -->
-        <!-- <p> Link to my detailed process blog coming soon. </p> -->
+        </footer>
       </div>
-    </div>
-  </body>
+    </main>
+  </div>
+</body>
+
 </html>

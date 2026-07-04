@@ -1,19 +1,21 @@
 <!doctype html>
-
 <html lang="en">
 
 <head>
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <title>Providence</title>
+  <title>Providence — AR Physical Therapy Application</title>
+  <meta name="description"
+    content="Case study on Providence Health's web-based augmented reality application, designed to make physical therapy training and patient education more accessible through volumetric video." />
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="gif" href="/assets/gifs/hot-air-baloon-0073.gif" />
-  <script src="/index.js"></script>
+  <link rel="icon" type="image/gif" href="/assets/gifs/hot-air-baloon-0073.gif" />
+  <script src="/index.js" defer></script>
 </head>
 
 <body>
   <div id="projectbodycontainer">
-    <div id="projectbody">
-      <div class="header-grid">
+    <main id="projectbody">
+      <header class="header-grid">
         <h1 class="blackh1 providence-headeritem1">Providence</h1>
         <div class="providence-headeritem2">
           <p class="gray">2023</p>
@@ -23,46 +25,42 @@
           Collaborators: 4-person interdisciplinary team (design +
           development)
         </p>
-
         <p class="providence-headeritem4 gray">
           Using: Figma, JavaScript, A-Frame, WebAR (8th Wall)
         </p>
-      </div>
+      </header>
 
       <div id="slideshow">
         <div class="slide fade" style="display: block">
-          <img id="horizontalscreenshot" src="assets//Providence/providence-mobile1.PNG" id="" alt="" />
+          <img class="screenshot" src="assets/Providence/providence-mobile1.PNG" alt="Providence AR app, mobile view" />
         </div>
 
         <div class="slide fade" style="display: none">
-          <div style="
-                display: flex;
-                object-fit: contain;
-                width: 100%;
-                flex-direction: row;
-                gap: 1vh;
-              ">
-            <img class="three-image-slide" src="assets/Providence/providence-tutorial5.PNG" alt="" />
-            <img class="three-image-slide" src="assets/Providence/providence-tutorial4.PNG" alt="" />
-            <img class="three-image-slide" src="assets/Providence/providence-tutorial1.PNG" alt="" />
+          <div style="display: flex; object-fit: contain; width: 100%; flex-direction: row; gap: 1vh;">
+            <img class="three-image-slide" src="assets/Providence/providence-tutorial5.PNG"
+              alt="Providence onboarding tutorial, step 1" />
+            <img class="three-image-slide" src="assets/Providence/providence-tutorial4.PNG"
+              alt="Providence onboarding tutorial, step 2" />
+            <img class="three-image-slide" src="assets/Providence/providence-tutorial1.PNG"
+              alt="Providence onboarding tutorial, step 3" />
           </div>
         </div>
 
         <div class="slide fade" style="display: none">
-          <img id="horizontalscreenshot" src="assets/Providence/providence-vaughn.webp" alt="" />
+          <img class="screenshot" src="assets/Providence/providence-vaughn.webp" alt="Providence AR video controls" />
         </div>
         <div class="slide fade" style="display: none">
-          <img id="horizontalscreenshot" src="assets/Providence/Providence2.png" alt="" />
+          <img class="screenshot" src="assets/Providence/Providence2.png" alt="Providence AR app, desktop view" />
         </div>
 
         <div id="arrows">
-          <a class="prev" onclick="plusSlides(-1)">❮</a>
-          <a class="next" onclick="plusSlides(1)">❯</a>
+          <a class="prev" onclick="plusSlides(-1)" role="button" tabindex="0" aria-label="Previous screenshot">❮</a>
+          <a class="next" onclick="plusSlides(1)" role="button" tabindex="0" aria-label="Next screenshot">❯</a>
         </div>
       </div>
 
       <div class="project-description-div">
-        <div class="about-div">
+        <section class="about-div">
           <h2>About</h2>
           <p>
             Over a 5-month period, I worked on a small interdisciplinary team
@@ -78,10 +76,10 @@
             scenarios more understandable, engaging, and accessible across
             devices.
           </p>
-        </div>
+        </section>
 
-        <div class="problem-div">
-          <h2>Problem & Context</h2>
+        <section class="problem-div">
+          <h2>Problem &amp; Context</h2>
           <p>
             Providence was exploring alternatives to traditional training and
             patient education methods, which often relied on static content or
@@ -95,189 +93,122 @@
             training and care were limited. Providence needed a way to deliver
             training that was:
           </p>
-
-          <div class="list">
-            <p>
-              • Accessible remotely across a distributed workforce and patient
-              base
-            </p>
-            <p>• Engaging enough to improve retention and comprehension</p>
-            <p>• Scalable across multiple hospitals and user groups</p>
-          </div>
+          <ul class="bullet-list">
+            <li>• Accessible remotely across a distributed workforce and patient base</li>
+            <li>• Engaging enough to improve retention and comprehension</li>
+            <li>• Scalable across multiple hospitals and user groups</li>
+          </ul>
           <br />
           <p style="margin-bottom: 1.35vh">
             At the same time, emerging AR and volumetric video technologies
             introduced new UX challenges:
           </p>
+          <ul class="bullet-list">
+            <li>• Users needed to understand how to place and interact with content in physical space</li>
+            <li>• Interfaces had to remain usable across mobile and non-AR contexts</li>
+            <li>• Interaction patterns had to feel intuitive despite being unfamiliar to most users</li>
+          </ul>
+        </section>
 
-          <div class="list">
-            <p>
-              • Users needed to understand how to place and interact with
-              content in physical space
-            </p>
-            <p>
-              • Interfaces had to remain usable across mobile and non-AR
-              contexts
-            </p>
-            <p>
-              • Interaction patterns had to feel intuitive despite being
-              unfamiliar to most users
-            </p>
-          </div>
-        </div>
-
-        <div class="projectgoals">
+        <section class="projectgoals">
           <h2>Project Goals:</h2>
-          <div class="list">
-            <p>
-              • Enable users to better understand and replicate physical
-              movements through spatial, immersive content
-            </p>
-            <p>
-              • Ensure accessibility across devices, including non-AR
-              fallbacks
-            </p>
-            <p>
-              • Design intuitive interaction patterns for placing and viewing
-              AR-based volumetric video
-            </p>
-            <p>
-              • Support both patient use (at-home learning) and internal staff
-              training scenarios
-            </p>
-            <p>
-              • Contribute to a scalable model for distributing immersive
-              training content
-            </p>
-            <p>• Reduce reliance on costly third-party hosting solutions</p>
-          </div>
-        </div>
+          <ul class="bullet-list">
+            <li>• Enable users to better understand and replicate physical movements through spatial, immersive content
+            </li>
+            <li>• Ensure accessibility across devices, including non-AR fallbacks</li>
+            <li>• Design intuitive interaction patterns for placing and viewing AR-based volumetric video</li>
+            <li>• Support both patient use (at-home learning) and internal staff training scenarios</li>
+            <li>• Contribute to a scalable model for distributing immersive training content</li>
+            <li>• Reduce reliance on costly third-party hosting solutions</li>
+          </ul>
+        </section>
 
-        <div class="role-and-constraints">
+        <section class="role-and-constraints">
           <div class="role-col">
             <h2>My Role</h2>
-
-            <div class="list">
-              <p>
-                • Led UX/UI design for the application, including wireframes,
-                interaction design, and high-fidelity prototypes
-              </p>
-              <p>
-                • Designed a reusable component system aligned with
-                Providence’s brand guidelines
-              </p>
-              <p>
-                • Collaborated closely with developers through pair
-                programming to implement interactive featuresTranslated visual
-                assets into a modular UI system aligned with content structure
-              </p>
-              <p>
-                • Designed interaction patterns(buttons, hover states, loading
-                animations) to support usability and feedback
-              </p>
-              <p>
-                • Built key interface components, including custom video
-                controls and responsive behaviors for AR content
-              </p>
-              <p>
-                • Contributed to translating experimental AR interactions into
-                usable interface patterns
-              </p>
-            </div>
+            <ul class="bullet-list">
+              <li>• Led UX/UI design for the application, including wireframes, interaction design, and high-fidelity
+                prototypes</li>
+              <li>• Designed a reusable component system aligned with Providence’s brand guidelines</li>
+              <li>• Collaborated closely with developers through pair programming to implement interactive features.
+                Translated visual assets into a modular UI system aligned with content structure</li>
+              <li>• Designed interaction patterns (buttons, hover states, loading animations) to support usability and
+                feedback</li>
+              <li>• Built key interface components, including custom video controls and responsive behaviors for AR
+                content</li>
+              <li>• Contributed to translating experimental AR interactions into usable interface patterns</li>
+            </ul>
           </div>
           <div class="constraint-col">
             <h2>Constraints</h2>
-            <div class="list">
-              <p>
-                • Designing for an emerging interaction model (WebAR) with
-                limited established UX patterns
-              </p>
-              <p>
-                • Technical limitations around rendering, scaling, and
-                performance of volumetric video
-              </p>
-              <p>
-                • Need to support both AR-enabled and standard device
-                experiences
-              </p>
-              <p>
-                • Aligning with enterprise-level brand and accessibility
-                expectations
-              </p>
-              <p>
-                • Working within a prototype scope while contributing to a
-                larger, evolving product ecosystem
-              </p>
-            </div>
+            <ul class="bullet-list">
+              <li>• Designing for an emerging interaction model (WebAR) with limited established UX patterns</li>
+              <li>• Technical limitations around rendering, scaling, and performance of volumetric video</li>
+              <li>• Need to support both AR-enabled and standard device experiences</li>
+              <li>• Aligning with enterprise-level brand and accessibility expectations</li>
+              <li>• Working within a prototype scope while contributing to a larger, evolving product ecosystem</li>
+            </ul>
           </div>
-        </div>
+        </section>
 
-        <div class="design-decisions">
+        <section class="design-decisions">
           <h2>Design Decisions</h2>
+          <dl class="decision-list">
+            <dt>Simplifying AR interaction for first-time users</dt>
+            <dd>
+              The interface was designed to help users understand how to place
+              and interact with AR content in their physical space—an unfamiliar
+              interaction model for most users. To reduce friction, we
+              introduced lightweight onboarding tutorials with visual cues (e.g.
+              pinch, rotate gestures) alongside simplified interaction patterns.
+            </dd>
+            <dd style="margin-bottom: 1.35vh">
+              This introduced a tradeoff between providing guidance and
+              maintaining a streamlined interface. To balance this, onboarding
+              was kept brief and contextual, allowing users to quickly learn
+              interactions without interrupting the experience.
+            </dd>
+            <dt>Ensuring usability beyond AR-enabled environments</dt>
+            <dd style="margin-bottom: 1.35vh">
+              Because not all users would access the experience in AR, the
+              interface was designed to function across standard web and mobile
+              contexts. This required designing interaction patterns that could
+              translate between spatial and non-spatial environments without
+              losing clarity or functionality.
+            </dd>
+            <dt>Designing video controls for spatial interaction</dt>
+            <dd>
+              Standard video controls were adapted for an AR environment, where
+              content exists in 3D space rather than a fixed screen. Controls
+              needed to remain legible and accessible while not interfering with
+              the AR content, which could move or be positioned behind interface
+              elements.
+            </dd>
+            <dd style="margin-bottom: 1.35vh">
+              Balancing usability with immersion required simplifying controls
+              while maintaining core functionality (play, pause, mute,
+              scrubbing). UI placement and layering were carefully considered to
+              ensure controls remained visible without obstructing the
+              experience.
+            </dd>
+            <dt>Time-based controls</dt>
+            <dd style="margin-bottom: 10px">
+              Users needed precise control over time-based exercise
+              demonstrations to revisit and practice specific movements. The
+              interface supports scrubbing, skipping forward/backward, and
+              replaying segments within volumetric video.
+            </dd>
+            <dd style="margin-bottom: 1.35vh">
+              Designing these controls in a 3D environment required adapting
+              familiar interaction patterns while maintaining responsiveness and
+              clarity. Time-synced closed captions were integrated to support
+              accessibility and reinforce verbal instruction.
+            </dd>
+          </dl>
+        </section>
 
-          <p style="font-style: italic; font-weight: 400">
-            Simplifying AR interaction for first-time users
-          </p>
-          <p style="margin-bottom: 10px">
-            The interface was designed to help users understand how to place
-            and interact with AR content in their physical space—an unfamiliar
-            interaction model for most users. To reduce friction, we
-            introduced lightweight onboarding tutorials with visual cues (e.g.
-            pinch, rotate gestures) alongside simplified interaction patterns.
-          </p>
-          <p style="margin-bottom: 1.35vh">
-            This introduced a tradeoff between providing guidance and
-            maintaining a streamlined interface. To balance this, onboarding
-            was kept brief and contextual, allowing users to quickly learn
-            interactions without interrupting the experience.
-          </p>
-          <p style="font-style: italic; font-weight: 400">
-            Ensuring usability beyond AR-enabled environments
-          </p>
-          <p style="margin-bottom: 1.35vh">
-            Because not all users would access the experience in AR, the
-            interface was designed to function across standard web and mobile
-            contexts. This required designing interaction patterns that could
-            translate between spatial and non-spatial environments without
-            losing clarity or functionality.
-          </p>
-          <p style="font-style: italic; font-weight: 400">
-            Designing video controls for spatial interaction
-          </p>
-          <p style="margin-bottom: 10px">
-            Standard video controls were adapted for an AR environment, where
-            content exists in 3D space rather than a fixed screen. Controls
-            needed to remain legible and accessible while not interfering with
-            the AR content, which could move or be positioned behind interface
-            elements.
-          </p>
-          <p style="margin-bottom: 1.35vh">
-            Balancing usability with immersion required simplifying controls
-            while maintaining core functionality (play, pause, mute,
-            scrubbing). UI placement and layering were carefully considered to
-            ensure controls remained visible without obstructing the
-            experience.
-          </p>
-          <p style="font-style: italic; font-weight: 400">
-            Time-based controls
-          </p>
-          <p style="margin-bottom: 10px">
-            Users needed precise control over time-based exercise
-            demonstrations to revisit and practice specific movements. The
-            interface supports scrubbing, skipping forward/backward, and
-            replaying segments within volumetric video.
-          </p>
-          <p style="margin-bottom: 1.35vh">
-            Designing these controls in a 3D environment required adapting
-            familiar interaction patterns while maintaining responsiveness and
-            clarity. Time-synced closed captions were integrated to support
-            accessibility and reinforce verbal instruction.
-          </p>
-        </div>
-
-        <div class="results-div">
-          <h2>Impact & Results</h2>
-
+        <section class="results-div">
+          <h2>Impact &amp; Results</h2>
           <p style="margin-bottom: 1.35vh">
             The prototype demonstrated the viability of AR-based training as
             part of Providence’s broader learning and development strategy,
@@ -287,7 +218,6 @@
             infrastructure and supported continued investment in immersive
             training tools.
           </p>
-
           <p style="margin-bottom: 1.35vh">
             Feedback from Providence staff indicated that immersive, spatial
             experiences improved engagement, comprehension, and confidence
@@ -300,16 +230,14 @@
             publications, highlighting its role in advancing immersive
             learning in healthcare.
           </p>
-
           <p style="margin-bottom: 3vh">
             Here is a
-            <a href="https://l.ead.me/UPmersiv-ChairYoga" target="_blank">
-              link</a>
+            <a href="https://l.ead.me/UPmersiv-ChairYoga" target="_blank">link</a>
             to launch the experience.
           </p>
-        </div>
+        </section>
 
-        <div class="pressandhomediv">
+        <footer class="pressandhomediv">
           <div class="presslinks">
             <p class="times"><i>Press</i></p>
 
@@ -320,27 +248,23 @@
             <br />
 
             <a class="press" href="https://www.youtube.com/watch?v=pX5uOxRRFi4" target="_blank"><i>Intel Technology is
-                Helping Providence Shape the Future of
-                Healthcare</i></a><br />
+                Helping Providence Shape the Future of Healthcare</i></a><br />
             <p class="times">Intel, 2022</p>
             <br />
             <a class="press"
               href="https://marketscale.com/industries/healthcare/how-augmented-reality-and-immersive-technologies-improve-patient-outcomes/"
-              target="_blank"><i>How Augmented Reality and Immersive Technologies Can Improve
-                Patient Outcomes</i></a><br />
+              target="_blank"><i>How Augmented Reality and Immersive Technologies Can Improve Patient
+                Outcomes</i></a><br />
             <p class="times">MarketScale, 2023</p>
           </div>
           <div class="homediv" style="grid-row: 11/12">
             <div class="homegifdiv">
-              <a href="https://arfachowdhary.com/"><img src="./assets/gifs/home.gif" alt="Small home image"
-                  class="homegif" /></a>
+              <a href="./"><img src="./assets/gifs/home.gif" alt="Return to homepage" class="homegif" /></a>
             </div>
           </div>
-        </div>
-
-
+        </footer>
       </div>
-    </div>
+    </main>
   </div>
 </body>
 

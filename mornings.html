@@ -1,251 +1,233 @@
 <!doctype html>
-
 <html lang="en">
-  <head>
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <title>Cafe Mornings</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="gif" href="/assets/gifs/hot-air-baloon-0073.gif" />
-    <script src="index.js"></script>
-  </head>
 
-  <body>
-    <div id="projectbodycontainer">
-      <div id="projectbody">
-        <div class="ar-world-header header-grid">
-          <h1 style="grid-column: 1 / 7" class="blackh1">
-            Case Study — Cafe Mornings
-          </h1>
-          <div style="grid-column: 7 / 12">
-            <p class="gray">2025</p>
-            <p class="gray">
-              UX/UI Design, Front-end Development, Brand System Integration
-            </p>
-          </div>
-          <!-- <p class="ar-world-headeritem3 gray">Using: Figma, Squarespace</p> -->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Case Study — Cafe Mornings</title>
+  <meta name="description"
+    content="Case study on the Cafe Mornings website redesign, improving navigation, information hierarchy, and brand consistency for a Catskills cafe and market." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/gif" href="/assets/gifs/hot-air-baloon-0073.gif" />
+  <script src="index.js" defer></script>
+</head>
+
+<body>
+  <div id="projectbodycontainer">
+    <main id="projectbody">
+      <header class="header-grid">
+        <h1 style="grid-column: 1 / 7" class="blackh1">
+          Case Study — Cafe Mornings
+        </h1>
+        <div style="grid-column: 7 / 12">
+          <p class="gray">2025</p>
+          <p class="gray">
+            UX/UI Design, Front-end Development, Brand System Integration
+          </p>
+        </div>
+      </header>
+
+      <div id="slideshow">
+        <div class="slide fade" style="display: block">
+          <a target="_blank" href="https://www.cafemornings.com/">
+            <img class="screenshot" src="/assets/mornings/landing.png" alt="Cafe Mornings homepage" />
+          </a>
+        </div>
+        <div class="slide fade" style="display: none">
+          <a target="_blank" href="https://www.cafemornings.com/">
+            <img class="screenshot" src="/assets/mornings/visit-us.png" alt="Cafe Mornings visit us page" />
+          </a>
+        </div>
+        <div class="slide fade" style="display: none">
+          <a target="_blank" href="https://www.cafemornings.com/">
+            <img class="screenshot" src="/assets/mornings/visit-arkville.png"
+              alt="Cafe Mornings Arkville location page" />
+          </a>
+        </div>
+        <div class="slide fade" style="display: none">
+          <a target="_blank" href="https://www.cafemornings.com/">
+            <img class="screenshot" src="/assets/mornings/mornings-ui-4.png" alt="Cafe Mornings UI detail" />
+          </a>
+        </div>
+        <div class="slide fade" style="display: none">
+          <img class="screenshot" src="assets/mornings/footer.png" alt="Cafe Mornings footer" />
+        </div>
+        <div class="slide fade" style="display: none">
+          <a target="_blank" href="https://www.cafemornings.com/">
+            <img class="screenshot" src="assets/mornings/morning-loading-animation.gif"
+              alt="Cafe Mornings loading animation" />
+          </a>
         </div>
 
-        <div id="slideshow">
-          <!-- <div class="slide fade" style="display: block">
-            <img
-              id="horizontalscreenshot"
-              src="/assets/mornings/original-home-page.png"
-            />
-          </div>
-          <div class="slide fade" style="display: none">
-            <img
-              id="horizontalscreenshot"
-              src="/assets/mornings/original-home-page-2.png"
-            />
-          </div> -->
-
-          <div class="slide fade" style="display: block">
-            <a target="_blank"  href="https://www.cafemornings.com/"><img id="horizontalscreenshot" src="/assets/mornings/landing.png" /></a>
-          </div>
-          <div class="slide fade" style="display: none">
-            <a target="_blank"  href="https://www.cafemornings.com/">
-              <img
-                id="horizontalscreenshot"
-                src="/assets/mornings/visit-us.png"
-              />
-            </a>
-          </div>
-          <div class="slide fade" style="display: none">
-            <a  target="_blank" href="https://www.cafemornings.com/">
-              <img
-                id="horizontalscreenshot"
-                src="/assets/mornings/visit-arkville.png"
-              />
-            </a>
-          </div>
-          <div class="slide fade" style="display: none">
-            <a  target="_blank" href="https://www.cafemornings.com/">
-              <img
-                id="horizontalscreenshot"
-                src="/assets/mornings/mornings-ui-4.png"
-              />
-            </a>
-          </div>
-          
-          <div class="slide fade" style="display: none">
-            <img id="horizontalscreenshot" src="assets/mornings/footer.png" />
-          </div>
-          <div class="slide fade" style="display: none">
-              <a target="_blank" href="https://www.cafemornings.com/"><img id="horizontalscreenshot" src="assets/mornings/morning-loading-animation.gif" /></a>
-          </div>
-
-          <div id="arrows">
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
-          </div>
-        </div>
-
-        <div class="project-description-div">
-          <div class="about-div">
-            <h2>About</h2>
-            <p>
-              Cafe Mornings is a family-run Korean cafe and market in the
-              Catskills, serving breakfast and lunch alongside curated pantry
-              items and gifts. Their visitors include locals, families, and
-              food-driven travelers passing through the scenic Route 28 highway.
-            </p>
-          </div>
-            <div class="audit-div">
-              <h2>Existing Site Audit</h2>
-              <p>
-                I evaluated the existing site using heuristic analysis and
-                scenario-based review, focusing on how first-time visitors and
-                returning users locate key information and understand the cafe’s
-                offerings.
-              </p>
-              <br>
-              <p style="margin-bottom:5px"><u><b>Issues:</b></u></p>
-              
-                <div class="list">
-                  <p> • Visual Consistency: Inconsistent typography, color usage, and button styles reduced brand credibility and made the interface feel unstructured </p>
-                  <p> • Information Heirarchy:
-                  No clear path for primary actions and key user goals</p>
-                    <p class="indent"> ○ Travelers seeking menu, hours, location</p>
-                    <p class="indent"> ○ Locals browsing pantry items</p>
-                  <p> • Usability & Navigation: Menu was difficult to locate and not easily scannable </p>
-                  <p>• Information Architecture: No clear distinction between cafe, market, and event offerings, making it difficult to understand the business model. </p>
-                  <p>• User Perception: The homepage did not communicate what makes Cafe Mornings distinct, especially for first-time visitors and travelers</p>
-                  </p>
-                </div>
-            </div>
-       
-          <div class="two-column">
-            <div class="project-goals">
-                 <h2>Project Goals</h2>
-                 <p>• Clarify the site structure to support primary user goals (view menu, plan visit, browse market items) </p>
-                 <p>• Improve navigation and content hierarchy for faster access to key information</p>
-                 <p>• Establish a clear distinction between cafe and market offerings</p>
-                 <p>• Create a strong first impression for first-time visitors discovering the cafe online</p>
-                 <p>• Build a flexible, maintainable system that the client can update independently</p>
-            </div>
-            <div class = "user-flow">
-              <img   class="lightbox-img" src="assets/mornings/user-flow1.jpg" alt="User flow diagram">
-               <p style="font-style: italic; font-size: 15px; color: #1400ef">
-          User flow diagram addressing key user goal and issues from audit 
-        </p>
-            </div>
-            
-          </div>
-
-
-          <div class="role-and-constraints" >
-            
-              <div class="role-col">
-                <h2>My Role</h2>
-            
-                  <div class="list">
-                    <p>
-                      • Contributed to UX/UI strategy through wireframes and iterative design decisions
-                    </p>
-                    <p>• Designed and Developed site pages within a CMS  (Squarespace), using custom code to extend layout and interaction patterns. </p>
-                    <p>Translated visual assets into a modular UI system aligned with content structure</p>
-                    <p>
-                      • Designed interaction patterns(buttons, hover states, loading animations) to support usability and feedback
-                    </p>
-                    <p>• Delivered documentation to support client handoff and ongoing site updates</p>
-                  </div>
-              </div>
-              <div class="constraint-col">
-                <h2>Constraints</h2>
-                  <div class="list">
-                    <p>• No existing content hierarchy or structured information architecture</p>
-                    <p>• Platform constraints required scalable, low-maintenance layout solutions</p>
-                    <p>• Limited budget and development scope</p>
-                    <p>• Needed to support multiple offerings (cafe, market, events) within a unified system</p>
-                  </div>
-              </div>
-          </div>
-
-          <div class="validation-and-inputs" style="width: 90%">
-            <h2>Validation & Inputs</h2>
-            <div class="list">
-              <p>• Heuristic evaluation of the existing site</p>
-              <p>• Informal usability checks (users locating menu and hours)</p>
-              <p>• Review of comparable cafe websites to understand common patterns</p>
-            </div>
-          </div>
-<div class="key-design-decisions">
-  
-              <h2>
-                Key Design Decisions
-              </h2>
-  
-              <p style="font-style: italic; font-weight: 400">
-                Homepage prioritizes orientation before action
-              </p>
-              <p style="margin-bottom: 10px">
-               The homepage was structured to help users quickly understand what Cafe Mornings is before engaging with specific actions like viewing the menu or browsing products. Because many visitors arrive with little context (often from search or maps), it was important to clearly communicate the cafe’s hybrid identity as a dining,  retail, and special event space. Emphasizing orientation risks slowing down users who are looking for immediate information. To resolve this, key actions such as menu, hours, and location were kept accessible through persistent navigation and early placement within the page.
-              </p>
-              <p style="font-style: italic; font-weight: 400">
-                Navigation structured around user intent
-              </p>
-              <p style="margin-bottom: 10px">
-                Navigation was organized around primary user goals—visiting the cafe (menu, hours), browsing the market, and learning about the space. The previous structure did not reflect how users approached the site, making it harder to find relevant information. A more defined structure improved clarity but risked reducing the site’s exploratory and playful feel. This was addressed by maintaining visual flexibility within a consistent and predictable navigation system.
-              </p>
-  
-              <p style="font-style: italic; font-weight: 400">
-                Clear separation of cafe and market experiences
-              </p>
-  
-              <p style="margin-bottom: 10px">
-                Distinct pathways and page structures were created for cafe and market content to better support different user behaviors. Users interacting with the cafe needed quick, scannable information, while those browsing the market required a more exploratory experience. Separating these introduced a risk of fragmenting the overall experience, which was mitigated by maintaining a shared visual language and consistent UI patterns across both sections.
-              </p>
-              <p style="font-style: italic; font-weight: 400">
-              Visual system supports hierarchy, not just branding
-              </p>
-  
-              <p>
-                Illustration and visual elements were used intentionally to guide attention and reinforce content hierarchy rather than act as purely decorative elements. While the existing visual assets were expressive, they lacked integration with the interface structure. Prioritizing clarity required reducing visual density in some areas, which risked weakening the brand’s personality. This was resolved by applying visual elements selectively at key moments to support both readability and identity.
-              </p>
-  
-</div>
-
-          <div class="results-div" >
-            <h2>Results</h2>
-            <p>
-              The redesigned site improves clarity, navigation, and first-time user comprehension while maintaining a distinct visual identity. By restructuring content and aligning layout decisions with user needs, the experience now supports both quick, task-based visits and more exploratory browsing.
-            </p>
-            <br>
-            <div class="list">
-              <p> • Clearer distinction between cafe and market offerings</p>
-              <p> • Faster access to key information (menu, location, hours)</p>
-              <p> • Stronger first impression for new visitors</p>
-              <p> • Flexible, modular structure that allows the client to update content easily</p>
-              <p> • Informal usability checks indicated users were able to locate key information more quickly</p>
-
-            </div>
-            <p style="margin-top: 6px">
-              <a href="https://www.cafemornings.com/">Visit Live Site</a>
-            </p>
-          </div>
-
- 
-          <div class="homediv" style="grid-row: 11/12">
-            <div class="homegifdiv">
-              <a href="./"
-                ><img
-                  src="./assets/gifs/home.gif"
-                  alt="Small home image"
-                  class="homegif"
-              /></a>
-            </div>
-          </div>
-          
+        <div id="arrows">
+          <a class="prev" onclick="plusSlides(-1)" role="button" tabindex="0" aria-label="Previous screenshot">❮</a>
+          <a class="next" onclick="plusSlides(1)" role="button" tabindex="0" aria-label="Next screenshot">❯</a>
         </div>
       </div>
-    </div>
 
+      <div class="project-description-div">
+        <section class="about-div">
+          <h2>About</h2>
+          <p>
+            Cafe Mornings is a family-run Korean cafe and market in the
+            Catskills, serving breakfast and lunch alongside curated pantry
+            items and gifts. Their visitors include locals, families, and
+            food-driven travelers passing through the scenic Route 28 highway.
+          </p>
+        </section>
 
-    <div id="lightbox">
-      <img id="lightbox-image" src="" alt="" />
-    </div>
-  </body>
+        <section class="audit-div">
+          <h2>Existing Site Audit</h2>
+          <p>
+            I evaluated the existing site using heuristic analysis and
+            scenario-based review, focusing on how first-time visitors and
+            returning users locate key information and understand the cafe’s
+            offerings.
+          </p>
+          <br />
+          <p style="margin-bottom: 5px"><u><b>Issues:</b></u></p>
+          <ul class="bullet-list">
+            <li>• Visual Consistency: Inconsistent typography, color usage, and button styles reduced brand credibility
+              and made the interface feel unstructured</li>
+            <li>
+              • Information Hierarchy: No clear path for primary actions and key user goals
+              <ul class="bullet-list">
+                <li class="indent">○ Travelers seeking menu, hours, location</li>
+                <li class="indent">○ Locals browsing pantry items</li>
+              </ul>
+            </li>
+            <li>• Usability &amp; Navigation: Menu was difficult to locate and not easily scannable</li>
+            <li>• Information Architecture: No clear distinction between cafe, market, and event offerings, making it
+              difficult to understand the business model.</li>
+            <li>• User Perception: The homepage did not communicate what makes Cafe Mornings distinct, especially for
+              first-time visitors and travelers</li>
+          </ul>
+        </section>
+
+        <section class="two-column">
+          <div class="project-goals">
+            <h2>Project Goals</h2>
+            <ul class="bullet-list">
+              <li>• Clarify the site structure to support primary user goals (view menu, plan visit, browse market
+                items)</li>
+              <li>• Improve navigation and content hierarchy for faster access to key information</li>
+              <li>• Establish a clear distinction between cafe and market offerings</li>
+              <li>• Create a strong first impression for first-time visitors discovering the cafe online</li>
+              <li>• Build a flexible, maintainable system that the client can update independently</li>
+            </ul>
+          </div>
+          <figure class="user-flow">
+            <img class="lightbox-img" src="assets/mornings/user-flow1.jpg" alt="User flow diagram" />
+            <figcaption style="font-style: italic; font-size: 15px; color: #1400ef">
+              User flow diagram addressing key user goal and issues from audit
+            </figcaption>
+          </figure>
+        </section>
+
+        <section class="role-and-constraints">
+          <div class="role-col">
+            <h2>My Role</h2>
+            <ul class="bullet-list">
+              <li>• Contributed to UX/UI strategy through wireframes and iterative design decisions</li>
+              <li>• Designed and Developed site pages within a CMS (Squarespace), using custom code to extend layout and
+                interaction patterns.</li>
+              <li>• Translated visual assets into a modular UI system aligned with content structure</li>
+              <li>• Designed interaction patterns (buttons, hover states, loading animations) to support usability and
+                feedback</li>
+              <li>• Delivered documentation to support client handoff and ongoing site updates</li>
+            </ul>
+          </div>
+          <div class="constraint-col">
+            <h2>Constraints</h2>
+            <ul class="bullet-list">
+              <li>• No existing content hierarchy or structured information architecture</li>
+              <li>• Platform constraints required scalable, low-maintenance layout solutions</li>
+              <li>• Limited budget and development scope</li>
+              <li>• Needed to support multiple offerings (cafe, market, events) within a unified system</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="validation-and-inputs" style="width: 90%">
+          <h2>Validation &amp; Inputs</h2>
+          <ul class="bullet-list">
+            <li>• Heuristic evaluation of the existing site</li>
+            <li>• Informal usability checks (users locating menu and hours)</li>
+            <li>• Review of comparable cafe websites to understand common patterns</li>
+          </ul>
+        </section>
+
+        <section class="key-design-decisions">
+          <h2>Key Design Decisions</h2>
+          <dl class="decision-list">
+            <dt>Homepage prioritizes orientation before action</dt>
+            <dd>
+              The homepage was structured to help users quickly understand what Cafe Mornings is before engaging with
+              specific actions like viewing the menu or browsing products. Because many visitors arrive with little
+              context (often from search or maps), it was important to clearly communicate the cafe’s hybrid identity
+              as a dining, retail, and special event space. Emphasizing orientation risks slowing down users who are
+              looking for immediate information. To resolve this, key actions such as menu, hours, and location were
+              kept accessible through persistent navigation and early placement within the page.
+            </dd>
+            <dt>Navigation structured around user intent</dt>
+            <dd>
+              Navigation was organized around primary user goals—visiting the cafe (menu, hours), browsing the market,
+              and learning about the space. The previous structure did not reflect how users approached the site,
+              making it harder to find relevant information. A more defined structure improved clarity but risked
+              reducing the site’s exploratory and playful feel. This was addressed by maintaining visual flexibility
+              within a consistent and predictable navigation system.
+            </dd>
+            <dt>Clear separation of cafe and market experiences</dt>
+            <dd>
+              Distinct pathways and page structures were created for cafe and market content to better support
+              different user behaviors. Users interacting with the cafe needed quick, scannable information, while
+              those browsing the market required a more exploratory experience. Separating these introduced a risk of
+              fragmenting the overall experience, which was mitigated by maintaining a shared visual language and
+              consistent UI patterns across both sections.
+            </dd>
+            <dt>Visual system supports hierarchy, not just branding</dt>
+            <dd>
+              Illustration and visual elements were used intentionally to guide attention and reinforce content
+              hierarchy rather than act as purely decorative elements. While the existing visual assets were
+              expressive, they lacked integration with the interface structure. Prioritizing clarity required reducing
+              visual density in some areas, which risked weakening the brand’s personality. This was resolved by
+              applying visual elements selectively at key moments to support both readability and identity.
+            </dd>
+          </dl>
+        </section>
+
+        <section class="results-div">
+          <h2>Results</h2>
+          <p>
+            The redesigned site improves clarity, navigation, and first-time user comprehension while maintaining a
+            distinct visual identity. By restructuring content and aligning layout decisions with user needs, the
+            experience now supports both quick, task-based visits and more exploratory browsing.
+          </p>
+          <br />
+          <ul class="bullet-list">
+            <li>• Clearer distinction between cafe and market offerings</li>
+            <li>• Faster access to key information (menu, location, hours)</li>
+            <li>• Stronger first impression for new visitors</li>
+            <li>• Flexible, modular structure that allows the client to update content easily</li>
+            <li>• Informal usability checks indicated users were able to locate key information more quickly</li>
+          </ul>
+          <p style="margin-top: 6px">
+            <a href="https://www.cafemornings.com/">Visit Live Site</a>
+          </p>
+        </section>
+
+        <footer class="homediv" style="grid-row: 11/12">
+          <div class="homegifdiv">
+            <a href="./"><img src="./assets/gifs/home.gif" alt="Return to homepage" class="homegif" /></a>
+          </div>
+        </footer>
+      </div>
+    </main>
+  </div>
+
+  <div id="lightbox">
+    <img id="lightbox-image" src="" alt="" />
+  </div>
+</body>
+
 </html>

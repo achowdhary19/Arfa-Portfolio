@@ -1,209 +1,180 @@
 <!doctype html>
-
 <html lang="en">
-  <head>
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <title>AR Worldcraft</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="gif" href="/assets/gifs/hot-air-baloon-0073.gif" />
-    <script src="index.js"></script>
-  </head>
 
-  <body>
-    <div id="projectbodycontainer">
-      <div id="projectbody">
-        <div class="ar-world-header header-grid">
-          <h1 class="blackh1">AR Worldcraft at NuVu Summer</h1>
-          <div class="ar-world-headeritem2">
-            <p class="gray">2025</p>
-            <p class="gray">Teaching</p>
-          </div>
-          <p class="ar-world-headeritem3 gray">Using: CoSpaces, MagicaVoxel</p>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>AR Worldcraft at NuVu Summer</title>
+  <meta name="description"
+    content="Teaching case study on AR Worldcraft, a two-week AR game development studio for middle schoolers at NuVu Innovation School, covering curriculum design and teaching approach." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/gif" href="/assets/gifs/hot-air-baloon-0073.gif" />
+  <script src="index.js" defer></script>
+
+
+</head>
+
+<body>
+  <div id="projectbodycontainer">
+    <main id="projectbody">
+      <header class="ar-world-header header-grid">
+        <h1 class="blackh1">AR Worldcraft at NuVu Summer</h1>
+        <div class="ar-world-headeritem2">
+          <p class="gray">2025</p>
+          <p class="gray">Teaching</p>
+        </div>
+        <p class="ar-world-headeritem3 gray">Using: CoSpaces, MagicaVoxel</p>
+      </header>
+
+      <div id="slideshow">
+        <div class="slide fade" style="display: block">
+          <img class="screenshot lightbox-img" src="/assets/worldcraft/doors.png"
+            alt="AR Worldcraft in-game doors puzzle" />
+        </div>
+        <div class="slide fade" style="display: none">
+          <img class="screenshot lightbox-img" src="/assets/worldcraft/ducktective-storyboard.jpg"
+            alt="Ducktective game storyboard" />
+        </div>
+        <div class="slide fade" style="display: none">
+          <img class="screenshot lightbox-img" src="/assets/worldcraft/vacuum.png"
+            alt="AR Worldcraft in-game vacuum object" />
+        </div>
+        <div class="slide fade" style="display: none">
+          <img class="screenshot lightbox-img" src="/assets/worldcraft/fishing-presentation.JPG"
+            alt="Student fishing game presentation" />
+        </div>
+        <div class="slide fade" style="display: none">
+          <img class="screenshot lightbox-img " src="/assets/worldcraft/ets.png"
+            alt="Student game exposition display" />
         </div>
 
-        <div id="slideshow">
-          <div class="slide fade" style="display: block">
-            <img src="/assets/worldcraft/doors.png" id="" alt="" />
-          </div>
-
-          <div class="slide fade" style="display: none">
-            <img
-              id="horizontalscreenshot"
-              src="/assets/worldcraft/ducktective-storyboard.jpg"
-              alt=""
-            />
-          </div>
-          <div class="slide fade" style="display: none">
-            <img src="/assets/worldcraft/vacuum.png" alt="" />
-          </div>
-          <div class="slide fade" style="display: none">
-            <img
-              id="horizontalscreenshot"
-              src="/assets/worldcraft/fishing-presentation.JPG"
-              alt="dollscreenshot2"
-            />
-          </div>
-
-          <div class="slide fade" style="display: none">
-            <img
-              id="horizontalscreenshot"
-              src="/assets/worldcraft/ets.png"
-              alt=""
-            />
-          </div>
-
-          <div id="arrows">
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
-          </div>
-        </div>
-
-        <div id="worldcraft-description-div">
-          <div class="brief-div">
-            <h2>Brief</h2>
-            <p>
-              In summer 2025, I taught a two-week studio on AR game development
-              for middle schoolers at NuVu Innovation School in Cambridge, MA.
-              The goal was to introduce students to product development and
-              programming in a way that feels accessible, intuitive, and
-              empowering — especially for students with no previous coding or 3D
-              experience. I adapted the curriculum, taught daily seminars, and
-              guided students from initial concept to playable prototype through
-              brainstorming, design, storytelling, world-building, and
-              programming.
-            </p>
-          </div>
-          <div class="about-div">
-            <h2>About NuVu School</h2>
-            <p>
-              NuVu provides a non-traditional studio-based learning experience
-              focused on design thinking, engineering, craft, and technology. In
-              the classroom, students build real-world skills—like
-              communication, collaboration, and adaptability—while exploring new
-              technology and topics from different fields. NuVu's focus on
-              design is grounded in problem solving, ensuring that students are
-              active participants in the world and in the how and why of their
-              work.
-            </p>
-          </div>
-
-          <div class="approach-div">
-            <div style="display: flex; flex-direction: column; gap: 25px">
-              <div
-                style="
-                  display: flex;
-                  align-items: flex-end;
-                  justify-content: space-between;
-                "
-              >
-                <div style="display: flex; flex-direction: column; width: 50%">
-                  <h2>Teaching Approach</h2>
-                  <p>
-                    Designing and building a project can feel intimidating and
-                    overly technical. I wanted to create a learning environment
-                    where students could approach this process and new
-                    technologies with curiosity rather than fear. The
-                    alternative classroom environment removed barriers to
-                    learning and allowed me to meet each student where they are.
-                    I provided multiple ways for students to engage, access
-                    information and demonstrate what they know.
-                  </p>
-                </div>
-                <div style="width: 45%">
-                  <img
-                    style="width: 90%"
-                    src="/assets/worldcraft/angry-birds.gif"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <p>
-                My goal was to introduce students to the design process from a
-                high level perspective so that they can adapt this thinking in
-                other settings. Within this process, they learned how to use
-                technologies to communicate concepts in different forms. I
-                adapted a syllabus based on the learning styles and interests of
-                the students. I wanted the students to get a feel for every
-                stage of the process - from drafting ideas on paper, to making
-                quick prototypes, to developing a product. Using the syllabus as
-                a guide rather than a rulebook, I confidently supported students
-                through their individual learning experience, working with their
-                unique set of strengths and weaknesses. I allowed the class to
-                move flexibly through the process of making and understand it as
-                a non-linear and always unfolding practice. This approach gives
-                students a strong foundation into design thinking, making, and
-                problem solving and equips them with the thinking muscles to
-                take this into further applications.
-              </p>
-              <p>
-                In addition to the conceptual and technical skills learned in
-                class, I aimed to embed socio-emotional learning competencies,
-                like relationships skills and self management, throughout the
-                studio. Practices like goal-setting, collaboration, reflection,
-                and feedback helped the students build confidence, strengthen
-                communication, and improve decision-making skills. Despite this
-                being a software heavy class with most students working on
-                projects alone, the class naturally turned to eachother to
-                tackle problems and celebrate little wins together.
-              </p>
-            </div>
-          </div>
-          <div style="display: flex; width: 100%; justify-content: center">
-            <img
-              style="max-width: 65%"
-              src="/assets/worldcraft/ducktective.png"
-              alt=""
-            />
-          </div>
-          <div class="process-div">
-            <h2>Studio Process</h2>
-            <div style="display: flex; flex-direction: column; gap: 40px">
-              <div
-                style="
-                  display: flex;
-                  align-items: flex-end;
-                  justify-content: space-between;
-                "
-              >
-                <p style="width: 100%">
-                  Each day, I taught lessons on a piece of the design process
-                  followed by hands on activities to practice what we learned.
-                  We started the class by discussing our interest in play and
-                  analyzing games from different lenses - narrative, world
-                  design, and gameplay. Next, the class collaboratively
-                  brainstormed ideas for their games. Under a time constraint,
-                  students came up with as many ideas as possible for game
-                  environments, mechanics, and narratives. The students used the
-                  collection of ideas to frankenstein together a game and
-                  practiced fleshing out their idea further by sketching a
-                  storyboard. After a few rounds of brainstorming and
-                  storyboarding, students narrowed down their game ideas and we
-                  moved into asset creation and digital prototyping, using
-                  Delightex Edu (previously CoSpaces Edu), a block based 3D game
-                  engine with AR and VR capabilities. Students continued
-                  developing their games, debugging, playtesting, creating art,
-                  until the final day where they presented their design and
-                  development process to an audience and displayed their games
-                  in an exposition.
-                </p>
-              </div>
-              <div class="homediv" style="grid-row: 11/12">
-                <div class="homegifdiv">
-                  <a href="./"
-                    ><img
-                      src="./assets/gifs/home.gif"
-                      alt="Small home image"
-                      class="homegif"
-                  /></a>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div id="arrows">
+          <a class="prev" onclick="plusSlides(-1)" role="button" tabindex="0" aria-label="Previous screenshot">❮</a>
+          <a class="next" onclick="plusSlides(1)" role="button" tabindex="0" aria-label="Next screenshot">❯</a>
         </div>
       </div>
-    </div>
-  </body>
+
+      <div class="project-description-flex">
+        <section class="about-div">
+          <h2>About</h2>
+          <p>
+            In summer 2025, I lead a studio on game development for middle schoolers at NuVu Innovation School in
+            Cambridge, MA. My goal was to create an approachable and empowering setting to introduce kids to programming
+            and the maker journey . I adapted a curriculum, taught daily seminars, and guided students from initial
+            concept to playable prototype through brainstorming, design, storytelling, world-building, and programming.
+          </p>
+        </section>
+
+
+
+        <section class="approach-div">
+          <!-- <div class="worldcraft-approach"> -->
+          <!-- <div class="worldcraft-approach-row">
+              <div class="worldcraft-approach-text"> -->
+          <h2>Teaching Approach</h2>
+          <p>
+            Building a project from concept to finish can feel intimidating, especially when the process is so
+            often
+            made to look clean and straightforward. I wanted students to approach new technologies with curiosity
+            instead of fear — treating confusion and uncertainty as playful entry points rather than reasons to
+            stop.
+            The hands-on studio format, as opposed to a lecture-based classroom, let me watch each student work
+            and meet
+            them where they were. With a small, varied group, I built in multiple ways for them to engage, take in
+            information, and show what they knew.
+          </p><br>
+          <p>
+            Beyond programming and design skills, I taught goal-setting, collaboration, reflection, and feedback.
+            Above
+            all, I wanted students to feel what it's like to experiment, mess up, and go back to the drawing
+            board. This
+            class was less about games or code, and more about learning to try things and test them. Using the
+            syllabus
+            as a guide rather than a ruleset, I worked with each student's individual strengths and pace, and made
+            sure
+            they left with real confidence navigating an unfamiliar, non-linear process — a foundation in design
+            thinking and problem-solving that goes well beyond programming.
+          </p>
+          <!-- </div> -->
+          <!-- <div class="worldcraft-approach-image">
+                <img src="/assets/worldcraft/angry-birds.gif" alt="Student game prototype inspired by Angry Birds" />
+              </div> -->
+          <!-- </div> -->
+          <!-- </div> -->
+        </section>
+
+        <div class="worldcraft-centered-image ">
+          <img class="lightbox-img" src="/assets/worldcraft/ducktective.png"
+            alt="Ducktective student game, final screenshot" />
+        </div>
+
+        <!-- <section class="process-div">
+          <h2>Studio Process</h2>
+          <div class="worldcraft-process-body">
+            <p>
+              Each day paired a short lesson on a piece of the design process with hands-on practice. We opened by
+              unpacking what makes games work — narrative, world design, gameplay — then moved into collaborative
+              brainstorming, where students generated as many ideas as possible for environments, mechanics, and
+              narratives under a time constraint. Students frankensteined their favorite ideas into one concept,
+              storyboarded it, then moved into asset creation and digital prototyping using Delightex Edu (formerly
+              CoSpaces Edu), a block-based 3D engine with AR/VR capabilities. The rest of the studio was spent building,
+              debugging, and playtesting, ending with a final exposition where students presented their games and
+              process to an audience.
+            </p>
+          </div>
+        </section> -->
+
+
+        <section class="process-div">
+          <div class="worldcraft-process">
+            <div class="worldcraft-process-row">
+              <div class="worldcraft-process-text">
+                <h2>Studio Process</h2>
+                <p>
+                  Each day paired a short lesson on a piece of the design process with hands-on practice. We opened by
+                  unpacking what makes games work — narrative, world design, gameplay — then moved into collaborative
+                  brainstorming, where students generated as many ideas as possible for environments, mechanics, and
+                  narratives under a time constraint. Students frankensteined their favorite ideas into one concept,
+                  storyboarded it, then moved into asset creation and digital prototyping using Delightex Edu (formerly
+                  CoSpaces Edu), a block-based 3D engine with AR/VR capabilities. The rest of the studio was spent
+                  building,
+                  debugging, and playtesting, ending with a final exposition where students presented their games and
+                  process to an audience.
+                </p>
+              </div>
+              <div class="worldcraft-process-image">
+                <img class="lightbox-img" src="/assets/worldcraft/angry-birds.gif"
+                  alt="Student game prototype inspired by Angry Birds" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+        <section class="reflection-div">
+          <h2>Reflection</h2>
+          <div class="reflection-body">
+            <p>
+              Teaching this course deepened my interest in designing tools and learning environments that turn
+              complexity into something approachable — the same instinct that drives my design work outside the
+              classroom. The most meaningful outcome was watching students build real confidence navigating an
+              unfamiliar technology, which is exactly the kind of experience I want my work to create
+            </p>
+          </div>
+        </section>
+      </div>
+      <footer class="homediv">
+        <div class="homegifdiv">
+          <a href="./"><img src="./assets/gifs/home.gif" alt="Return to homepage" class="homegif" /></a>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <div id="lightbox">
+    <img id="lightbox-image" src="" alt="" />
+  </div>
+</body>
+
 </html>
