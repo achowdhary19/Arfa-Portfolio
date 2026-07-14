@@ -90,7 +90,8 @@ h3 {
   font-size: 20px;
   font-weight: bold;
   padding: 0;
-  margin-bottom: 8px;
+  margin: 8px 0px 8px 0px;
+
 }
 
 ul {
@@ -106,7 +107,7 @@ ul {
 li {
   font-size: 15pt;
   list-style-type: none;
-  padding-bottom: 1em;
+  padding-bottom: .2em;
   margin: 0;
   display: list-item;
   text-align: -webkit-match-parent;
@@ -150,8 +151,7 @@ a:visited {
   letter-spacing: 0.7px;
   line-height: 1.2em;
   font-size: 18px;
-  margin: 0;
-  padding: 0;
+ 
 }
 
 /* "Term / description" pairs used in Key Design Decisions sections.
@@ -335,6 +335,9 @@ button[aria-expanded="true"]::after {
 .spacer {
   height: 1.5vh;
 }
+.big-spacer{
+  height: 9vh;
+}
 
 .spacer-divider {
   height: 1.5vh;
@@ -371,7 +374,7 @@ button[aria-expanded="true"]::after {
 }
 
 #projectbody {
-  width: 56vw;
+  width: 54vw;
   margin-bottom: 2px;
 }
 
@@ -396,11 +399,11 @@ button[aria-expanded="true"]::after {
   grid-column: 9/11;
 }
 
-/* Plain semantic wrapper — intentionally unstyled (matches original
-   behavior on ecolibrium/digitalcounsel/providence/mornings, which never
-   actually received the flex/gap styling below due to a class-vs-id
-   mismatch in the original CSS). */
+/* Plain semantic wrapper */
 .project-description-div {
+  display:flex;
+  flex-direction:column;
+  gap: 20px;
 }
 
 /* Flex column with spacing between subsections — used by pages that
@@ -539,7 +542,7 @@ button[aria-expanded="true"]::after {
   justify-content: space-between;
   align-items: flex-end;
   gap: 30px;
-  margin-top: 50px;
+
   width: 100%;
 }
 
@@ -558,8 +561,14 @@ button[aria-expanded="true"]::after {
   font-family: Times;
   font-size: 18px;
   text-decoration: none !important;
-  color: var(--primary-blue) !important;
+ 
 }
+
+ .press:hover{ /* not working cus a visited is set to primary blue  */
+   color: #1400EF;
+}
+
+
 
 /* -----------------------------
    8. PAGE-SPECIFIC OVERRIDES
@@ -580,6 +589,7 @@ button[aria-expanded="true"]::after {
   display: flex;
   flex-direction: column;
   align-items: center;
+ 
 }
 
 .original-inventory-innerdiv,
@@ -588,7 +598,12 @@ button[aria-expanded="true"]::after {
   width: 100%;
   flex-direction: column;
   align-items: center;
-  margin: 15px 0px 15px 0px;
+  margin: 20px 0px 20px 0px;
+}
+
+.original-inventory-innerdiv{
+  margin: 35px 0px 35px 0px;
+
 }
 
 .concept-exploration-innerdiv {
@@ -686,11 +701,13 @@ button[aria-expanded="true"]::after {
 }
 
 /* Worldcraft */
-.worldcraft-process {
+s.worldcraft-proces {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 25px;
 }
+
+
 
 .worldcraft-process-row {
   display: flex;
@@ -709,7 +726,7 @@ button[aria-expanded="true"]::after {
 }
 
 .worldcraft-process-image img {
-  width: 90%;
+  width: 100%;
 }
 
 .worldcraft-centered-image {

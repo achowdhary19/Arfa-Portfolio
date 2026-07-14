@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Vanished Puzzle Quest</title>
+    <meta name="description"
+        content="UX research and playtesting case study on Vanished Puzzle Quest, a first-person puzzle game set in the Islamic Golden Age, including a speculative inventory system redesign." />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+    <link rel="icon" type="image/gif" href="/assets/gifs/hot-air-baloon-0073.gif" />
+</head>
+
+<body>
+    <div id="projectbodycontainer">
+        <main id="projectbody">
+            <header class="header-grid">
+                <h1 class="blackh1 oblivion-headeritem1">Vanished Puzzle Quest</h1>
+                <div class="oblivion-headeritem2">
+                    <p class="gray">2024</p>
+                    <p class="gray">UX Research, Playtesting</p>
+                </div>
+                <p class="gray oblivion-headeritem3">
+                    Collaborators: Unity Productions Foundation, Saltium Games
+                </p>
+            </header>
+
+            <div id="slideshow">
+                <div class="slide fade" style="display: block">
+                    <img class="screenshot" src="/assets/vanished/oblivion1.gif" alt="Vanished Puzzle Quest gameplay" />
+                </div>
+                <div class="slide fade" style="display: none">
+                    <img class="screenshot" src="/assets/vanished/vanished1.PNG"
+                        alt="Vanished Puzzle Quest screenshot 1" />
+                </div>
+                <div class="slide fade" style="display: none">
+                    <img class="screenshot" src="/assets/vanished/vanished2.PNG"
+                        alt="Vanished Puzzle Quest screenshot 2" />
+                </div>
+                <div class="slide fade" style="display: none">
+                    <img class="screenshot" src="/assets/vanished/oblivion4.jpg"
+                        alt="Vanished Puzzle Quest screenshot 3" />
+                </div>
+                <div class="slide fade" style="display: none">
+                    <img class="screenshot" src="/assets/vanished/oblivion2.jpg"
+                        alt="Vanished Puzzle Quest screenshot 4" />
+                </div>
+
+                <div id="arrows">
+                    <a class="prev" onclick="plusSlides(-1)" role="button" tabindex="0"
+                        aria-label="Previous screenshot">❮</a>
+                    <a class="next" onclick="plusSlides(1)" role="button" tabindex="0"
+                        aria-label="Next screenshot">❯</a>
+                </div>
+            </div>
+
+            <div class="project-description-div">
+                <section>
+                    <h2 style="font-weight: bold">About</h2>
+                    <p>
+                        Vanished is a first-person puzzle game set in the Islamic Golden Age, where players rebuild
+                        ancient tools and instruments to unravel a mystery and piece together lost history. I joined
+                        during development as a playtester and UX contributor — my role was scoped to research and
+                        feedback rather than implementation, so the redesign below is a speculative proposal I built to
+                        demonstrate design thinking, not a shipped feature.
+                    </p>
+                </section>
+
+                <section>
+                    <h2 style="font-weight: bold">Research</h2>
+                    <p>
+                        We playtested regularly with volunteers and logged feedback by type — usability issues, bugs,
+                        observed behavior, stated pain points, visual issues. I synthesized these logs to find patterns
+                        across players, then designed solutions that balanced player experience, dev process, and
+                        stakeholder constraints against the game's goals of challenge, discovery, and learning.
+                    </p>
+                </section>
+
+                <section>
+                    <h2 style="font-weight: bold">Redesign: Inventory Management</h2>
+                    <p>
+                        Playtesting surfaced three recurring issues: object discoverability, progression confusion, and
+                        inventory comprehension. Since the core gameplay is about collecting, combining, and learning
+                        about historical artifacts, understanding what an object is is fundamental to progressing. The
+                        existing inventory showed collected items as unlabeled icons with no inspection or context —
+                        players often felt uncertain what they were holding, and that uncertainty pushed them toward
+                        brute-forcing combinations instead of reasoning through puzzles. <br><br>
+                    </p>
+                    <p>
+                        I proposed a more supportive inventory system that would give players clearer context without
+                        stripping down the puzzle design itself. </p>
+                    <div class="original-inventory-div">
+                        <div class="original-inventory-innerdiv">
+                            <img src="assets/vanished/current-inventory.png" alt="Original inventory system, annotated"
+                                class="lightbox-img" />
+                            <p class="inventory-caption">
+                                Original inventory system, annotated
+                            </p>
+                        </div>
+                    </div>
+
+                    <p>
+                        The current inventory provides insufficient information for players to confidently identify,
+                        understand,
+                        and apply collected objects within puzzle-solving contexts.<br><br>
+                    </p>
+                </section>
+
+
+
+                <section class="oblivion-two-column">
+                    <div class="oblivion-col1">
+                        <h2>Design Goals</h2>
+                        <ul class="design-goals list">
+                            <li>• Help players confidently identify collected objects</li>
+                            <li>• Add context without removing the need for interpretation</li>
+                            <li>• Keep the interface uncluttered on small mobile screens</li>
+                            <li>• Reduce cognitive load while preserving immersion</li>
+                            <li>• Preserve the game's goals of exploration, challenge, and learning
+
+                            </li>
+                        </ul>
+
+                        <div>
+                            <h2>Selected Direction</h2>
+                            <p>
+                                I chose tap-to-inspect because it surfaces contextual information only when requested,
+                                without breaking immersion. Persistent labels improved understanding but added clutter,
+                                especially on mobile. A full inventory journal offered richer educational content but
+                                was overbuilt for how simple most objects were, and risked slowing gameplay down.
+                                Tap-to-inspect supported the existing game rather than requiring new layers, while
+                                balancing clarity, player agency, and feasibility.
+                            </p>
+                        </div>
+                    </div>
+                    <figure class="oblivion-col2 concept-exploration-innerdiv">
+                        <img src="assets/vanished/inventory-mockups.jpg" alt="Concept exploration for inventory system"
+                            class="lightbox-img" />
+                        <figcaption class="inventory-caption">
+                            Concept exploration for inventory system
+                        </figcaption>
+                    </figure>
+                </section>
+
+                <section>
+                    <h2>Reflection</h2>
+                    <p>
+                        Vanished reinforced that game design balances more than usability — technical limits, production
+                        constraints, narrative goals, and the emotional experience a game aims to create all shape the
+                        decision. Games ask players to <i><b>spend</b></i> time, not save it, which puts more weight on
+                        their actual wants than a productivity tool carries. Playtesting with real users surfaces things
+                        internal review and technical prediction alone can't. As a designer, I'm looking for the pivot
+                        point between clarity, challenge, discovery, and learning.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Project Status</h2>
+                    <p>
+                        Vanished Puzzle Quest released commercially in March 2026. I contributed through UX research,
+                        playtesting, and design exploration during development. The inventory redesign above was not
+                        implemented in the released game.
+                    </p>
+                </section>
+
+                <footer class="pressandhomediv">
+                    <div class="presslinks">
+                        <h2>Press</h2>
+                        <p class="times"><i>Official</i></p>
+
+                        <a class="press" href="https://vanished.game/" target="_blank">Vanished Official Website</a><br>
+                        <a class="press" href="https://store.steampowered.com/app/4262720/Vanished_Puzzle_Quest/"
+                            target="_blank">Steam</a><br>
+                        <a class="press" href="https://store.epicgames.com/p/vanished-puzzle-quest-080e56?lang=en-US"
+                            target="_blank">Epic Games Store</a><br>
+                        <a class="press" href="https://www.youtube.com/watch?v=o2daFgdaxqY" target="_blank">Official
+                            Launch
+                            Trailer</a>
+
+                        <br><br>
+
+                        <p class="times"><i>Press</i></p>
+
+                        <a class="press"
+                            href="https://www.wisfarmer.com/press-release/story/44176/a-first-of-its-kind-video-game-based-on-muslim-scientific-artifacts-launching-on-march-20-2026/"
+                            target="_blank">Wisconsin Farmer</a><br>
+                        <a class="press" href="https://www.pocketgamer.com/vanished-puzzle-quest/official-launch/"
+                            target="_blank">Pocket Gamer</a><br>
+                        <a class="press" href="https://zeteo.com/p/video-game-golden-age-islam-vanished"
+                            target="_blank">Zeteo</a>
+                    </div>
+
+                    <div style="align-self: flex-end;" class="homediv">
+                        <div class="homegifdiv">
+                            <a href="./"><img src="./assets/gifs/home.gif" alt="Return to homepage"
+                                    class="homegif" /></a>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </main>
+    </div>
+
+    <div id="lightbox">
+        <img id="lightbox-image" src="" alt="" />
+    </div>
+</body>
+
+</html>
